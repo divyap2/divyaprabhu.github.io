@@ -1,23 +1,129 @@
 
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Divya Prabhu | Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #e1f5fe, #f3e5f5);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #283593, #6a1b9a);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .profile-photo {
+      width: 150px;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      margin-bottom: 1rem;
+    }
+    h1 {
+      margin: 0.2rem 0;
+      font-size: 2.5rem;
+    }
+    .typing {
+      font-size: 1.2rem;
+      color: #ffeb3b;
+      height: 30px;
+      margin-bottom: 1rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: #ab47bc;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    nav {
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav a {
+      display: inline-block;
+      padding: 1rem;
+      text-decoration: none;
+      color: #5e35b1;
+      font-weight: bold;
+    }
+    main {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 3rem;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+    }
+    h2 {
+      color: #512da8;
+      margin-top: 0;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 0.3rem;
+    }
+    .skill-bar-container label {
+      display: block;
+      margin-top: 1rem;
+    }
+    .bar {
+      height: 10px;
+      background: #e0e0e0;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+    .bar::after {
+      content: '';
+      display: block;
+      height: 100%;
+      background: #7e57c2;
+      width: 0;
+      transition: width 1.5s ease-out;
+    }
+    .timeline li {
+      list-style: none;
+      padding-left: 1rem;
+      position: relative;
+    }
+    .timeline li::before {
+      content: '⏺';
+      position: absolute;
+      left: 0;
+      color: #9575cd;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      background: #ede7f6;
+    }
+  </style>
 </head>
 <body>
-  <header id="top">
+  <header>
     <img src="profile.jpg" alt="Divya Prabhu" class="profile-photo">
     <h1>Divya Prabhu</h1>
     <div class="typing" id="typing"></div>
-    <button id="themeToggle" title="Toggle theme">🌓</button>
     <a class="btn" href="DivyaPrabhu_Resume.pdf" download>Download CV</a>
   </header>
 
-  <nav id="navbar">
+  <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
@@ -28,31 +134,31 @@
   </nav>
 
   <main>
-    <section id="about" class="section reveal">
+    <section id="about">
       <h2>About Me</h2>
       <p>I am a bioengineer and translational researcher passionate about bridging discovery with impact...</p>
     </section>
 
-    <section id="skills" class="section reveal">
+    <section id="skills">
       <h2>Skills</h2>
       <div class="skill-bar-container">
-        <label>Flow Cytometry</label><div class="bar" data-skill="90%"></div>
-        <label>Confocal Microscopy</label><div class="bar" data-skill="95%"></div>
-        <label>Python</label><div class="bar" data-skill="80%"></div>
-        <label>Workflow Automation</label><div class="bar" data-skill="85%"></div>
+        <label>Flow Cytometry</label><div class="bar" style="--width:90%;" data-skill="90%"></div>
+        <label>Confocal Microscopy</label><div class="bar" style="--width:95%;" data-skill="95%"></div>
+        <label>Python</label><div class="bar" style="--width:80%;" data-skill="80%"></div>
+        <label>Workflow Automation</label><div class="bar" style="--width:85%;" data-skill="85%"></div>
       </div>
     </section>
 
-    <section id="projects" class="section reveal">
+    <section id="projects">
       <h2>Projects</h2>
       <ul>
-        <li><strong>CSF Drug Modeling:</strong> Studied brain drug delivery via CSF flow</li>
-        <li><strong>Biobank Automation:</strong> Digitized clinical workflows at UMC Utrecht</li>
+        <li><strong>CSF Drug Modeling:</strong> Brain drug delivery via CSF flow</li>
+        <li><strong>Biobank Automation:</strong> Digitized workflows at UMC Utrecht</li>
         <li><strong>Facial Expression AI:</strong> CNN-based emotion detection</li>
       </ul>
     </section>
 
-    <section id="timeline" class="section reveal">
+    <section id="timeline">
       <h2>Timeline</h2>
       <ul class="timeline">
         <li><span>2025</span> – Researcher, UCSD Kravets Lab</li>
@@ -61,13 +167,13 @@
       </ul>
     </section>
 
-    <section id="testimonials" class="section reveal">
+    <section id="testimonials">
       <h2>Testimonials</h2>
       <blockquote>"Divya is an exceptional researcher with deep understanding of imaging and translational workflows."</blockquote>
       <blockquote>"She transformed our biobank into a world-class operation. Highly recommend!"</blockquote>
     </section>
 
-    <section id="blog" class="section reveal">
+    <section id="blog">
       <h2>Blog & Articles</h2>
       <ul>
         <li><a href="https://prabhudivya.medium.com/about">Medium – prabhudivya</a></li>
@@ -76,7 +182,7 @@
       </ul>
     </section>
 
-    <section id="contact" class="section reveal">
+    <section id="contact">
       <h2>Contact</h2>
       <p><i class="fas fa-envelope"></i> <a href="mailto:divya.20.prabhu@gmail.com">Email</a></p>
       <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/divya-prabhu">LinkedIn</a></p>
@@ -87,6 +193,51 @@
     <p>&copy; 2025 Divya Prabhu. All rights reserved.</p>
   </footer>
 
-  <script src="assets/js/script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const words = [
+        "Bioengineer",
+        "Confocal Microscopy",
+        "Islet & Cell Biology",
+        "Imaging-Based Research",
+        "Clinical & Translational Science",
+        "Product Strategist"
+      ];
+      let i = 0, j = 0, isDeleting = false;
+      const typingElement = document.getElementById("typing");
+
+      function type() {
+        const current = words[i];
+        if (!isDeleting && j <= current.length) {
+          typingElement.innerHTML = current.substring(0, j++);
+        } else if (isDeleting && j >= 0) {
+          typingElement.innerHTML = current.substring(0, j--);
+        }
+
+        if (j === current.length && !isDeleting) {
+          setTimeout(() => { isDeleting = true; type(); }, 1500);
+          return;
+        }
+
+        if (j === 0 && isDeleting) {
+          isDeleting = false;
+          i = (i + 1) % words.length;
+        }
+
+        setTimeout(type, isDeleting ? 75 : 150);
+      }
+
+      if (typingElement) {
+        type();
+      }
+
+      document.querySelectorAll('.bar').forEach(bar => {
+        const width = bar.getAttribute('data-skill');
+        bar.querySelector('::after')?.style.setProperty('width', width);
+        bar.style.setProperty('--width', width);
+        bar.querySelector('::after')?.style.setProperty('background', '#7e57c2');
+      });
+    });
+  </script>
 </body>
 </html>
