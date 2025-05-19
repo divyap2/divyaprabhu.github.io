@@ -8,35 +8,173 @@
   <meta name="description" content="Portfolio of Divya Prabhu – Bioengineer, Imaging Researcher, and Product Strategist.">
   <meta name="keywords" content="Divya Prabhu, bioengineer, UCSD, microscopy, translational science, imaging, portfolio">
   <meta name="author" content="Divya Prabhu">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('assets/img/geisel.jpg') no-repeat center center fixed;
+      background-size: cover;
+      background-color: #e0f7fa;
+      color: #0f172a;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.8);
+    }
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid #38bdf8;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: rgba(255,255,255,0.95);
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #0077b6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #ffffffcc;
+      padding: 2rem;
+      border-radius: 12px;
+    }
+    h2 {
+      color: #0077b6;
+    }
+    .skill-bar {
+      margin: 1rem 0;
+    }
+    .skill-bar-label {
+      font-weight: bold;
+    }
+    .bar {
+      width: 100%;
+      background: #caf0f8;
+      height: 18px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      background: linear-gradient(to right, #00b4d8, #0077b6);
+      width: 0;
+      transition: width 1.5s ease-in-out;
+    }
+    details {
+      margin: 1rem 0;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-top: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card a {
+      color: #0077b6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
-<body style="font-family: sans-serif; background: #f8fafc; color: #1e293b;">
-  <header style="text-align: center; padding: 2rem;">
+<body>
+  <header>
+    <img src="profile.jpg" alt="Divya Prabhu" />
     <h1>Divya Prabhu</h1>
-    <p>Bioengineer | Imaging | Translational Science | Product Strategy</p>
+    <p>Bioengineer | Confocal Microscopy | Islet & Cell Biology | Imaging-Based Research | Clinical & Translational Science | Product Strategist</p>
   </header>
-  <section style="max-width: 800px; margin: auto; background: white; padding: 2rem; border-radius: 10px;">
+
+  <nav>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
-    <p>I am a bioengineer and translational researcher passionate about bridging discovery with impact—where imaging, cell biology, and engineered solutions converge to drive better diagnostics and therapies.</p>
-    <h2>Skills</h2>
-    <ul>
-      <li><strong>Lab:</strong> Flow Cytometry, ELISA, qPCR, Confocal Microscopy</li>
-      <li><strong>Computational:</strong> Python, MATLAB, ImageJ, Power BI</li>
-      <li><strong>Workflow/Product:</strong> JIRA, Agile PM, LIMS, FDA Standards</li>
-    </ul>
+    <p>I am a bioengineer and translational researcher passionate about bridging discovery with impact, where imaging, cell biology, and engineered solutions converge to drive better diagnostics and therapies...</p>
+  </section>
+
+  <section id="skills">
+    <h2>Animated Skills</h2>
+    <div class="skill-bar">
+      <div class="skill-bar-label">Islet Biology</div>
+      <div class="bar"><div class="bar-fill" style="width:95%"></div></div>
+    </div>
+    <div class="skill-bar">
+      <div class="skill-bar-label">Python</div>
+      <div class="bar"><div class="bar-fill" style="width:85%"></div></div>
+    </div>
+    <div class="skill-bar">
+      <div class="skill-bar-label">Workflow Automation</div>
+      <div class="bar"><div class="bar-fill" style="width:88%"></div></div>
+    </div>
+    <details><summary>All Technical Skills</summary>
+      <p>Flow Cytometry, ELISA, qPCR, RT-PCR, Cell Culture, Imaging, ImageJ, MATLAB, Power BI, LIMS, etc.</p>
+    </details>
+  </section>
+
+  <section id="projects">
     <h2>Projects</h2>
     <ul>
-      <li>Modeling CSF drug dynamics in brain pharmacokinetics</li>
-      <li>Automating biobank workflows across global institutions</li>
-      <li>CNN-based facial expression recognition models</li>
+      <li>Modeling CSF Drug Dynamics in the Brain</li>
+      <li>Workflow Plugin Development at UMC Utrecht</li>
+      <li>CNN Facial Expression Recognition</li>
     </ul>
-    <h2>Blog</h2>
-    <ul>
-      <li><a href="https://www.openspecimen.org/automation-of-biobanking-activities/" target="_blank">Automation of Biobanking</a></li>
-      <li><a href="https://www.openspecimen.org/future-of-biobanking/" target="_blank">Future of Biobanking</a></li>
-    </ul>
+  </section>
+
+  <section id="blog">
+    <h2>Blog Highlights</h2>
+    <div class="card">
+      <h3>Future of Biobanking</h3>
+      <p>Explore where biobanking is headed...</p>
+      <a href="https://www.openspecimen.org/future-of-biobanking/" target="_blank">Read More →</a>
+    </div>
+    <div class="card">
+      <h3>Automation of Biobanking</h3>
+      <p>Sample handling, traceability, and workflow improvements...</p>
+      <a href="https://www.openspecimen.org/automation-of-biobanking-activities/" target="_blank">Read More →</a>
+    </div>
+  </section>
+
+  <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:divya.20.prabhu@gmail.com">divya.20.prabhu@gmail.com</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/divya-prabhu" target="_blank">linkedin.com/in/divya-prabhu</a></p>
   </section>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      document.querySelectorAll('.bar-fill').forEach(bar => {
+        const rect = bar.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+          const style = bar.getAttribute('style');
+          bar.style.width = style.split(':')[1];
+        }
+      });
+    });
+  </script>
 </body>
 </html>
