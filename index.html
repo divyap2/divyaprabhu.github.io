@@ -7,10 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <style>
     body {
-      margin: 0;
+      background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+              url('assets/img/geisel.jpg'),
+              url('assets/img/confocal.jpg'),
+              url('assets/img/dna-overlay.png');
+      background-blend-mode: overlay, lighten, multiply;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to right, #e1f5fe, #f3e5f5);
-      color: #333;
     }
     header {
       background: linear-gradient(to right, #283593, #6a1b9a);
