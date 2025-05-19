@@ -2,66 +2,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Divya Prabhu | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { font-family: Arial, sans-serif; background: #fdfdfd; color: #333; margin: 0; padding: 0; }
-        header { background: #f0f0f0; padding: 2rem; text-align: center; font-size: 2.5rem; font-weight: bold; }
-        section { padding: 2rem; max-width: 900px; margin: auto; }
-        h2 { border-bottom: 2px solid #ccc; padding-bottom: 0.5rem; }
-        ul { padding-left: 1.5rem; }
-        li { margin-bottom: 0.5rem; }
-        p, li { line-height: 1.6; }
-        a { color: #0044cc; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #888; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Divya Prabhu | Portfolio</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f8f9fa; color: #212529; }
+    header { background: #343a40; color: white; padding: 2rem; text-align: center; }
+    nav { background: #dee2e6; padding: 1rem; text-align: center; }
+    nav a { margin: 0 15px; text-decoration: none; color: #495057; font-weight: bold; }
+    section { max-width: 900px; margin: 2rem auto; padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    h2 { border-bottom: 2px solid #ced4da; padding-bottom: 0.5rem; color: #343a40; }
+    ul { padding-left: 1.2rem; }
+    footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #6c757d; }
+  </style>
 </head>
 <body>
-    <header>Divya Prabhu</header>
-    <section>
-        <h2>About Me</h2>
-        <p>I am a bioengineer and translational researcher passionate about bridging discovery with impact, where imaging, cell biology, and engineered solutions converge to drive better diagnostics and therapies. My path into research wasn’t just academic—it was deeply personal. Watching loved ones face chronic diseases grounded my work in a sense of purpose that continues to guide me in every experiment, model, and dataset I work with.</p>
-        <p>At UC San Diego’s Kravets Lab, my thesis research focuses on calcium signaling and beta-cell network dynamics in Type 2 Diabetes. I investigate how intra-islet communication affects insulin secretion and metabolic coordination—work aimed at uncovering early biomarkers and therapeutic targets.</p>
-        <p>I’ve worked on pancreatic cancer in the Cheresh Lab, product-driven clinical research software at Krishagni Solutions, and thrive in collaborative environments where precision meets purpose.</p>
-    </section>
+  <header>
+    <h1>Divya Prabhu</h1>
+    <p>Bioengineer | Translational Researcher | Product Strategist</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#publications">Publications</a>
+    <a href="#recommendations">Recommendations</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <section>
-        <h2>Skills</h2>
-        <p><strong>Lab Techniques:</strong> Flow Cytometry, ELISA, qPCR, Western Blotting, Immunofluorescence, Live-cell Imaging, Islet Biology, NGS Assays, iPSC-Derived Models</p>
-        <p><strong>Computational:</strong> FLIM, ImageJ, Imaris, MATLAB, Python, Power BI, GraphPad Prism, MySQL, LIMS, ELN, LabVIEW</p>
-        <p><strong>Product & Workflow:</strong> JIRA, Atlassian Suite, GMP Compliance, Agile, Clinical Research Ops, Workflow Automation</p>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a bioengineer and translational researcher passionate about bridging discovery with impact. My research at UC San Diego focuses on calcium signaling and beta-cell networks in Type 2 Diabetes, using live-cell imaging and confocal microscopy. I also bring experience in clinical research software from Krishagni Solutions, aligning cross-functional teams and automating lab workflows across global institutions.</p>
+  </section>
 
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>CSF Drug Modeling:</strong> Designed a compartmental model to study cerebrospinal fluid dynamics for improved brain drug delivery and pharmacokinetics.</li>
-            <li><strong>Workflow Plug-in:</strong> Developed automated clinical lab workflows at UMC Utrecht; improved efficiency, compliance, and traceability using LIMS & JIRA dashboards.</li>
-            <li><strong>Facial Expression Recognition:</strong> Built CNN-based deep learning models for real-time emotion detection using TensorFlow, Keras, and OpenCV.</li>
-            <li><strong>Humidity Sensor (8051):</strong> Engineered a microcontroller-based humidity sensor with real-time LCD output and cloud-based IoT applications.</li>
-        </ul>
-    </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Lab: Flow Cytometry, Immunofluorescence, qPCR, Live-cell Imaging, Islet Biology</li>
+      <li>Data & Imaging: FLIM, ImageJ, Imaris, MATLAB, Python, GraphPad Prism, Power BI</li>
+      <li>Workflow: LIMS, ELN, Jira, Confluence, Agile, Regulatory Compliance</li>
+    </ul>
+  </section>
 
-    <section>
-        <h2>Certifications</h2>
-        <ul>
-            <li>Aerosol Transmissible Disease Pathogens Refresher</li>
-            <li>HIPAA Professional (HIPAAP)</li>
-            <li>Medical Device Development</li>
-            <li>Good Clinical Practice (In Progress)</li>
-            <li>Drug Development (In Progress)</li>
-            <li>And more...</li>
-        </ul>
-    </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>CSF Drug Modeling:</strong> Modeled drug pharmacokinetics in brain via CSF flow control.</li>
+      <li><strong>Clinical Workflow Plug-in:</strong> Automated 100+ lab processes at UMC Utrecht with real-time tracking.</li>
+      <li><strong>Facial Expression Recognition:</strong> Built CNN models for real-time emotion detection (97%+ accuracy).</li>
+      <li><strong>Humidity Sensor:</strong> Designed sensor with 8051 microcontroller for IoT-ready climate monitoring.</li>
+    </ul>
+  </section>
 
-    <section>
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:divya.20.prabhu@gmail.com">divya.20.prabhu@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/divya-prabhu/" target="_blank">linkedin.com/in/divya-prabhu</a></p>
-    </section>
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>HIPAA Professional</li>
+      <li>Medical Device Development</li>
+      <li>Good Clinical Practice (in progress)</li>
+      <li>Drug Development (in progress)</li>
+    </ul>
+  </section>
 
-    <footer>&copy; 2025 Divya Prabhu. All rights reserved.</footer>
+  <section id="publications">
+    <h2>Publications & Achievements</h2>
+    <ul>
+      <li><em>Coming Soon:</em> Thesis work on intra-islet signaling and diabetes biomarkers.</li>
+      <li>Co-authored reports on tumor–stromal interactions and targeted therapies.</li>
+    </ul>
+  </section>
+
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <p>"Divya is an outstanding researcher and team player. Her ability to manage complex workflows and her deep scientific knowledge make her a true asset to any research-driven organization." – <em>LinkedIn Recommendation</em></p>
+    <p>"She brought our biobank workflow into the 21st century—accurate, scalable, and compliant." – <em>Client at UMC Utrecht</em></p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:divya.20.prabhu@gmail.com">divya.20.prabhu@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/divya-prabhu" target="_blank">linkedin.com/in/divya-prabhu</a></p>
+  </section>
+
+  <footer>&copy; 2025 Divya Prabhu. All rights reserved.</footer>
 </body>
 </html>
