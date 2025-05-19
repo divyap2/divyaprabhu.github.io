@@ -3,29 +3,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Divya Prabhu | Full Portfolio</title>
+  <title>Divya Prabhu | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f4f8; color: #333; }
-    header { background: #512da8; color: white; text-align: center; padding: 2rem; }
-    nav { background: #ede7f6; padding: 1rem; text-align: center; }
-    nav a { margin: 0 15px; text-decoration: none; color: #512da8; font-weight: bold; }
-    section { max-width: 1100px; margin: 2rem auto; padding: 1rem; background: white; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-    h2 { color: #512da8; }
-    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1rem; }
-    .card { background: #fff; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-    .card h3 { margin-top: 0; color: #303f9f; }
-    .card p { color: #555; font-size: 0.95rem; }
-    .read-more { display: inline-block; margin-top: 0.5rem; color: #7e57c2; font-weight: bold; text-decoration: none; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f4f8;
+      color: #333;
+    }
+    header {
+      background: #512da8;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    .typing {
+      font-size: 1.2rem;
+      color: #ffeb3b;
+      height: 30px;
+      margin-top: 0.5rem;
+    }
+    nav {
+      background: #ede7f6;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #512da8;
+      font-weight: bold;
+    }
+    section {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #512da8;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #303f9f;
+    }
+    .card p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    .read-more {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: #7e57c2;
+      font-weight: bold;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Divya Prabhu</h1>
-    <p>Bioengineer | Imaging | Translational Science</p>
+    <div class="typing" id="typing"></div>
   </header>
+
   <nav>
     <a href="#about">About</a>
+    <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#blog">Blog</a>
     <a href="#contact">Contact</a>
@@ -34,6 +94,24 @@
   <section id="about">
     <h2>About Me</h2>
     <p>I am a bioengineer and translational researcher passionate about bridging discovery with impact, where imaging, cell biology, and engineered solutions converge to drive better diagnostics and therapies.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Confocal Microscopy, Calcium Imaging, Islet Biology</li>
+      <li>Workflow Automation, Python, MATLAB</li>
+      <li>Product Strategy, Clinical Research Operations</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>CSF Drug Modeling</strong> – Optimizing CNS drug delivery</li>
+      <li><strong>Biobank Automation</strong> – 100+ digitalized workflows</li>
+      <li><strong>Facial Expression AI</strong> – Deep learning for emotion recognition</li>
+    </ul>
   </section>
 
   <section id="blog">
@@ -60,7 +138,47 @@
   <section id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:divya.20.prabhu@gmail.com">divya.20.prabhu@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/divya-prabhu" target="_blank">divya-prabhu</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/divya-prabhu" target="_blank">linkedin.com/in/divya-prabhu</a></p>
   </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const words = [
+        "Bioengineer",
+        "Confocal Microscopy",
+        "Islet & Cell Biology",
+        "Imaging-Based Research",
+        "Clinical & Translational Science",
+        "Product Strategist"
+      ];
+      let i = 0, j = 0, isDeleting = false;
+      const typingElement = document.getElementById("typing");
+
+      function type() {
+        const current = words[i];
+        if (!isDeleting && j <= current.length) {
+          typingElement.innerHTML = current.substring(0, j++);
+        } else if (isDeleting && j >= 0) {
+          typingElement.innerHTML = current.substring(0, j--);
+        }
+
+        if (j === current.length && !isDeleting) {
+          setTimeout(() => { isDeleting = true; type(); }, 1500);
+          return;
+        }
+
+        if (j === 0 && isDeleting) {
+          isDeleting = false;
+          i = (i + 1) % words.length;
+        }
+
+        setTimeout(type, isDeleting ? 75 : 150);
+      }
+
+      if (typingElement) {
+        type();
+      }
+    });
+  </script>
 </body>
 </html>
