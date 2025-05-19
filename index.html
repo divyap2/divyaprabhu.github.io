@@ -3,70 +3,40 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Divya Prabhu | Portfolio + Blog</title>
+  <title>Divya Prabhu | Full Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background: #f4f4f8;
-      color: #333;
-    }
-    header {
-      background: #512da8;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    .container {
-      max-width: 1100px;
-      margin: 2rem auto;
-      padding: 1rem;
-    }
-    h2 {
-      text-align: center;
-      color: #512da8;
-    }
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
-    }
-    .card {
-      background: white;
-      border-radius: 12px;
-      padding: 1.5rem;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card h3 {
-      color: #303f9f;
-      margin-top: 0;
-    }
-    .card p {
-      font-size: 0.95rem;
-      color: #555;
-    }
-    .read-more {
-      display: inline-block;
-      margin-top: 0.8rem;
-      color: #7e57c2;
-      text-decoration: none;
-      font-weight: bold;
-    }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f4f4f8; color: #333; }
+    header { background: #512da8; color: white; text-align: center; padding: 2rem; }
+    nav { background: #ede7f6; padding: 1rem; text-align: center; }
+    nav a { margin: 0 15px; text-decoration: none; color: #512da8; font-weight: bold; }
+    section { max-width: 1100px; margin: 2rem auto; padding: 1rem; background: white; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+    h2 { color: #512da8; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 1rem; }
+    .card { background: #fff; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .card h3 { margin-top: 0; color: #303f9f; }
+    .card p { color: #555; font-size: 0.95rem; }
+    .read-more { display: inline-block; margin-top: 0.5rem; color: #7e57c2; font-weight: bold; text-decoration: none; }
   </style>
 </head>
 <body>
   <header>
     <h1>Divya Prabhu</h1>
-    <p>Bioengineer | Confocal Microscopy | Imaging & Translational Science</p>
+    <p>Bioengineer | Imaging | Translational Science</p>
   </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-  <div class="container">
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a bioengineer and translational researcher passionate about bridging discovery with impact, where imaging, cell biology, and engineered solutions converge to drive better diagnostics and therapies.</p>
+  </section>
+
+  <section id="blog">
     <h2>Blog Highlights</h2>
     <div class="cards">
       <div class="card">
@@ -85,6 +55,12 @@
         <a class="read-more" href="https://www.openspecimen.org/ethical-challenges-in-covid-19-biospecimen-research/" target="_blank">Read More →</a>
       </div>
     </div>
-  </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:divya.20.prabhu@gmail.com">divya.20.prabhu@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/divya-prabhu" target="_blank">divya-prabhu</a></p>
+  </section>
 </body>
 </html>
