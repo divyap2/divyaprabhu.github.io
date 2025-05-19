@@ -3,8 +3,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Divya Prabhu | Enhanced Navbar</title>
+  <title>Divya Prabhu | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Divya Prabhu – Bioengineer, Imaging Researcher, and Product Strategist.">
+  <meta name="keywords" content="Divya Prabhu, bioengineer, UCSD, microscopy, translational science, imaging, portfolio">
+  <meta name="author" content="Divya Prabhu">
+  <meta property="og:title" content="Divya Prabhu | Portfolio">
+  <meta property="og:description" content="UCSD-trained bioengineer focused on imaging and translational research.">
+  <meta property="og:image" content="https://divyap2.github.io/divyaprabhu.github.io/profile.jpg">
+  <meta property="og:url" content="https://divyap2.github.io/divyaprabhu.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
   <style>
     body {
       margin: 0;
@@ -44,8 +52,8 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(202, 240, 248, 0.9);
-      backdrop-filter: blur(8px);
+      background: rgba(202, 240, 248, 0.95);
+      backdrop-filter: blur(10px);
       padding: 1rem;
       text-align: center;
       transition: box-shadow 0.3s ease-in-out;
@@ -70,6 +78,30 @@
     h2 {
       color: #0077b6;
     }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.2rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background: #f0f8ff;
+      border-radius: 8px;
+      padding: 1rem;
+      color: #2c3e50;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      color: #0077b6;
+      margin-top: 0;
+    }
+    .read-more {
+      color: #0096c7;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
   </style>
 </head>
 <body>
@@ -89,24 +121,62 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>This section stays readable even with a background image.</p>
+    <p>I am a bioengineer and translational researcher passionate about bridging discovery with impact...</p>
   </section>
 
   <section id="skills">
     <h2>Skills</h2>
     <ul>
-      <li>Confocal Microscopy</li>
-      <li>Islet Biology</li>
-      <li>Python, MATLAB, Workflow Automation</li>
+      <li>Confocal Microscopy, Calcium Imaging, Islet Biology</li>
+      <li>Workflow Automation, Python, MATLAB</li>
+      <li>Product Strategy, Clinical Research Operations</li>
     </ul>
   </section>
 
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>CSF Drug Modeling</strong> – Optimizing CNS drug delivery</li>
+      <li><strong>Biobank Automation</strong> – 100+ digitalized workflows</li>
+      <li><strong>Facial Expression AI</strong> – Deep learning for emotion recognition</li>
+    </ul>
+  </section>
+
+  <section id="blog">
+    <h2>Blog Highlights</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Future of Biobanking</h3>
+        <p>Explore where biobanking is headed and how automation, ethics, and data governance are reshaping clinical research infrastructure.</p>
+        <a class="read-more" href="https://www.openspecimen.org/future-of-biobanking/" target="_blank">Read More →</a>
+      </div>
+      <div class="card">
+        <h3>Automation of Biobanking Activities</h3>
+        <p>How automation reduces sample handling errors, enhances traceability, and scales up biobank workflows for efficiency.</p>
+        <a class="read-more" href="https://www.openspecimen.org/automation-of-biobanking-activities/" target="_blank">Read More →</a>
+      </div>
+      <div class="card">
+        <h3>Ethical Challenges in COVID-19 Research</h3>
+        <p>Discussing the rapid sample collection and consent challenges in pandemic biobanking and how we adapted.</p>
+        <a class="read-more" href="https://www.openspecimen.org/ethical-challenges-in-covid-19-biospecimen-research/" target="_blank">Read More →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:divya.20.prabhu@gmail.com">divya.20.prabhu@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/divya-prabhu" target="_blank">linkedin.com/in/divya-prabhu</a></p>
+  </section>
+
   <script>
+    // Sticky nav scroll effect
     const nav = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
       nav.classList.toggle('scrolled', window.scrollY > 10);
     });
 
+    // Typing animation
     const words = [
       "Bioengineer",
       "Confocal Microscopy",
