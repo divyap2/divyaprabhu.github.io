@@ -622,6 +622,164 @@ document.addEventListener("DOMContentLoaded", () => {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 </style>
+
+<section id="resume" style="padding: 60px 20px;">
+  <h2 style="text-align: center; color: #3078b8; font-size: 36px; font-weight: bold; margin-bottom: 40px;">Resume</h2>
+  <div style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap;">
+
+    <!-- Education -->
+    <div style="flex: 1; min-width: 300px;">
+      <h3 style="color: #182b49; font-size: 24px;">Education</h3>
+      <div class="timeline">
+
+        <div class="timeline-entry">
+          <div class="timeline-title">MASTER OF SCIENCE IN BIOENGINEERING</div>
+          <div class="timeline-date">Sept 2023 – Present</div>
+          <div class="timeline-sub">University of California, San Diego, CA</div>
+          <p>Relevant Coursework: Biochemistry, Molecular Biology, Cell Biology, Tissue Engineering, Genetic Engineering, Computational Neuroscience, Applied Immunology, Biophysics, Advanced Biostatistics, Pharmacokinetics, Stem Cell Biology</p>
+        </div>
+
+        <div class="timeline-entry">
+          <div class="timeline-title">BACHELOR OF ENGINEERING IN BIOMEDICAL</div>
+          <div class="timeline-date">Aug 2016 – Oct 2020</div>
+          <div class="timeline-sub">University of Mumbai, India</div>
+          <p>Relevant Coursework: Medical Imaging, Signals & Control Systems, Biomaterials, Biomedical Instrumentation, Bioinformatics, Embedded Systems, Clinical Engineering, Physiology, Analog Circuits, Anatomy</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <div style="flex: 1; min-width: 300px;">
+      <h3 style="color: #182b49; font-size: 24px;">Professional Experience</h3>
+      <div class="timeline">
+
+        <div class="timeline-entry">
+          <div class="timeline-title">RESEARCH ASSOCIATE</div>
+          <div class="timeline-date">Apr 2024 – Present</div>
+          <div class="timeline-sub">Kravets Lab, Cheresh Lab, UC San Diego, CA</div>
+          <ul>
+            <li>Pioneered research on beta-cell subpopulations in diabetic and obese mouse models using advanced FLIM and calcium imaging techniques to identify metabolic signatures associated with insulin resistance.</li>
+            <li>Standardized imaging workflows for over 50 pancreatic tissue samples, improving experimental consistency and reducing imaging error rates by 20%.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-entry">
+          <div class="timeline-title">RESEARCH ASSOCIATE</div>
+          <div class="timeline-date">Jan 2024 – Mar 2024</div>
+          <div class="timeline-sub">Kravets Lab, UC San Diego, CA</div>
+          <ul>
+            <li>Conducted in vivo experiments in murine models to investigate the mechanistic role of LPAR4/fibronectin signaling in tumor microenvironments, contributing data to an NIH-funded study on pancreatic cancer.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-entry">
+          <div class="timeline-title">PRODUCT MANAGER</div>
+          <div class="timeline-date">Jul 2020 – Aug 2023</div>
+          <div class="timeline-sub">Krishagni Solutions, India</div>
+          <ul>
+            <li>Led cross-functional implementation of 30+ automated laboratory workflows across international biobank clients using OpenSpecimen, enhancing biospecimen traceability and compliance with HIPAA/GCP standards.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-entry">
+          <div class="timeline-title">RESEARCH INTERN</div>
+          <div class="timeline-date">Jun 2020 – Jul 2020</div>
+          <div class="timeline-sub">CIBioD, Chandigarh, India</div>
+          <ul>
+            <li>Collaborated on workflow optimization for 3D bioprinting of pancreatic constructs and developed a machine learning model to predict glycemic variability, reducing forecast error by 18%.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-entry">
+          <div class="timeline-title">BIOMEDICAL ENGINEERING INTERN</div>
+          <div class="timeline-date">Dec 2018 – Jan 2019</div>
+          <div class="timeline-sub">Holy Family Hospital, Mumbai, India</div>
+          <ul>
+            <li>Conducted preventive maintenance and repair of surgical, imaging, and ICU equipment including ventilators and defibrillators, ensuring operational readiness and clinical safety.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+body { font-family: 'Segoe UI', sans-serif; }
+.timeline {
+  border-left: 3px solid #3078b8;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+.timeline-entry {
+  margin-bottom: 30px;
+  position: relative;
+}
+.timeline-entry::before {
+  content: "";
+  position: absolute;
+  left: -18px;
+  top: 8px;
+  width: 14px;
+  height: 14px;
+  background-color: #ffffff;
+  border: 3px solid #3078b8;
+  border-radius: 50%;
+  z-index: 1;
+}
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border: 3px solid #3078b8;
+  border-radius: 50%;
+}
+.timeline-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #182b49;
+}
+.timeline-date {
+  background-color: #e4ebf3;
+  display: inline-block;
+  padding: 3px 10px;
+  margin: 5px 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+.timeline-sub {
+  font-style: italic;
+  margin-bottom: 6px;
+}
+.timeline-entry p, .timeline-entry ul {
+  font-size: 14px;
+  margin: 5px 0 0 0;
+  padding-left: 15px;
+}
+
+.timeline-entry {
+  animation: fadeSlideIn 0.8s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+.timeline-entry:nth-child(1) { animation-delay: 0.2s; }
+.timeline-entry:nth-child(2) { animation-delay: 0.4s; }
+.timeline-entry:nth-child(3) { animation-delay: 0.6s; }
+.timeline-entry:nth-child(4) { animation-delay: 0.8s; }
+.timeline-entry:nth-child(5) { animation-delay: 1s; }
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+
 </body>
 
 
