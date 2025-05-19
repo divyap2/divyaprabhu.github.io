@@ -175,49 +175,54 @@
 </section>
 
 
-<section id="projects" style="padding: 60px 20px; background-color: #f4f4f4; font-family: 'Times New Roman', serif;">
+
+<section id="projects" style="padding: 60px 20px; background-color: #f4f4f4; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
   <div style="max-width: 800px; margin: auto;">
     <h2 style="text-align: center; color: #00356b;">Project Highlights</h2>
-    <div class="slider-container" style="position: relative; overflow: hidden; height: 320px; margin-top: 40px;">
+    <div class="slider-container" style="position: relative; overflow: hidden; height: 360px; margin-top: 40px;">
       <div class="slider" style="display: flex; transition: transform 0.5s ease;">
 
-        <div class="slide" style="min-width: 100%; box-sizing: border-box; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.08);">
-          <h3 style="color: #00356b;">Humidity sensor using 8051</h3>
+        <div class="slide" style="min-width: 100%; box-sizing: border-box; padding: 25px; background: white; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.08);">
+          <h3 style="color: #00356b;">Humidity Sensor using 8051 Microcontroller</h3>
           <p><strong style="color: #c69214;">Jul 2018 - Nov 2018</strong><br><em>Thadomal Shahani Engineering College</em></p>
           <ul>
-            <li>Humidity sensor with ADC + LCD</li>
-            <li>Microcontroller RH% calculation</li>
-            <li>IoT climate control integration</li>
+            <li>Designed and implemented a humidity sensor-based system for weather forecasting, air conditioning, and hygrometer applications.</li>
+            <li>Connected the sensor to an ADC with 1.5V calibration for high-precision conversion of analog to digital data.</li>
+            <li>Processed digital output through 8051 microcontroller to compute and display RH% in real-time.</li>
+            <li>Enabled automated environmental control with potential for integration into IoT and industrial automation systems.</li>
           </ul>
         </div>
 
-        <div class="slide" style="min-width: 100%; box-sizing: border-box; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.08);">
-          <h3 style="color: #00356b;">Facial Expression CNN</h3>
+        <div class="slide" style="min-width: 100%; box-sizing: border-box; padding: 25px; background: white; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.08);">
+          <h3 style="color: #00356b;">Facial Expression Recognition using CNN</h3>
           <p><strong style="color: #c69214;">Aug 2019 - Oct 2020</strong><br><em>Thadomal Shahani Engineering College</em></p>
           <ul>
-            <li>97% accuracy for 7 expressions</li>
-            <li>Trained on CK+, FER2013, FERG-DB</li>
-            <li>Real-time emotion classification</li>
+            <li>Developed CNN model achieving 97% accuracy on CK+ dataset and over 90% on FERG-DB, FER2013.</li>
+            <li>Optimized using data augmentation, transfer learning, and hyperparameter tuning techniques.</li>
+            <li>Handled 60k+ images using TensorFlow, Keras, and OpenCV for real-time emotion recognition.</li>
+            <li>Proposed applications in mental health, HCI, security, and wearable assistive technologies.</li>
           </ul>
         </div>
 
-        <div class="slide" style="min-width: 100%; box-sizing: border-box; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.08);">
-          <h3 style="color: #00356b;">Workflow Plug-in</h3>
+        <div class="slide" style="min-width: 100%; box-sizing: border-box; padding: 25px; background: white; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.08);">
+          <h3 style="color: #00356b;">Workflow Plug-in for Biobanking Labs</h3>
           <p><strong style="color: #c69214;">Aug 2022 - Aug 2023</strong><br><em>OpenSpecimen (UMC Utrecht)</em></p>
           <ul>
-            <li>Automated 100+ lab workflows</li>
-            <li>Integrated LIMS, REDCap, Epic</li>
-            <li>Improved biobank efficiency</li>
+            <li>Designed custom workflows for 100+ lab protocols to automate DNA, serum, and tissue processing.</li>
+            <li>Led project lifecycle including client engagement, documentation, compliance (HIPAA, GDPR).</li>
+            <li>Developed dashboards and reports using JIRA, LIMS, REDCap, Epic for real-time tracking and efficiency.</li>
+            <li>Recognized for improving biobank digitization and operational scalability.</li>
           </ul>
         </div>
 
-        <div class="slide" style="min-width: 100%; box-sizing: border-box; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.08);">
-          <h3 style="color: #00356b;">Modeling CSF Flow</h3>
+        <div class="slide" style="min-width: 100%; box-sizing: border-box; padding: 25px; background: white; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.08);">
+          <h3 style="color: #00356b;">Modeling of CSF Flow Modulation on Brain Drug Delivery</h3>
           <p><strong style="color: #c69214;">Apr 2024 - Jun 2024</strong><br><em>UC San Diego</em></p>
           <ul>
-            <li>Drug delivery via CSF dynamics</li>
-            <li>Compartmental modeling approach</li>
-            <li>Improved CNS pharmacokinetics</li>
+            <li>Introduced compartmental model simulating drug diffusion and delivery via cerebrospinal fluid dynamics.</li>
+            <li>Simulated controlled delivery of temozolomide using CSF-modulating agents like acetazolamide and verapamil.</li>
+            <li>Demonstrated therapeutic optimization potential for glioblastoma through CSF-based pharmacokinetics.</li>
+            <li>Focused on sustained-release delivery systems and implantable depots for improved CNS targeting.</li>
           </ul>
         </div>
 
@@ -229,6 +234,25 @@
     </div>
   </div>
 </section>
+
+<script>
+  let currentSlide = 0;
+  function showSlide(index) {
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slide');
+    if (index >= slides.length) currentSlide = 0;
+    else if (index < 0) currentSlide = slides.length - 1;
+    else currentSlide = index;
+    slider.style.transform = 'translateX(' + (-currentSlide * 100) + '%)';
+  }
+  function plusSlide(n) {
+    showSlide(currentSlide + n);
+  }
+  window.addEventListener('DOMContentLoaded', () => {
+    showSlide(0);
+  });
+</script>
+
 
 <script>
   let currentSlide = 0;
