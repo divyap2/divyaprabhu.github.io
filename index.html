@@ -5,22 +5,112 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Divya Prabhu | Portfolio</title>
-  <a href="DivyaPrabhu_Resume.pdf" download class="btn">Download CV</a>
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f8f9fa; color: #212529; }
-    header { background: #343a40; color: white; padding: 2rem; text-align: center; }
-    nav { background: #dee2e6; padding: 1rem; text-align: center; }
-    nav a { margin: 0 15px; text-decoration: none; color: #495057; font-weight: bold; }
-    section { max-width: 900px; margin: 2rem auto; padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
-    h2 { border-bottom: 2px solid #ced4da; padding-bottom: 0.5rem; color: #343a40; }
-    ul { padding-left: 1.2rem; }
-    footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #6c757d; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f8f9fa;
+      color: #212529;
+      transition: background 0.3s, color 0.3s;
+    }
+    .dark-mode {
+      background: #121212;
+      color: #f1f1f1;
+    }
+    header {
+      background: #343a40;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background: #dee2e6;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #495057;
+      font-weight: bold;
+    }
+    .dark-mode nav {
+      background: #1f1f1f;
+    }
+    .toggle-button {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      padding: 0.5rem 1rem;
+      background: #6c757d;
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .dark-mode .section {
+      background: #1e1e1e;
+    }
+    .visible {
+      opacity: 1;
+      transform: none;
+    }
+    h2 {
+      border-bottom: 2px solid #ced4da;
+      padding-bottom: 0.5rem;
+      color: #343a40;
+    }
+    .dark-mode h2 {
+      color: #f8f9fa;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.2rem;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .profile-photo {
+      width: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 1rem auto;
+      transition: transform 0.3s;
+    }
+    .profile-photo:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
   </style>
 </head>
 <body>
+  <button class="toggle-button" onclick="toggleTheme()">Toggle Mode</button>
   <header>
+    <img src="profile.jpg" alt="Divya Prabhu" class="profile-photo"/>
     <h1>Divya Prabhu</h1>
     <p>Bioengineer | Translational Researcher | Product Strategist</p>
+    <a class="btn" href="DivyaPrabhu_Resume.pdf" download>Download CV</a>
   </header>
   <nav>
     <a href="#about">About</a>
@@ -32,12 +122,12 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="about">
+  <section class="section" id="about">
     <h2>About Me</h2>
     <p>I am a bioengineer and translational researcher passionate about bridging discovery with impact. My research at UC San Diego focuses on calcium signaling and beta-cell networks in Type 2 Diabetes, using live-cell imaging and confocal microscopy. I also bring experience in clinical research software from Krishagni Solutions, aligning cross-functional teams and automating lab workflows across global institutions.</p>
   </section>
 
-  <section id="skills">
+  <section class="section" id="skills">
     <h2>Skills</h2>
     <ul>
       <li>Lab: Flow Cytometry, Immunofluorescence, qPCR, Live-cell Imaging, Islet Biology</li>
@@ -46,7 +136,7 @@
     </ul>
   </section>
 
-  <section id="projects">
+  <section class="section" id="projects">
     <h2>Projects</h2>
     <ul>
       <li><strong>CSF Drug Modeling:</strong> Modeled drug pharmacokinetics in brain via CSF flow control.</li>
@@ -56,7 +146,7 @@
     </ul>
   </section>
 
-  <section id="certifications">
+  <section class="section" id="certifications">
     <h2>Certifications</h2>
     <ul>
       <li>HIPAA Professional</li>
@@ -66,7 +156,7 @@
     </ul>
   </section>
 
-  <section id="publications">
+  <section class="section" id="publications">
     <h2>Publications & Achievements</h2>
     <ul>
       <li><em>Coming Soon:</em> Thesis work on intra-islet signaling and diabetes biomarkers.</li>
@@ -74,18 +164,36 @@
     </ul>
   </section>
 
-  <section id="recommendations">
+  <section class="section" id="recommendations">
     <h2>Recommendations</h2>
     <p>"Divya is an outstanding researcher and team player. Her ability to manage complex workflows and her deep scientific knowledge make her a true asset to any research-driven organization." – <em>LinkedIn Recommendation</em></p>
     <p>"She brought our biobank workflow into the 21st century—accurate, scalable, and compliant." – <em>Client at UMC Utrecht</em></p>
   </section>
 
-  <section id="contact">
+  <section class="section" id="contact">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:divya.20.prabhu@gmail.com">divya.20.prabhu@gmail.com</a></p>
     <p>LinkedIn: <a href="https://linkedin.com/in/divya-prabhu" target="_blank">linkedin.com/in/divya-prabhu</a></p>
   </section>
 
   <footer>&copy; 2025 Divya Prabhu. All rights reserved.</footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark-mode');
+    }
+    const sections = document.querySelectorAll('.section');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
 </body>
 </html>
