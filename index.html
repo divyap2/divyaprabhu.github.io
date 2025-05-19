@@ -9,18 +9,35 @@
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: #f4f4f8;
       color: #333;
+      background: url('assets/img/geisel.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(255, 255, 255, 0.85);
+      z-index: -1;
     }
     header {
-      background: #512da8;
-      color: white;
+      background: transparent;
+      color: #512da8;
       text-align: center;
-      padding: 2rem;
+      padding: 2rem 1rem;
+    }
+    .profile-photo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      margin-bottom: 1rem;
     }
     .typing {
       font-size: 1.2rem;
-      color: #ffeb3b;
+      color: #7e57c2;
       height: 30px;
       margin-top: 0.5rem;
     }
@@ -79,6 +96,7 @@
 </head>
 <body>
   <header>
+    <img src="profile.jpg" alt="Divya Prabhu" class="profile-photo">
     <h1>Divya Prabhu</h1>
     <div class="typing" id="typing"></div>
   </header>
@@ -93,7 +111,7 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I am a bioengineer and translational researcher passionate about bridging discovery with impact, where imaging, cell biology, and engineered solutions converge to drive better diagnostics and therapies.</p>
+    <p>I am a bioengineer and translational researcher passionate about bridging discovery with impact...</p>
   </section>
 
   <section id="skills">
