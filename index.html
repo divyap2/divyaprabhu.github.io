@@ -130,6 +130,47 @@
     window.onload = () => {
       type();
     };
-  </script>
+  
+<script>
+  const words = [
+    "Bioengineer",
+    "Confocal Microscopy",
+    "Islet & Cell Biology",
+    "Imaging-Based Research",
+    "Clinical & Translational Science",
+    "Product Strategist"
+  ];
+  let i = 0, j = 0, currentWord = "", isDeleting = false;
+  const typingElement = document.getElementById("typing");
+
+  function type() {
+    if (i < words.length) {
+      currentWord = words[i];
+
+      if (!isDeleting && j <= currentWord.length) {
+        typingElement.innerHTML = currentWord.substring(0, j++);
+      } else if (isDeleting && j >= 0) {
+        typingElement.innerHTML = currentWord.substring(0, j--);
+      }
+
+      if (j === currentWord.length && !isDeleting) {
+        setTimeout(() => { isDeleting = true; type(); }, 1500); // Pause before deleting
+        return;
+      }
+
+      if (j === 0 && isDeleting) {
+        isDeleting = false;
+        i = (i + 1) % words.length;
+      }
+    }
+
+    setTimeout(type, isDeleting ? 75 : 175); // Slower typing/deleting
+  }
+
+  window.onload = () => {
+    type();
+  };
+</script>
+
 </body>
 </html>
