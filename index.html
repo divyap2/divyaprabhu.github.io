@@ -586,7 +586,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 </script>
+
+<style>
+.blog-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  opacity: 0.7;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+.blog-card:hover {
+  opacity: 1;
+  transform: translateY(-10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+</style>
 </body>
+
 
 
 </html>
