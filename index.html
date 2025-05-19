@@ -1,11 +1,92 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Divya Prabhu | Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <h1>Hang tight, Divya's advanced portfolio is loading...</h1>
+  <header id="top">
+    <img src="profile.jpg" alt="Divya Prabhu" class="profile-photo">
+    <h1>Divya Prabhu</h1>
+    <div class="typing" id="typing"></div>
+    <button id="themeToggle" title="Toggle theme">🌓</button>
+    <a class="btn" href="DivyaPrabhu_Resume.pdf" download>Download CV</a>
+  </header>
+
+  <nav id="navbar">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about" class="section reveal">
+      <h2>About Me</h2>
+      <p>I am a bioengineer and translational researcher passionate about bridging discovery with impact...</p>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <h2>Skills</h2>
+      <div class="skill-bar-container">
+        <label>Flow Cytometry</label><div class="bar" data-skill="90%"></div>
+        <label>Confocal Microscopy</label><div class="bar" data-skill="95%"></div>
+        <label>Python</label><div class="bar" data-skill="80%"></div>
+        <label>Workflow Automation</label><div class="bar" data-skill="85%"></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>CSF Drug Modeling:</strong> Studied brain drug delivery via CSF flow</li>
+        <li><strong>Biobank Automation:</strong> Digitized clinical workflows at UMC Utrecht</li>
+        <li><strong>Facial Expression AI:</strong> CNN-based emotion detection</li>
+      </ul>
+    </section>
+
+    <section id="timeline" class="section reveal">
+      <h2>Timeline</h2>
+      <ul class="timeline">
+        <li><span>2025</span> – Researcher, UCSD Kravets Lab</li>
+        <li><span>2023</span> – M.S. Bioengineering, UC San Diego</li>
+        <li><span>2021</span> – Clinical Product Strategist, Krishagni</li>
+      </ul>
+    </section>
+
+    <section id="testimonials" class="section reveal">
+      <h2>Testimonials</h2>
+      <blockquote>"Divya is an exceptional researcher with deep understanding of imaging and translational workflows."</blockquote>
+      <blockquote>"She transformed our biobank into a world-class operation. Highly recommend!"</blockquote>
+    </section>
+
+    <section id="blog" class="section reveal">
+      <h2>Blog & Articles</h2>
+      <ul>
+        <li><a href="https://prabhudivya.medium.com/about">Medium – prabhudivya</a></li>
+        <li><a href="https://www.openspecimen.org/future-of-biobanking/">Future of Biobanking</a></li>
+        <li><a href="https://www.openspecimen.org/automation-of-biobanking-activities/">Automation of Biobanking</a></li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <h2>Contact</h2>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:divya.20.prabhu@gmail.com">Email</a></p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/divya-prabhu">LinkedIn</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Divya Prabhu. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
