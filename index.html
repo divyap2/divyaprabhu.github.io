@@ -1,1 +1,135 @@
-<!DOCTYPE html><html><head><title>Divya Prabhu Portfolio</title></head><body><h1>Full site coming up...</h1></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Divya Prabhu | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f8f9fa; color: #212529; transition: background 0.3s, color 0.3s; }
+    header { background: #343a40; color: white; padding: 2rem; text-align: center; }
+    .typing { color: #00ffd5; font-weight: bold; font-size: 1.3rem; margin-top: 10px; }
+    nav { background: #dee2e6; padding: 1rem; text-align: center; }
+    nav a { margin: 0 15px; text-decoration: none; color: #495057; font-weight: bold; }
+    section { max-width: 900px; margin: 2rem auto; padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    h2 { border-bottom: 2px solid #ced4da; padding-bottom: 0.5rem; color: #343a40; }
+    .profile-photo { width: 150px; border-radius: 50%; margin-bottom: 1rem; }
+    .skills .skill-bar { height: 20px; background: #eee; border-radius: 10px; overflow: hidden; margin-bottom: 1rem; }
+    .skills .skill-bar-fill { height: 100%; background-color: #00aaff; width: 0; transition: width 2s ease-in-out; }
+    .project-card { background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); transition: transform 0.3s; }
+    .project-card:hover { transform: translateY(-5px); }
+    footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #6c757d; }
+    a { color: #007bff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="profile.jpg" alt="Divya Prabhu" class="profile-photo"/>
+    <h1>Divya Prabhu</h1>
+    <div class="typing" id="typing"></div>
+    <a href="DivyaPrabhu_Resume.pdf" download style="color:#00ffd5;">Download CV</a>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#publications">Publications</a>
+    <a href="#blog">Blog</a>
+    <a href="#recommendations">Recommendations</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a bioengineer and translational researcher passionate about bridging discovery with impact, where imaging, cell biology, and engineered solutions converge to drive better diagnostics and therapies...</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div><strong>Flow Cytometry</strong><div class="skill-bar"><div class="skill-bar-fill" style="width:90%;"></div></div></div>
+      <div><strong>Live-cell Imaging</strong><div class="skill-bar"><div class="skill-bar-fill" style="width:85%;"></div></div></div>
+      <div><strong>Python</strong><div class="skill-bar"><div class="skill-bar-fill" style="width:75%;"></div></div></div>
+      <div><strong>Workflow Automation</strong><div class="skill-bar"><div class="skill-bar-fill" style="width:80%;"></div></div></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-card"><h4>CSF Drug Modeling</h4><p>Studied how CSF flow affects drug pharmacokinetics in the brain.</p></div>
+    <div class="project-card"><h4>Biobank Workflow Automation</h4><p>Developed 100+ automated workflows for UMC Utrecht labs.</p></div>
+    <div class="project-card"><h4>Facial Expression Recognition</h4><p>Built deep learning models for emotion recognition using CNNs.</p></div>
+    <div class="project-card"><h4>Humidity Sensor</h4><p>Engineered real-time humidity tracking device using 8051 MCU.</p></div>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>HIPAA Professional</li>
+      <li>Medical Device Development</li>
+      <li>Good Clinical Practice (In Progress)</li>
+      <li>Drug Development (In Progress)</li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h2>Publications</h2>
+    <p>📄 <a href="https://doi.org/10.1101/2025.04.25.650736" target="_blank">Intra-islet signaling and beta-cell coordination – bioRxiv</a></p>
+  </section>
+
+  <section id="blog">
+    <h2>Blog & Articles</h2>
+    <p>📝 <a href="https://prabhudivya.medium.com/about" target="_blank">Medium Blog – prabhudivya</a></p>
+    <ul>
+      <li><a href="https://www.openspecimen.org/microbiome-biobanks-challenges-and-opportunities/" target="_blank">Microbiome Biobanks</a></li>
+      <li><a href="https://www.openspecimen.org/ethical-challenges-in-covid-19-biospecimen-research/" target="_blank">Ethical Challenges in COVID-19 Biospecimen Research</a></li>
+      <li><a href="https://www.openspecimen.org/automation-of-biobanking-activities/" target="_blank">Automation of Biobanking</a></li>
+      <li><a href="https://www.openspecimen.org/future-of-biobanking/" target="_blank">Future of Biobanking</a></li>
+    </ul>
+  </section>
+
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <p>"Divya is an outstanding researcher and team player..."</p>
+    <p>"She brought our biobank workflow into the 21st century..."</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:divya.20.prabhu@gmail.com">Email</a></p>
+    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/divya-prabhu">LinkedIn</a></p>
+    <p><i class="fas fa-phone"></i> <a href="tel:+1234567890">Phone</a></p>
+  </section>
+
+  <footer>&copy; 2025 Divya Prabhu. All rights reserved.</footer>
+
+  <script>
+    const words = ["Bioengineer", "Researcher", "Innovator", "Strategist"];
+    let i = 0, j = 0, currentWord = "", isDeleting = false;
+    const typingElement = document.getElementById("typing");
+    function type() {
+      if (i < words.length) {
+        currentWord = words[i];
+        if (!isDeleting && j <= currentWord.length) {
+          typingElement.innerHTML = currentWord.substring(0, j++);
+        } else if (isDeleting && j >= 0) {
+          typingElement.innerHTML = currentWord.substring(0, j--);
+        }
+        if (j === currentWord.length) isDeleting = true;
+        if (j === 0 && isDeleting) {
+          isDeleting = false;
+          i = (i + 1) % words.length;
+        }
+      }
+      setTimeout(type, isDeleting ? 50 : 150);
+    }
+    window.onload = () => {
+      type();
+    };
+  </script>
+</body>
+</html>
