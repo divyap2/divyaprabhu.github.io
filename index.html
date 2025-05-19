@@ -3,81 +3,105 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Divya Prabhu | Portfolio + Blog</title>
+  <title>Divya Prabhu | Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: #f9f9f9;
+      background: #f4f4f8;
       color: #333;
     }
     header {
       background: #512da8;
       color: white;
-      text-align: center;
       padding: 2rem;
-    }
-    nav {
       text-align: center;
-      background: #ede7f6;
-      padding: 1rem;
     }
-    nav a {
-      color: #512da8;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .blog-section {
-      max-width: 900px;
+    .container {
+      max-width: 1100px;
       margin: 2rem auto;
       padding: 1rem;
+    }
+    h2 {
+      text-align: center;
+      color: #512da8;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .card {
       background: white;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
     }
-    .blog-section h2 {
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.5rem;
+    .card:hover {
+      transform: translateY(-5px);
     }
-    .medium-posts {
-      display: grid;
-      gap: 1.5rem;
-    }
-    .medium-posts iframe {
+    .card img {
       width: 100%;
-      height: 400px;
-      border: none;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content h3 {
+      margin-top: 0;
+      color: #303f9f;
+    }
+    .card-content p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .read-more {
+      display: inline-block;
+      margin-top: 0.8rem;
+      color: #7e57c2;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Divya Prabhu</h1>
-    <p>Bioengineer | Confocal Microscopy | Imaging & Translational Science</p>
+    <p>Medium Blog Highlights</p>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#blog">Blog</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="blog" class="blog-section">
-    <h2>My Blog on Medium</h2>
-    <div class="medium-posts">
-      <iframe src="https://prabhudivya.medium.com/embed" allowfullscreen></iframe>
+  <div class="container">
+    <h2>Recent Articles</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*fAqqh3nNhsVZLdQzMJUCbA.png" alt="Blog 1">
+        <div class="card-content">
+          <h3>Future of Biobanking</h3>
+          <p>Explore where biobanking is headed and how automation, ethics, and data governance are reshaping clinical research infrastructure.</p>
+          <a class="read-more" href="https://www.openspecimen.org/future-of-biobanking/" target="_blank">Read More →</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*kU9KCu8n0Kvn6DndduYOyQ.png" alt="Blog 2">
+        <div class="card-content">
+          <h3>Automation of Biobanking Activities</h3>
+          <p>How automation reduces sample handling errors, enhances traceability, and scales up biobank workflows for efficiency.</p>
+          <a class="read-more" href="https://www.openspecimen.org/automation-of-biobanking-activities/" target="_blank">Read More →</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*Zp1q9rPTbQOk5fDhHoGn8A.png" alt="Blog 3">
+        <div class="card-content">
+          <h3>Ethical Challenges in COVID-19 Research</h3>
+          <p>Discussing the rapid sample collection and consent challenges in pandemic biobanking and how we adapted.</p>
+          <a class="read-more" href="https://www.openspecimen.org/ethical-challenges-in-covid-19-biospecimen-research/" target="_blank">Read More →</a>
+        </div>
+      </div>
     </div>
-    <p style="text-align:center; margin-top:1rem;">
-      <a href="https://prabhudivya.medium.com" target="_blank">View all posts on Medium →</a>
-    </p>
-  </section>
-
-  <section id="contact" class="blog-section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:divya.20.prabhu@gmail.com">divya.20.prabhu@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/divya-prabhu" target="_blank">divya-prabhu</a></p>
-  </section>
+  </div>
 </body>
 </html>
