@@ -1,0 +1,1 @@
+// JavaScript for theme toggle, skill bar animations, and typing
