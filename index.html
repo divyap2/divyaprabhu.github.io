@@ -7,10 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <style>
     body {
-      background-image: url('assets/img/geisel.jpg');
+      background-image: 
+        linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+        url('assets/img/confocal.jpg'),
+        url('assets/img/dna-overlay.png'),
+        url('assets/img/geisel.jpg');
+      background-blend-mode: overlay, screen, multiply;
       background-size: cover;
       background-position: center;
-      background-repeat: no-repeat;
       background-attachment: fixed;
     }
     header {
