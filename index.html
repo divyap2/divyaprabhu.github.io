@@ -95,8 +95,17 @@
       text-decoration: none;
       font-weight: bold;
     }
-  </style>
-
+  
+    .card:hover {
+        transform: scale(1.03);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+    .bar-fill:hover {
+        filter: brightness(1.2);
+        transition: filter 0.3s ease;
+    }
+    </style>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
@@ -111,6 +120,15 @@
 <h1>Divya Prabhu</h1>
 <div id="typing" style="font-size: 1.1rem; color: #0077b6; height: 28px;"></div>
 </header>
+<section data-aos="fade-up" id="stats" style="text-align:center; padding:2rem 0;">
+<h2 style="color:#0077b6;">Quick Stats</h2>
+<div style="display:flex; justify-content:center; gap:2rem; flex-wrap:wrap; font-size:1.2rem;">
+<div><strong id="projectsCount">0</strong><br/>Projects</div>
+<div><strong id="yearsExp">0</strong><br/>Years Experience</div>
+<div><strong id="publications">0</strong><br/>Publications</div>
+</div>
+</section>
+
 <nav>
 <div>
 <a href="#about">About</a>
@@ -163,6 +181,16 @@
 <a href="https://www.openspecimen.org/automation-of-biobanking-activities/" target="_blank">Read More →</a>
 </div>
 </section>
+
+<section data-aos="fade-up" id="timeline">
+<h2>Career Timeline</h2>
+<ul style="list-style:none; padding-left:0;">
+<li><strong>2023–Present:</strong> Thesis at UCSD on Calcium Signaling and Beta-cell Dynamics</li>
+<li><strong>2021–2022:</strong> Product Implementation at Krishagni Solutions</li>
+<li><strong>2019–2021:</strong> Cancer Research in Cheresh Lab</li>
+<li><strong>2018–2019:</strong> Bioengineering at UC San Diego (M.S.)</li>
+</ul>
+</section>
 <section data-aos="fade-up" id="contact">
 <h2>Contact</h2>
 <p>Email: <a href="mailto:divya.20.prabhu@gmail.com">divya.20.prabhu@gmail.com</a></p>
@@ -202,5 +230,27 @@ function type() {
 }
 type();
 </script>
-</div></body>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  function animateCount(id, end, duration) {
+    let start = 0;
+    const increment = end / (duration / 10);
+    const counter = document.getElementById(id);
+    const timer = setInterval(() => {
+      start += increment;
+      if (start >= end) {
+        counter.textContent = end;
+        clearInterval(timer);
+      } else {
+        counter.textContent = Math.floor(start);
+      }
+    }, 10);
+  }
+  animateCount("projectsCount", 12, 1000);
+  animateCount("yearsExp", 5, 1000);
+  animateCount("publications", 4, 1000);
+});
+</script>
+</body>
 </html>
