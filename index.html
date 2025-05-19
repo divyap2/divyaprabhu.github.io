@@ -210,7 +210,9 @@
       setTimeout(type, isDeleting ? 75 : 175);
     }
 
-    type();
+    if (typingElement) {
+      type();
+    }
   });
 </script>
 </body>
