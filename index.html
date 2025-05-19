@@ -189,6 +189,16 @@
 <li><strong>2018–2019:</strong> Bioengineering at UC San Diego (M.S.)</li>
 </ul>
 </section>
+
+<section data-aos="fade-up" id="testimonials">
+<h2 style="text-align:center; color:#0077b6;">Testimonials</h2>
+<div id="testimonialSlider" style="max-width:800px;margin:auto;background:white;border-radius:10px;padding:1.5rem;box-shadow:0 2px 8px rgba(0,0,0,0.1);position:relative;min-height:180px;">
+<blockquote id="testimonialText" style="font-style:italic;text-align:center;"></blockquote>
+<p id="testimonialAuthor" style="text-align:right;font-weight:bold;margin-top:1rem;"></p>
+<button onclick="prevTestimonial()" style="position:absolute;left:10px;top:50%;transform:translateY(-50%);">❮</button>
+<button onclick="nextTestimonial()" style="position:absolute;right:10px;top:50%;transform:translateY(-50%);">❯</button>
+</div>
+</section>
 <section data-aos="fade-up" id="contact">
 <h2>Contact</h2>
 <p>Email: <a href="mailto:divya.20.prabhu@gmail.com">divya.20.prabhu@gmail.com</a></p>
@@ -250,6 +260,34 @@ document.addEventListener("DOMContentLoaded", () => {
   animateCount("publications", 1, 1000);
   animateCount("blogsCount", 4, 1000);
 });
+</script>
+
+<script>
+  const testimonials = [
+    { text: "Divya is a knowledgeable, methodological, and efficient scientist and I have learned a great deal from her expertise and skills. Thus, I highly recommend her as a professional.", author: "~ Dr. Nantia Lakovidou" },
+    { text: "I had the privilege of working with Divya when implementing the Bio repository system... she was knowledgeable about her work and provided the best customer service.", author: "~ Innocent Obilil" },
+    { text: "During the intensive period of implementing the new OpenSpecimen Workflow plug-in, Divya provided us with product support in a professional manner...", author: "~ Jaap van Minnen" },
+    { text: "Divya is delightful to work with - she gets the pulse of the customer very quickly... I would jump at the opportunity to work with her again.", author: "~ Sunil Ayalasomayajula" },
+    { text: "Divya is a very diligent, sincere, hard working and focused on the projects in hand... Pro-active attitude to learn, very good communicator.", author: "~ Amit Das" },
+    { text: "I taught Divya Applied Mathematics, Biostatistics and Operations Research... her ability to remain focused and her pro-active attitude to learn will be a great asset.", author: "~ Dr. Poonam Soni" },
+    { text: "I know Divya as a sincere, attentive and honest student with a focused mindset to achieve her goals... She radiates positivity and great energy.", author: "~ Sachit Nalaskar" }
+  ];
+  let current = 0;
+  function showTestimonial(index) {
+    document.getElementById("testimonialText").textContent = testimonials[index].text;
+    document.getElementById("testimonialAuthor").textContent = testimonials[index].author;
+  }
+  function nextTestimonial() {
+    current = (current + 1) % testimonials.length;
+    showTestimonial(current);
+  }
+  function prevTestimonial() {
+    current = (current - 1 + testimonials.length) % testimonials.length;
+    showTestimonial(current);
+  }
+  document.addEventListener("DOMContentLoaded", () => {
+    showTestimonial(current);
+  });
 </script>
 </body>
 </html>
