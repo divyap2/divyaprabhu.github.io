@@ -108,63 +108,11 @@
     </style>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const testimonials = [
-      {
-        text: "Divya is a knowledgeable, methodological, and efficient scientist and I have learned a great deal from her expertise and skills. Thus, I highly recommend her as a professional.",
-        author: "~ Dr. Nantia Lakovidou (Senior Researcher at Khalifa University)"
-      },
-      {
-        text: "I had the privilege of working with Divya when implementing the Bio repository system for the International Livestock Research Institute under the BUILD project. I must admit she was knowledgeable about her work and provided the best customer service and response time. I would without any reservations recommend her for any future opportunities that provide the chance to grow in career and skill.",
-        author: "~ Innocent Obilil (Data Systems Information Specialist at ILRI)"
-      },
-      {
-        text: "During the intensive period of implementing the new OpenSpecimen Workflow plug-in, Divya provided us with product support in a professional manner. Always fast, solution-oriented and based on our wishes. Thanks Divya!",
-        author: "~ Jaap van Minnen (Project Manager at UMC Utrecht)"
-      },
-      {
-        text: "Divya is delightful to work with - she gets the pulse of the customer very quickly, understands the capabilities of the product and what can and cannot be done and advises the customer about the best way of doing things. Divya designed and built the workflows functionality for the Fred Hutch Cancer Center and I worked closely with her providing requirements. She was savvy, smart, prompt and open to exploring alternate solutions. I wish Divya all the best and would jump at the opportunity to ...
-        author: "~ Sunil Ayalasomayajula (Senior Consultant at Coppei)"
-      },
-      {
-        text: "Divya is a very diligent, sincere, hard working and focused on the projects in hand. She is an excellent team member and highly dependable to get the task completed as per timelines. Pro-active attitude to learn, very good communicator & interpersonal skills.",
-        author: "~ Amit Das (Co-Founder & Director at Med-Cubator Innovations Pvt. Ltd)"
-      },
-      {
-        text: "I taught Divya Applied Mathematics, Biostatistics and Operations Research. Divya is very diligent, sincere and hard working. Apart from her skills, her ability to remain focused and her pro-active attitude to learn will be a great asset to her and any organization she works for.",
-        author: "~ Dr. Poonam Soni (Associate Professor & HoD Mathematics at Thadomal Shahani Engineering College)"
-      },
-      {
-        text: "I know Divya as a sincere, attentive and honest student with a focused mindset to achieve her goals. She was a bright student who always stood ahead of her peers in studies. Divya radiates positivity and energy through her pleasing persona. She believed in hard work and persistence. She was involved in social outreach through NSS and NGOs. I am confident about her sincerity and talent. I offer her best wishes and am proud of her as my student.",
-        author: "~ Sachit Nalaskar (Associate Professor; Advisor, NSS; & Nodal Officer, UBA at TSEC)"
-      }
-    ];
-
-    let index = 0;
-    const textEl = document.getElementById("testimonial-text");
-    const authorEl = document.getElementById("testimonial-author");
-    const container = document.getElementById("testimonial-container");
-
-    function showTestimonial(i) {
-      container.style.opacity = 0;
-      setTimeout(() => {
-        textEl.textContent = testimonials[i].text;
-        authorEl.textContent = testimonials[i].author;
-        container.style.opacity = 1;
-      }, 1000);
-    }
-
-    setInterval(() => {
-      index = (index + 1) % testimonials.length;
-      showTestimonial(index);
-    }, 3000);
-
-    showTestimonial(index);
-  });
-</script>
-
+      document.addEventListener('DOMContentLoaded', function () {
+        AOS.init({ once: true });
+      });
+    </script>
 </head>
 <body><div style="background-color: rgba(255,255,255,0.65); padding: 0; margin: 0;">
 <header>
@@ -269,306 +217,112 @@
 <p>Email: <a href="mailto:divya.20.prabhu@gmail.com">divya.20.prabhu@gmail.com</a></p>
 <p>LinkedIn: <a href="https://linkedin.com/in/divya-prabhu" target="_blank">linkedin.com/in/divya-prabhu</a></p>
 </section>
-
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const testimonials = [
-      {
-        text: "Divya is a knowledgeable, methodological, and efficient scientist and I have learned a great deal from her expertise and skills. Thus, I highly recommend her as a professional.",
-        author: "~ Dr. Nantia Lakovidou (Senior Researcher at Khalifa University)"
-      },
-      {
-        text: "I had the privilege of working with Divya when implementing the Bio repository system for the International Livestock Research Institute under the BUILD project. I must admit she was knowledgeable about her work and provided the best customer service and response time. I would without any reservations recommend her for any future opportunities that provide the chance to grow in career and skill.",
-        author: "~ Innocent Obilil (Data Systems Information Specialist at ILRI)"
-      },
-      {
-        text: "During the intensive period of implementing the new OpenSpecimen Workflow plug-in, Divya provided us with product support in a professional manner. Always fast, solution-oriented and based on our wishes. Thanks Divya!",
-        author: "~ Jaap van Minnen (Project Manager at UMC Utrecht)"
-      },
-      {
-        text: "Divya is delightful to work with - she gets the pulse of the customer very quickly, understands the capabilities of the product and what can and cannot be done and advises the customer about the best way of doing things. Divya designed and built the workflows functionality for the Fred Hutch Cancer Center and I worked closely with her providing requirements. She was savvy, smart, prompt and open to exploring alternate solutions. I wish Divya all the best and would jump at the opportunity to ...
-        author: "~ Sunil Ayalasomayajula (Senior Consultant at Coppei)"
-      },
-      {
-        text: "Divya is a very diligent, sincere, hard working and focused on the projects in hand. She is an excellent team member and highly dependable to get the task completed as per timelines. Pro-active attitude to learn, very good communicator & interpersonal skills.",
-        author: "~ Amit Das (Co-Founder & Director at Med-Cubator Innovations Pvt. Ltd)"
-      },
-      {
-        text: "I taught Divya Applied Mathematics, Biostatistics and Operations Research. Divya is very diligent, sincere and hard working. Apart from her skills, her ability to remain focused and her pro-active attitude to learn will be a great asset to her and any organization she works for.",
-        author: "~ Dr. Poonam Soni (Associate Professor & HoD Mathematics at Thadomal Shahani Engineering College)"
-      },
-      {
-        text: "I know Divya as a sincere, attentive and honest student with a focused mindset to achieve her goals. She was a bright student who always stood ahead of her peers in studies. Divya radiates positivity and energy through her pleasing persona. She believed in hard work and persistence. She was involved in social outreach through NSS and NGOs. I am confident about her sincerity and talent. I offer her best wishes and am proud of her as my student.",
-        author: "~ Sachit Nalaskar (Associate Professor; Advisor, NSS; & Nodal Officer, UBA at TSEC)"
-      }
-    ];
-
-    let index = 0;
-    const textEl = document.getElementById("testimonial-text");
-    const authorEl = document.getElementById("testimonial-author");
-    const container = document.getElementById("testimonial-container");
-
-    function showTestimonial(i) {
-      container.style.opacity = 0;
-      setTimeout(() => {
-        textEl.textContent = testimonials[i].text;
-        authorEl.textContent = testimonials[i].author;
-        container.style.opacity = 1;
-      }, 1000);
-    }
-
-    setInterval(() => {
-      index = (index + 1) % testimonials.length;
-      showTestimonial(index);
-    }, 3000);
-
-    showTestimonial(index);
-  });
-</script>
-
-
+    window.addEventListener('scroll', () => {
+      document.querySelectorAll('.bar-fill').forEach(bar => {
+        const rect = bar.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+          const style = bar.getAttribute('style');
+          bar.style.width = style.split(':')[1];
+        }
+      });
+    });
+  </script>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const testimonials = [
-      {
-        text: "Divya is a knowledgeable, methodological, and efficient scientist and I have learned a great deal from her expertise and skills. Thus, I highly recommend her as a professional.",
-        author: "~ Dr. Nantia Lakovidou (Senior Researcher at Khalifa University)"
-      },
-      {
-        text: "I had the privilege of working with Divya when implementing the Bio repository system for the International Livestock Research Institute under the BUILD project. I must admit she was knowledgeable about her work and provided the best customer service and response time. I would without any reservations recommend her for any future opportunities that provide the chance to grow in career and skill.",
-        author: "~ Innocent Obilil (Data Systems Information Specialist at ILRI)"
-      },
-      {
-        text: "During the intensive period of implementing the new OpenSpecimen Workflow plug-in, Divya provided us with product support in a professional manner. Always fast, solution-oriented and based on our wishes. Thanks Divya!",
-        author: "~ Jaap van Minnen (Project Manager at UMC Utrecht)"
-      },
-      {
-        text: "Divya is delightful to work with - she gets the pulse of the customer very quickly, understands the capabilities of the product and what can and cannot be done and advises the customer about the best way of doing things. Divya designed and built the workflows functionality for the Fred Hutch Cancer Center and I worked closely with her providing requirements. She was savvy, smart, prompt and open to exploring alternate solutions. I wish Divya all the best and would jump at the opportunity to ...
-        author: "~ Sunil Ayalasomayajula (Senior Consultant at Coppei)"
-      },
-      {
-        text: "Divya is a very diligent, sincere, hard working and focused on the projects in hand. She is an excellent team member and highly dependable to get the task completed as per timelines. Pro-active attitude to learn, very good communicator & interpersonal skills.",
-        author: "~ Amit Das (Co-Founder & Director at Med-Cubator Innovations Pvt. Ltd)"
-      },
-      {
-        text: "I taught Divya Applied Mathematics, Biostatistics and Operations Research. Divya is very diligent, sincere and hard working. Apart from her skills, her ability to remain focused and her pro-active attitude to learn will be a great asset to her and any organization she works for.",
-        author: "~ Dr. Poonam Soni (Associate Professor & HoD Mathematics at Thadomal Shahani Engineering College)"
-      },
-      {
-        text: "I know Divya as a sincere, attentive and honest student with a focused mindset to achieve her goals. She was a bright student who always stood ahead of her peers in studies. Divya radiates positivity and energy through her pleasing persona. She believed in hard work and persistence. She was involved in social outreach through NSS and NGOs. I am confident about her sincerity and talent. I offer her best wishes and am proud of her as my student.",
-        author: "~ Sachit Nalaskar (Associate Professor; Advisor, NSS; & Nodal Officer, UBA at TSEC)"
-      }
-    ];
-
-    let index = 0;
-    const textEl = document.getElementById("testimonial-text");
-    const authorEl = document.getElementById("testimonial-author");
-    const container = document.getElementById("testimonial-container");
-
-    function showTestimonial(i) {
-      container.style.opacity = 0;
-      setTimeout(() => {
-        textEl.textContent = testimonials[i].text;
-        authorEl.textContent = testimonials[i].author;
-        container.style.opacity = 1;
-      }, 1000);
-    }
-
-    setInterval(() => {
-      index = (index + 1) % testimonials.length;
-      showTestimonial(index);
-    }, 3000);
-
-    showTestimonial(index);
-  });
+const typingElement = document.getElementById("typing");
+const words = ["Bioengineer", "Confocal Microscopy", "Islet & Cell Biology", "Imaging-Based Research", "Clinical & Translational Science", "Product Strategist"];
+let i = 0, j = 0, isDeleting = false;
+function type() {
+  const current = words[i];
+  if (!isDeleting && j <= current.length) {
+    typingElement.innerHTML = current.substring(0, j++);
+  } else if (isDeleting && j >= 0) {
+    typingElement.innerHTML = current.substring(0, j--);
+  }
+  if (j === current.length && !isDeleting) {
+    setTimeout(() => { isDeleting = true; type(); }, 1500);
+    return;
+  }
+  if (j === 0 && isDeleting) {
+    isDeleting = false;
+    i = (i + 1) % words.length;
+  }
+  setTimeout(type, isDeleting ? 60 : 120);
+}
+type();
 </script>
-
 </div>
-
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const testimonials = [
-      {
-        text: "Divya is a knowledgeable, methodological, and efficient scientist and I have learned a great deal from her expertise and skills. Thus, I highly recommend her as a professional.",
-        author: "~ Dr. Nantia Lakovidou (Senior Researcher at Khalifa University)"
-      },
-      {
-        text: "I had the privilege of working with Divya when implementing the Bio repository system for the International Livestock Research Institute under the BUILD project. I must admit she was knowledgeable about her work and provided the best customer service and response time. I would without any reservations recommend her for any future opportunities that provide the chance to grow in career and skill.",
-        author: "~ Innocent Obilil (Data Systems Information Specialist at ILRI)"
-      },
-      {
-        text: "During the intensive period of implementing the new OpenSpecimen Workflow plug-in, Divya provided us with product support in a professional manner. Always fast, solution-oriented and based on our wishes. Thanks Divya!",
-        author: "~ Jaap van Minnen (Project Manager at UMC Utrecht)"
-      },
-      {
-        text: "Divya is delightful to work with - she gets the pulse of the customer very quickly, understands the capabilities of the product and what can and cannot be done and advises the customer about the best way of doing things. Divya designed and built the workflows functionality for the Fred Hutch Cancer Center and I worked closely with her providing requirements. She was savvy, smart, prompt and open to exploring alternate solutions. I wish Divya all the best and would jump at the opportunity to ...
-        author: "~ Sunil Ayalasomayajula (Senior Consultant at Coppei)"
-      },
-      {
-        text: "Divya is a very diligent, sincere, hard working and focused on the projects in hand. She is an excellent team member and highly dependable to get the task completed as per timelines. Pro-active attitude to learn, very good communicator & interpersonal skills.",
-        author: "~ Amit Das (Co-Founder & Director at Med-Cubator Innovations Pvt. Ltd)"
-      },
-      {
-        text: "I taught Divya Applied Mathematics, Biostatistics and Operations Research. Divya is very diligent, sincere and hard working. Apart from her skills, her ability to remain focused and her pro-active attitude to learn will be a great asset to her and any organization she works for.",
-        author: "~ Dr. Poonam Soni (Associate Professor & HoD Mathematics at Thadomal Shahani Engineering College)"
-      },
-      {
-        text: "I know Divya as a sincere, attentive and honest student with a focused mindset to achieve her goals. She was a bright student who always stood ahead of her peers in studies. Divya radiates positivity and energy through her pleasing persona. She believed in hard work and persistence. She was involved in social outreach through NSS and NGOs. I am confident about her sincerity and talent. I offer her best wishes and am proud of her as my student.",
-        author: "~ Sachit Nalaskar (Associate Professor; Advisor, NSS; & Nodal Officer, UBA at TSEC)"
+document.addEventListener("DOMContentLoaded", () => {
+  function animateCount(id, end, duration) {
+    let start = 0;
+    const increment = end / (duration / 10);
+    const counter = document.getElementById(id);
+    const timer = setInterval(() => {
+      start += increment;
+      if (start >= end) {
+        counter.textContent = end;
+        clearInterval(timer);
+      } else {
+        counter.textContent = Math.floor(start);
       }
-    ];
+    }, 10);
+  }
+  animateCount("projectsCount", 4, 1000);
+  animateCount("yearsExp", 5, 1000);
+  animateCount("publications", 1, 1000);
+  animateCount("blogsCount", 4, 1000);
+});
 
-    let index = 0;
-    const textEl = document.getElementById("testimonial-text");
-    const authorEl = document.getElementById("testimonial-author");
-    const container = document.getElementById("testimonial-container");
-
-    function showTestimonial(i) {
-      container.style.opacity = 0;
-      setTimeout(() => {
-        textEl.textContent = testimonials[i].text;
-        authorEl.textContent = testimonials[i].author;
-        container.style.opacity = 1;
-      }, 1000);
-    }
-
-    setInterval(() => {
-      index = (index + 1) % testimonials.length;
-      showTestimonial(index);
-    }, 3000);
-
-    showTestimonial(index);
-  });
-</script>
-
-
+animateCount("postersCount", 1, 1000);</script>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const testimonials = [
-      {
-        text: "Divya is a knowledgeable, methodological, and efficient scientist and I have learned a great deal from her expertise and skills. Thus, I highly recommend her as a professional.",
-        author: "~ Dr. Nantia Lakovidou (Senior Researcher at Khalifa University)"
-      },
-      {
-        text: "I had the privilege of working with Divya when implementing the Bio repository system for the International Livestock Research Institute under the BUILD project. I must admit she was knowledgeable about her work and provided the best customer service and response time. I would without any reservations recommend her for any future opportunities that provide the chance to grow in career and skill.",
-        author: "~ Innocent Obilil (Data Systems Information Specialist at ILRI)"
-      },
-      {
-        text: "During the intensive period of implementing the new OpenSpecimen Workflow plug-in, Divya provided us with product support in a professional manner. Always fast, solution-oriented and based on our wishes. Thanks Divya!",
-        author: "~ Jaap van Minnen (Project Manager at UMC Utrecht)"
-      },
-      {
-        text: "Divya is delightful to work with - she gets the pulse of the customer very quickly, understands the capabilities of the product and what can and cannot be done and advises the customer about the best way of doing things. Divya designed and built the workflows functionality for the Fred Hutch Cancer Center and I worked closely with her providing requirements. She was savvy, smart, prompt and open to exploring alternate solutions. I wish Divya all the best and would jump at the opportunity to ...
-        author: "~ Sunil Ayalasomayajula (Senior Consultant at Coppei)"
-      },
-      {
-        text: "Divya is a very diligent, sincere, hard working and focused on the projects in hand. She is an excellent team member and highly dependable to get the task completed as per timelines. Pro-active attitude to learn, very good communicator & interpersonal skills.",
-        author: "~ Amit Das (Co-Founder & Director at Med-Cubator Innovations Pvt. Ltd)"
-      },
-      {
-        text: "I taught Divya Applied Mathematics, Biostatistics and Operations Research. Divya is very diligent, sincere and hard working. Apart from her skills, her ability to remain focused and her pro-active attitude to learn will be a great asset to her and any organization she works for.",
-        author: "~ Dr. Poonam Soni (Associate Professor & HoD Mathematics at Thadomal Shahani Engineering College)"
-      },
-      {
-        text: "I know Divya as a sincere, attentive and honest student with a focused mindset to achieve her goals. She was a bright student who always stood ahead of her peers in studies. Divya radiates positivity and energy through her pleasing persona. She believed in hard work and persistence. She was involved in social outreach through NSS and NGOs. I am confident about her sincerity and talent. I offer her best wishes and am proud of her as my student.",
-        author: "~ Sachit Nalaskar (Associate Professor; Advisor, NSS; & Nodal Officer, UBA at TSEC)"
-      }
-    ];
+const testimonials = [
+  { text: "Divya is a knowledgeable, methodological, and efficient scientist and I have learned a great deal from her expertise and skills. Thus, I highly recommend her as a professional.", author: "~ Dr. Nantia Lakovidou" },
+  { text: "I had the privilege of working with Divya when implementing the Bio repository system for the International Livestock Research Institute under the BUILD project. I must admit she was knowledgeable about her work and provided the best customer service and response time. I would without any reservations recommend her for any future opportunities that provide the chance to grow in career and skill.", author: "~ Innocent Obilil" },
+  { text: "During the intensive period of implementing the new OpenSpecimen Workflow plug-in, Divya provided us with product support in a professional manner. Always fast, solution-oriented and based on our wishes. Thanks Divya!", author: "~ Jaap van Minnen" },
+  { text: "Divya is delightful to work with - she gets the pulse of the customer very quickly, understands the capabilities of the product and what can and cannot be done and advises the customer about the best way of doing things. Divya designed and built the workflows functionality (a new and evolving module of Open Specimen) for the Fred Hutch Cancer Center and I worked very closely with her while providing the end customer's requirements to Divya, who would take it from there and provide the best solution possible. I found Divya to be savvy, smart, prompt and open to exploring alternate solutions when the product couldn't directly meet a requirement. I wish Divya all the best with her future and would jump at the opportunity to work with her again.", author: "~ Sunil Ayalasomayajula" },
+  { text: "Divya is a very diligent, sincere, hard working and focused on the projects in hand. She is an excellent team member and highly dependable to get the task completed as per timelines. Pro-active attitude to learn, very good communicator & interpersonal skills.", author: "~ Amit Das" },
+  { text: "I taught Divya Applied Mathematics, Biostatistics and Operations Research. Divya is very diligent, sincere and hard working. Apart from her skills, her ability to remain focused and her pro-active attitude to learn will be a great asset to her and any organization she works for.", author: "~ Dr. Poonam Soni" },
+  { text: "I know Divya as a sincere, attentive and honest student with a focused mindset to achieve her goals. She was a bright student who always stood ahead of her peers on many occasions in studies. Divya set forth a good example with her diligent attempts to try out contemporary skills and knowledge. She radiates positivity and great energy through her pleasing persona. She always believed in hard work and persistence in everything she did. Divya was also involved in social outreach programs in the college through NSS and through joining various NGOs on her own. I am very confident about her sincerity and talent.", author: "~ Sachit Nalaskar" }
+];
+let current = 0;
+let interval;
 
-    let index = 0;
-    const textEl = document.getElementById("testimonial-text");
-    const authorEl = document.getElementById("testimonial-author");
-    const container = document.getElementById("testimonial-container");
+function showTestimonial(index) {
+  document.getElementById("testimonialText").textContent = testimonials[index].text;
+  document.getElementById("testimonialAuthor").textContent = testimonials[index].author;
+}
 
-    function showTestimonial(i) {
-      container.style.opacity = 0;
-      setTimeout(() => {
-        textEl.textContent = testimonials[i].text;
-        authorEl.textContent = testimonials[i].author;
-        container.style.opacity = 1;
-      }, 1000);
-    }
+function nextTestimonial() {
+  current = (current + 1) % testimonials.length;
+  showTestimonial(current);
+}
 
-    setInterval(() => {
-      index = (index + 1) % testimonials.length;
-      showTestimonial(index);
-    }, 3000);
+function prevTestimonial() {
+  current = (current - 1 + testimonials.length) % testimonials.length;
+  showTestimonial(current);
+}
 
-    showTestimonial(index);
+document.addEventListener("DOMContentLoaded", () => {
+  showTestimonial(current);
+  const nextBtn = document.querySelector('button[onclick="nextTestimonial()"]');
+  const prevBtn = document.querySelector('button[onclick="prevTestimonial()"]');
+
+  nextBtn.addEventListener("mouseenter", () => {
+    interval = setInterval(nextTestimonial, 2000);
   });
-</script>
+  nextBtn.addEventListener("mouseleave", () => clearInterval(interval));
 
+  prevBtn.addEventListener("mouseenter", () => {
+    interval = setInterval(prevTestimonial, 2000);
+  });
+  prevBtn.addEventListener("mouseleave", () => clearInterval(interval));
+});
+</script>
 
 
 
 </body>
 </html>
 
-<!-- Testimonial Slider Start -->
-<section id="testimonials" style="padding: 60px 20px; background-color: #f9f9f9;">
-  <div style="max-width: 900px; margin: auto; font-family: 'Times New Roman', serif; text-align: center;">
-    <h2 style="color: #003C71;">Testimonials</h2>
-    <div id="testimonial-container" style="margin-top: 30px; min-height: 200px; transition: opacity 1s ease-in-out;">
-      <p id="testimonial-text" style="font-size: 1.2em; color: #333;"></p>
-      <p id="testimonial-author" style="margin-top: 10px; font-weight: bold; color: #C69214;"></p>
-    </div>
-  </div>
-</section>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const testimonials = [
-      {
-        text: "Divya is a knowledgeable, methodological, and efficient scientist and I have learned a great deal from her expertise and skills. Thus, I highly recommend her as a professional.",
-        author: "~ Dr. Nantia Lakovidou (Senior Researcher at Khalifa University)"
-      },
-      {
-        text: "I had the privilege of working with Divya when implementing the Bio repository system for the International Livestock Research Institute under the BUILD project. I must admit she was knowledgeable about her work and provided the best customer service and response time. I would without any reservations recommend her for any future opportunities that provide the chance to grow in career and skill.",
-        author: "~ Innocent Obilil (Data Systems Information Specialist at ILRI)"
-      },
-      {
-        text: "During the intensive period of implementing the new OpenSpecimen Workflow plug-in, Divya provided us with product support in a professional manner. Always fast, solution-oriented and based on our wishes. Thanks Divya!",
-        author: "~ Jaap van Minnen (Project Manager at UMC Utrecht)"
-      },
-      {
-        text: "Divya is delightful to work with - she gets the pulse of the customer very quickly, understands the capabilities of the product and what can and cannot be done and advises the customer about the best way of doing things. Divya designed and built the workflows functionality for the Fred Hutch Cancer Center and I worked closely with her providing requirements. She was savvy, smart, prompt and open to exploring alternate solutions. I wish Divya all the best and would jump at the opportunity to ...
-        author: "~ Sunil Ayalasomayajula (Senior Consultant at Coppei)"
-      },
-      {
-        text: "Divya is a very diligent, sincere, hard working and focused on the projects in hand. She is an excellent team member and highly dependable to get the task completed as per timelines. Pro-active attitude to learn, very good communicator & interpersonal skills.",
-        author: "~ Amit Das (Co-Founder & Director at Med-Cubator Innovations Pvt. Ltd)"
-      },
-      {
-        text: "I taught Divya Applied Mathematics, Biostatistics and Operations Research. Divya is very diligent, sincere and hard working. Apart from her skills, her ability to remain focused and her pro-active attitude to learn will be a great asset to her and any organization she works for.",
-        author: "~ Dr. Poonam Soni (Associate Professor & HoD Mathematics at Thadomal Shahani Engineering College)"
-      },
-      {
-        text: "I know Divya as a sincere, attentive and honest student with a focused mindset to achieve her goals. She was a bright student who always stood ahead of her peers in studies. Divya radiates positivity and energy through her pleasing persona. She believed in hard work and persistence. She was involved in social outreach through NSS and NGOs. I am confident about her sincerity and talent. I offer her best wishes and am proud of her as my student.",
-        author: "~ Sachit Nalaskar (Associate Professor; Advisor, NSS; & Nodal Officer, UBA at TSEC)"
-      }
-    ];
-
-    let index = 0;
-    const textEl = document.getElementById("testimonial-text");
-    const authorEl = document.getElementById("testimonial-author");
-    const container = document.getElementById("testimonial-container");
-
-    function showTestimonial(i) {
-      container.style.opacity = 0;
-      setTimeout(() => {
-        textEl.textContent = testimonials[i].text;
-        authorEl.textContent = testimonials[i].author;
-        container.style.opacity = 1;
-      }, 1000);
-    }
-
-    setInterval(() => {
-      index = (index + 1) % testimonials.length;
-      showTestimonial(index);
-    }, 3000);
-
-    showTestimonial(index);
-  });
-</script>
-
-<!-- Testimonial Slider End -->
