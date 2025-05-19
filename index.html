@@ -111,109 +111,33 @@
   <footer>&copy; 2025 Divya Prabhu. All rights reserved.</footer>
 
   <script>
-    const words = ["Bioengineer", "Researcher", "Innovator", "Strategist"];
-    let i = 0, j = 0, currentWord = "", isDeleting = false;
-    const typingElement = document.getElementById("typing");
-    function type() {
-      if (i < words.length) {
-        currentWord = words[i];
-        if (!isDeleting && j <= currentWord.length) {
-          typingElement.innerHTML = currentWord.substring(0, j++);
+    document.addEventListener("DOMContentLoaded", function () {
+      const words = ["Bioengineer", "Confocal Microscopy", "Islet & Cell Biology", "Imaging-Based Research", "Clinical & Translational Science", "Product Strategist"];
+      let i = 0, j = 0, isDeleting = false;
+      const typingElement = document.getElementById("typing");
+      
+      function type() {
+        const current = words[i];
+        if (!isDeleting && j <= current.length) {
+          typingElement.innerHTML = current.substring(0, j++);
         } else if (isDeleting && j >= 0) {
-          typingElement.innerHTML = currentWord.substring(0, j--);
+          typingElement.innerHTML = current.substring(0, j--);
         }
-        if (j === currentWord.length) isDeleting = true;
+        if (j === current.length && !isDeleting) {
+          setTimeout(() => { isDeleting = true; type(); }, 1500);
+          return;
+        }
         if (j === 0 && isDeleting) {
           isDeleting = false;
           i = (i + 1) % words.length;
         }
+        setTimeout(type, isDeleting ? 75 : 175);
       }
-      setTimeout(type, isDeleting ? 50 : 150);
-    }
-    window.onload = () => {
-      type();
-    };
   
-<script>
-  const words = [
-    "Bioengineer",
-    "Confocal Microscopy",
-    "Islet & Cell Biology",
-    "Imaging-Based Research",
-    "Clinical & Translational Science",
-    "Product Strategist"
-  ];
-  let i = 0, j = 0, currentWord = "", isDeleting = false;
-  const typingElement = document.getElementById("typing");
-
-  function type() {
-    if (i < words.length) {
-      currentWord = words[i];
-
-      if (!isDeleting && j <= currentWord.length) {
-        typingElement.innerHTML = currentWord.substring(0, j++);
-      } else if (isDeleting && j >= 0) {
-        typingElement.innerHTML = currentWord.substring(0, j--);
+      if (typingElement) {
+        type();
       }
-
-      if (j === currentWord.length && !isDeleting) {
-        setTimeout(() => { isDeleting = true; type(); }, 1500); // Pause before deleting
-        return;
-      }
-
-      if (j === 0 && isDeleting) {
-        isDeleting = false;
-        i = (i + 1) % words.length;
-      }
-    }
-
-    setTimeout(type, isDeleting ? 75 : 175); // Slower typing/deleting
-  }
-
-  window.onload = () => {
-    type();
-  };
-
-
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const words = [
-      "Bioengineer",
-      "Confocal Microscopy",
-      "Islet & Cell Biology",
-      "Imaging-Based Research",
-      "Clinical & Translational Science",
-      "Product Strategist"
-    ];
-    let i = 0, j = 0, isDeleting = false;
-    const typingElement = document.getElementById("typing");
-
-    function type() {
-      const current = words[i];
-      if (!isDeleting && j <= current.length) {
-        typingElement.innerHTML = current.substring(0, j++);
-      } else if (isDeleting && j >= 0) {
-        typingElement.innerHTML = current.substring(0, j--);
-      }
-
-      if (j === current.length && !isDeleting) {
-        setTimeout(() => { isDeleting = true; type(); }, 1500);
-        return;
-      }
-
-      if (j === 0 && isDeleting) {
-        isDeleting = false;
-        i = (i + 1) % words.length;
-      }
-
-      setTimeout(type, isDeleting ? 75 : 175);
-    }
-
-    if (typingElement) {
-      type();
-    }
-  });
+    });
 </script>
 </body>
 </html>
