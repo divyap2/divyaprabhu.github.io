@@ -7,9 +7,11 @@
   <title>Divya Prabhu | Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f8f9fa; color: #212529; transition: background 0.3s, color 0.3s; }
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f8f9fa; color: #212529; }
     header { background: #343a40; color: white; padding: 2rem; text-align: center; }
-    .typing { color: #00ffd5; font-weight: bold; font-size: 1.3rem; margin-top: 10px; }
+    .profile-photo { width: 150px; border-radius: 50%; margin-bottom: 1rem; }
+    h1 { margin-bottom: 0.5rem; }
+    .typing { font-size: 1.2rem; color: #00ffd5; height: 30px; margin-top: 5px; }
     nav { background: #dee2e6; padding: 1rem; text-align: center; }
     nav a { margin: 0 15px; text-decoration: none; color: #495057; font-weight: bold; }
     section { max-width: 900px; margin: 2rem auto; padding: 1rem; background: white; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
@@ -174,43 +176,43 @@
     type();
   };
 
-<script>
-  const words = [
-    "Bioengineer",
-    "Confocal Microscopy",
-    "Islet & Cell Biology",
-    "Imaging-Based Research",
-    "Clinical & Translational Science",
-    "Product Strategist"
-  ];
-  let i = 0, j = 0, isDeleting = false;
-  let typingElement = null;
-  document.addEventListener("DOMContentLoaded", function() {
-    typingElement = document.getElementById("typing");
-    type();
-  });
+ <script>
+    const words = [
+      "Bioengineer",
+      "Confocal Microscopy",
+      "Islet & Cell Biology",
+      "Imaging-Based Research",
+      "Clinical & Translational Science",
+      "Product Strategist"
+    ];
+    let i = 0, j = 0, isDeleting = false;
+    let typingElement = null;
+    document.addEventListener("DOMContentLoaded", function() {
+      typingElement = document.getElementById("typing");
+      type();
+    });
 
-  function type() {
-    const current = words[i];
-    if (!isDeleting && j <= current.length) {
-      typingElement.innerHTML = current.substring(0, j++);
-    } else if (isDeleting && j >= 0) {
-      typingElement.innerHTML = current.substring(0, j--);
+    function type() {
+      const current = words[i];
+      if (!isDeleting && j <= current.length) {
+        typingElement.innerHTML = current.substring(0, j++);
+      } else if (isDeleting && j >= 0) {
+        typingElement.innerHTML = current.substring(0, j--);
+      }
+
+      if (j === current.length && !isDeleting) {
+        setTimeout(() => { isDeleting = true; type(); }, 1500);
+        return;
+      }
+
+      if (j === 0 && isDeleting) {
+        isDeleting = false;
+        i = (i + 1) % words.length;
+      }
+
+      setTimeout(type, isDeleting ? 75 : 175);
     }
-
-    if (j === current.length && !isDeleting) {
-      setTimeout(() => { isDeleting = true; type(); }, 1500);
-      return;
-    }
-
-    if (j === 0 && isDeleting) {
-      isDeleting = false;
-      i = (i + 1) % words.length;
-    }
-
-    setTimeout(type, isDeleting ? 75 : 175);
-  }
-</script>
+  </script>
 
 </body>
 </html>
