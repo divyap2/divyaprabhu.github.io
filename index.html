@@ -99,7 +99,7 @@
   <header>
     <img src="profile.jpg" alt="Divya Prabhu" />
     <h1>Divya Prabhu</h1>
-    <p>Bioengineer | Confocal Microscopy | Islet & Cell Biology | Imaging-Based Research | Clinical & Translational Science | Product Strategist</p>
+    <div id="typing" style="font-size: 1.1rem; color: #0077b6; height: 28px;"></div>
   </header>
 
   <nav>
@@ -176,5 +176,30 @@
       });
     });
   </script>
+
+<script>
+const typingElement = document.getElementById("typing");
+const words = ["Bioengineer", "Confocal Microscopy", "Islet & Cell Biology", "Imaging-Based Research", "Clinical & Translational Science", "Product Strategist"];
+let i = 0, j = 0, isDeleting = false;
+function type() {
+  const current = words[i];
+  if (!isDeleting && j <= current.length) {
+    typingElement.innerHTML = current.substring(0, j++);
+  } else if (isDeleting && j >= 0) {
+    typingElement.innerHTML = current.substring(0, j--);
+  }
+  if (j === current.length && !isDeleting) {
+    setTimeout(() => { isDeleting = true; type(); }, 1500);
+    return;
+  }
+  if (j === 0 && isDeleting) {
+    isDeleting = false;
+    i = (i + 1) % words.length;
+  }
+  setTimeout(type, isDeleting ? 60 : 120);
+}
+type();
+</script>
+
 </body>
 </html>
