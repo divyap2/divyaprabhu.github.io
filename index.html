@@ -5,18 +5,11 @@
   <meta charset="UTF-8" />
   <title>Divya Prabhu | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Divya Prabhu – Bioengineer, Imaging Researcher, and Product Strategist.">
-  <meta name="keywords" content="Divya Prabhu, bioengineer, UCSD, microscopy, translational science, imaging, portfolio">
-  <meta name="author" content="Divya Prabhu">
-  <meta property="og:title" content="Divya Prabhu | Portfolio">
-  <meta property="og:description" content="UCSD-trained bioengineer focused on imaging and translational research.">
-  <meta property="og:image" content="https://divyap2.github.io/divyaprabhu.github.io/profile.jpg">
-  <meta property="og:url" content="https://divyap2.github.io/divyaprabhu.github.io/">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta name="description" content="Divya Prabhu portfolio with skills and projects.">
   <style>
     body {
-      margin: 0;
       font-family: 'Segoe UI', sans-serif;
+      margin: 0;
       background: url('assets/img/geisel.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #2c3e50;
@@ -25,12 +18,12 @@
       content: "";
       position: fixed;
       inset: 0;
-      background: rgba(255, 255, 255, 0.88);
+      background: rgba(255, 255, 255, 0.9);
       z-index: -1;
     }
     header {
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 2rem;
       color: #0077b6;
     }
     .profile-photo {
@@ -39,27 +32,15 @@
       object-fit: cover;
       border-radius: 50%;
       border: 4px solid #00b4d8;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
       margin-bottom: 1rem;
-    }
-    .typing {
-      font-size: 1.1rem;
-      color: #0096c7;
-      height: 30px;
-      margin-top: 0.5rem;
     }
     nav {
       position: sticky;
       top: 0;
-      z-index: 100;
       background: rgba(202, 240, 248, 0.95);
       backdrop-filter: blur(10px);
       padding: 1rem;
       text-align: center;
-      transition: box-shadow 0.3s ease-in-out;
-    }
-    nav.scrolled {
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
     }
     nav a {
       margin: 0 15px;
@@ -73,58 +54,30 @@
       background: #ffffffcc;
       padding: 1.5rem;
       border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
     h2 {
       color: #0077b6;
     }
 
-    /* Skill bars */
-    .skill-category {
-      margin-top: 2rem;
-    }
-    .skill-bar {
-      margin-bottom: 1rem;
-    }
-    .skill-bar-label {
-      font-weight: bold;
-      margin-bottom: 4px;
-    }
-    .bar {
-      background: #e0f7fa;
-      border-radius: 20px;
-      overflow: hidden;
-    }
-    .bar-fill {
-      height: 20px;
-      width: 0;
-      background: linear-gradient(to right, #00b4d8, #0077b6);
-      transition: width 1.5s ease-in-out;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.2rem;
-      margin-top: 1rem;
-    }
-    .card {
+    details {
+      margin: 1rem 0;
       background: #f0f8ff;
-      border-radius: 8px;
       padding: 1rem;
-      color: #2c3e50;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
-    .card h3 {
-      color: #0077b6;
-      margin-top: 0;
-    }
-    .read-more {
-      color: #0096c7;
-      text-decoration: none;
+    summary {
       font-weight: bold;
-      display: inline-block;
+      font-size: 1.1rem;
+      cursor: pointer;
+      color: #0077b6;
+    }
+    ul.skill-list {
       margin-top: 0.5rem;
+      padding-left: 1.2rem;
+    }
+    ul.skill-list li {
+      margin-bottom: 0.25rem;
     }
   </style>
 </head>
@@ -132,89 +85,77 @@
   <header>
     <img src="profile.jpg" alt="Divya Prabhu" class="profile-photo">
     <h1>Divya Prabhu</h1>
-    <div class="typing" id="typing"></div>
+    <div id="typing" style="color:#0096c7; font-weight:bold;"></div>
   </header>
 
-  <nav id="navbar">
+  <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
-    <a href="#blog">Blog</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I am a bioengineer and translational researcher passionate about bridging discovery with impact...</p>
+    <p>Bioengineer passionate about imaging, cell biology, and translational research.</p>
   </section>
 
   <section id="skills">
     <h2>Skills</h2>
-    <div class="skill-category">
-      <h3>Laboratory Techniques</h3>
-      <div class="skill-bar"><div class="skill-bar-label">Flow Cytometry (FACS)</div><div class="bar"><div class="bar-fill" style="width:85%"></div></div></div>
-      <div class="skill-bar"><div class="skill-bar-label">Islet Biology</div><div class="bar"><div class="bar-fill" style="width:95%"></div></div></div>
-    </div>
-    <div class="skill-category">
-      <h3>Bioinformatics, Imaging, Modeling</h3>
-      <div class="skill-bar"><div class="skill-bar-label">Python</div><div class="bar"><div class="bar-fill" style="width:85%"></div></div></div>
-      <div class="skill-bar"><div class="skill-bar-label">MATLAB</div><div class="bar"><div class="bar-fill" style="width:90%"></div></div></div>
-    </div>
-    <div class="skill-category">
-      <h3>Product and Workflow Management</h3>
-      <div class="skill-bar"><div class="skill-bar-label">JIRA</div><div class="bar"><div class="bar-fill" style="width:85%"></div></div></div>
-      <div class="skill-bar"><div class="skill-bar-label">Agile Project Management</div><div class="bar"><div class="bar-fill" style="width:90%"></div></div></div>
-    </div>
+
+    <details>
+      <summary>Laboratory Techniques</summary>
+      <ul class="skill-list">
+        <li>Flow Cytometry (FACS), ELISA, qPCR, RT-PCR, Western Blotting</li>
+        <li>Mammalian Cell Culture, Immunofluorescence, Live-cell Imaging</li>
+        <li>PBMC and Primary Cell Isolation, Islet Biology, NGS Assays</li>
+        <li>In Vivo Research, AFM, DNA/RNA Extraction, Plasmid Isolation</li>
+        <li>iPSC-Derived Models, Mouse Models, Aseptic Techniques, IHC</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Bioinformatics, Imaging and Computational Modeling</summary>
+      <ul class="skill-list">
+        <li>FLIM, FRAP, Calcium Imaging, ImageJ, Imaris</li>
+        <li>MATLAB, Python, GraphPad Prism, Spatial Data Analysis</li>
+        <li>AutoCAD, SolidWorks, Blender, Leica LAS X</li>
+        <li>BioTek Cytation Imager, Minitab, SimBiology, FlowJo</li>
+        <li>Microsoft Office, DOE, MSA, Power BI, MySQL, FFT</li>
+        <li>LIMS, ELN, LabVIEW</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>Product and Workflow Management</summary>
+      <ul class="skill-list">
+        <li>JIRA, Atlassian Suite, Workflow Automation</li>
+        <li>GMP Compliance, FDA Standards, Agile Project Management</li>
+        <li>Regulatory Documentation, Clinical Research Operations</li>
+        <li>Google Suite</li>
+      </ul>
+    </details>
+
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li><strong>CSF Drug Modeling</strong> – Optimizing CNS drug delivery</li>
-      <li><strong>Biobank Automation</strong> – 100+ digitalized workflows</li>
-      <li><strong>Facial Expression AI</strong> – Deep learning for emotion recognition</li>
-    </ul>
-  </section>
-
-  <section id="blog">
-    <h2>Blog Highlights</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Future of Biobanking</h3>
-        <p>Explore where biobanking is headed and how automation, ethics, and data governance are reshaping clinical research infrastructure.</p>
-        <a class="read-more" href="https://www.openspecimen.org/future-of-biobanking/" target="_blank">Read More →</a>
-      </div>
-      <div class="card">
-        <h3>Automation of Biobanking Activities</h3>
-        <p>How automation reduces sample handling errors, enhances traceability, and scales up biobank workflows for efficiency.</p>
-        <a class="read-more" href="https://www.openspecimen.org/automation-of-biobanking-activities/" target="_blank">Read More →</a>
-      </div>
-      <div class="card">
-        <h3>Ethical Challenges in COVID-19 Research</h3>
-        <p>Discussing the rapid sample collection and consent challenges in pandemic biobanking and how we adapted.</p>
-        <a class="read-more" href="https://www.openspecimen.org/ethical-challenges-in-covid-19-biospecimen-research/" target="_blank">Read More →</a>
-      </div>
-    </div>
+    <p>CSF Drug Modeling, Biobank Workflow Automation, AI Facial Recognition</p>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:divya.20.prabhu@gmail.com">divya.20.prabhu@gmail.com</a></p>
+    <p>Email: divya.20.prabhu@gmail.com</p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/divya-prabhu" target="_blank">linkedin.com/in/divya-prabhu</a></p>
   </section>
 
   <script>
-    const nav = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      nav.classList.toggle('scrolled', window.scrollY > 10);
-    });
-
     const words = [
       "Bioengineer",
       "Confocal Microscopy",
       "Islet & Cell Biology",
       "Imaging-Based Research",
-      "Clinical & Translational Science",
+      "Translational Science",
       "Product Strategist"
     ];
     let i = 0, j = 0, isDeleting = false;
@@ -227,33 +168,18 @@
       } else if (isDeleting && j >= 0) {
         typingElement.innerHTML = current.substring(0, j--);
       }
-
       if (j === current.length && !isDeleting) {
         setTimeout(() => { isDeleting = true; type(); }, 1500);
         return;
       }
-
       if (j === 0 && isDeleting) {
         isDeleting = false;
         i = (i + 1) % words.length;
       }
-
       setTimeout(type, isDeleting ? 75 : 150);
     }
 
-    if (typingElement) {
-      type();
-    }
-
-    // Animate skill bars when visible
-    window.addEventListener('scroll', () => {
-      document.querySelectorAll('.bar-fill').forEach(bar => {
-        const rect = bar.getBoundingClientRect();
-        if (rect.top < window.innerHeight) {
-          bar.style.width = bar.getAttribute('style').split(':')[1];
-        }
-      });
-    });
+    type();
   </script>
 </body>
 </html>
