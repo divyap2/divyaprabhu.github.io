@@ -156,21 +156,6 @@ section p, section li {
   }
 }
 
-
-@media (max-width: 768px) {
-  nav div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  nav a {
-    margin: 0.3rem 0;
-    font-size: 1rem;
-  }
-}
-
 </style>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -275,21 +260,6 @@ section p, section li {
   }
 }
 
-
-@media (max-width: 768px) {
-  nav div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  nav a {
-    margin: 0.3rem 0;
-    font-size: 1rem;
-  }
-}
-
 </style>
 
 
@@ -368,21 +338,6 @@ section p, section li {
     position: relative !important;
     opacity: 1 !important;
     margin-bottom: 1.5rem;
-  }
-}
-
-
-@media (max-width: 768px) {
-  nav div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  nav a {
-    margin: 0.3rem 0;
-    font-size: 1rem;
   }
 }
 
@@ -616,21 +571,6 @@ section p, section li {
     position: relative !important;
     opacity: 1 !important;
     margin-bottom: 1.5rem;
-  }
-}
-
-
-@media (max-width: 768px) {
-  nav div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  nav a {
-    margin: 0.3rem 0;
-    font-size: 1rem;
   }
 }
 
@@ -947,21 +887,6 @@ section p, section li {
   }
 }
 
-
-@media (max-width: 768px) {
-  nav div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  nav a {
-    margin: 0.3rem 0;
-    font-size: 1rem;
-  }
-}
-
 </style>
 
 <section data-aos="fade-up" id="testimonials">
@@ -1253,21 +1178,6 @@ section p, section li {
   }
 }
 
-
-@media (max-width: 768px) {
-  nav div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  nav a {
-    margin: 0.3rem 0;
-    font-size: 1rem;
-  }
-}
-
 </style>
     
 
@@ -1348,21 +1258,6 @@ section p, section li {
   }
 }
 
-
-@media (max-width: 768px) {
-  nav div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  nav a {
-    margin: 0.3rem 0;
-    font-size: 1rem;
-  }
-}
-
 </style>
 
 <style>
@@ -1428,21 +1323,6 @@ section p, section li {
   }
 }
 
-
-@media (max-width: 768px) {
-  nav div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  nav a {
-    margin: 0.3rem 0;
-    font-size: 1rem;
-  }
-}
-
 </style>
 
 <style>
@@ -1503,21 +1383,6 @@ section p, section li {
     position: relative !important;
     opacity: 1 !important;
     margin-bottom: 1.5rem;
-  }
-}
-
-
-@media (max-width: 768px) {
-  nav div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  nav a {
-    margin: 0.3rem 0;
-    font-size: 1rem;
   }
 }
 
@@ -1602,21 +1467,6 @@ section p, section li {
     position: relative !important;
     opacity: 1 !important;
     margin-bottom: 1.5rem;
-  }
-}
-
-
-@media (max-width: 768px) {
-  nav div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  nav a {
-    margin: 0.3rem 0;
-    font-size: 1rem;
   }
 }
 
@@ -1748,21 +1598,6 @@ section p, section li {
   }
 }
 
-
-@media (max-width: 768px) {
-  nav div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  nav a {
-    margin: 0.3rem 0;
-    font-size: 1rem;
-  }
-}
-
 </style>
 
 
@@ -1803,6 +1638,93 @@ function topFunction() {
   © 2025 Divya Prabhu. All Rights Reserved.
 </footer>
 
+
+
+<style>
+  .menu-icon {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: #38bdf8;
+    color: white;
+    border: none;
+    padding: 0.6rem 0.8rem;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    z-index: 1001;
+    cursor: pointer;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #0f172a;
+    color: white;
+    padding: 2rem 1rem;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .sidebar a {
+    display: block;
+    color: #ffffffcc;
+    text-decoration: none;
+    margin: 1rem 0;
+    font-size: 1.1rem;
+  }
+
+  .sidebar a:hover {
+    color: #38bdf8;
+  }
+
+  .sidebar-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+    nav {
+      display: none;
+    }
+    .menu-icon {
+      display: block;
+    }
+  }
+</style>
+
+<div class="sidebar" id="sidebar">
+  <button class="sidebar-close" onclick="toggleSidebar()">×</button>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#blog">Blogs</a>
+  <a href="#resume">Resume</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#publications">Publications</a>
+  <a href="#testimonials">Testimonials</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<button class="menu-icon" onclick="toggleSidebar()">☰</button>
+
+<script>
+  function toggleSidebar() {
+    document.getElementById('sidebar').classList.toggle('active');
+  }
+</script>
 
 </body>
 
