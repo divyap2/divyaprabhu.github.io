@@ -358,6 +358,35 @@ section p, section li {
 <div><strong id="publications">0</strong><br/>Publications</div>
 <div><strong id="blogsCount">4</strong><br/>Blogs</div><div><strong id="postersCount">1</strong><br/>Poster Presentations</div></div>
 </section>
+
+<style>
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    backdrop-filter: blur(10px);
+  }
+  nav div {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s, transform 0.3s;
+  }
+  nav a:hover {
+    color: #007acc;
+    transform: scale(1.05);
+  }
+</style>
 <nav>
   <div>
     <a href="#about">About</a>
@@ -371,6 +400,7 @@ section p, section li {
     <a href="#contact">Contact</a>
   </div>
 </nav>
+
 <section data-aos="fade-up" id="about">
 <h2>About Me</h2>
 <p>I’m a bioengineer and translational researcher driven by one purpose: to bridge scientific discovery with human impact. My passion lies where imaging, cell biology, and engineering meet to create breakthroughs in diagnostics and therapeutics. But my motivation isn’t just scientific—it’s deeply personal. Witnessing loved ones battle chronic illnesses rooted my career in a mission that goes beyond the lab bench.</p>
