@@ -159,93 +159,36 @@
     }
   }
 </style>
+
+
 <style>
   @media (max-width: 768px) {
-    .swiper-container.projects-slider,
-    .swiper-container.testimonials-slider {
-      overflow: visible !important;
-    }
-
-    .swiper-wrapper {
-      display: block !important;
-      height: auto !important;
-    }
-
     .swiper-slide {
-      display: block !important;
-      width: 100% !important;
-      margin-bottom: 20px;
-      height: auto !important;
-    }
-
-    .testimonial {
-      max-height: none !important;
-      overflow: visible !important;
-    }
-  }
-</style>
-
-<style>
-  @media (max-width: 768px) {
-    .testimonial {
-      max-height: 400px;
-      overflow-y: auto;
+      max-height: 500px !important;
+      overflow-y: auto !important;
       padding-right: 10px;
       box-sizing: border-box;
-      scrollbar-width: thin;
     }
+
+    .testimonial {
+      max-height: 500px !important;
+      overflow-y: auto !important;
+      padding-right: 10px;
+      box-sizing: border-box;
+    }
+
+    .swiper-slide::-webkit-scrollbar,
     .testimonial::-webkit-scrollbar {
       width: 6px;
     }
+
+    .swiper-slide::-webkit-scrollbar-thumb,
     .testimonial::-webkit-scrollbar-thumb {
-      background-color: #ccc;
-      border-radius: 3px;
-    }
-
-    .swiper-slide > div {
-      max-height: 420px;
-      overflow-y: auto;
-      padding-right: 10px;
-      box-sizing: border-box;
-      scrollbar-width: thin;
-    }
-
-    .swiper-slide > div::-webkit-scrollbar {
-      width: 6px;
-    }
-    .swiper-slide > div::-webkit-scrollbar-thumb {
-      background-color: #ccc;
+      background-color: #bbb;
       border-radius: 3px;
     }
   }
 </style>
-<style>
-  @media (max-width: 768px) {
-    .swiper-container.projects-slider,
-    .swiper-container.testimonials-slider {
-      overflow: visible !important;
-    }
-
-    .swiper-wrapper {
-      display: block !important;
-      height: auto !important;
-    }
-
-    .swiper-slide {
-      display: block !important;
-      width: 100% !important;
-      margin-bottom: 20px;
-      height: auto !important;
-    }
-
-    .testimonial {
-      max-height: none !important;
-      overflow: visible !important;
-    }
-  }
-</style>
-
-
 
 </head>
 <body style="background: url('assets/img/geisel.jpg') no-repeat center center fixed; background-size: cover;"><div style="background-color: rgba(255,255,255,0.65); padding: 0; margin: 0;">
@@ -1130,27 +1073,6 @@ function topFunction() {
   © 2025 Divya Prabhu. All Rights Reserved.
 </footer>
 
-
-
-<!-- Mobile-friendly testimonial stack -->
-<div class="testimonial-mobile-stack" style="display: none;">
-  <div class="testimonial" style="background: #f9f9f9; padding: 20px; margin-bottom: 20px; border-radius: 10px;">
-    <p>"Divya is a knowledgeable, methodological, and efficient scientist and I have learned a great deal from her expertise and skills. Thus, I highly recommend her as a professional."</p>
-    <p><strong>~ Dr. Nantia Lakovidou (Senior Researcher at Khalifa University)</strong></p>
-  </div>
-  <div class="testimonial" style="background: #f9f9f9; padding: 20px; margin-bottom: 20px; border-radius: 10px;">
-    <p>"I had the privilege of working with Divya when implementing the Bio repository system... She was knowledgeable about her work and provided the best customer service and response time."</p>
-    <p><strong>~ Innocent Obilil (Data Systems Information Specialist at ILRI)</strong></p>
-  </div>
-  <!-- Add more cloned testimonials if needed -->
-</div>
-
-<style>
-  @media (max-width: 768px) {
-    .swiper-container.testimonials-slider { display: none !important; }
-    .testimonial-mobile-stack { display: block !important; padding: 0 20px; }
-  }
-</style>
 
 </body>
 
