@@ -859,7 +859,7 @@ body { font-family: 'Segoe UI', sans-serif; }
   border-left: 3px solid #3078b8;
   margin-top: 20px;
   padding-left: 20px;
-}
+ position: relative;}
 .timeline-entry {
   margin-bottom: 30px;
   position: relative;
@@ -867,8 +867,9 @@ body { font-family: 'Segoe UI', sans-serif; }
 .timeline-entry::before {
   content: "";
   position: absolute;
-  left: -11px;
   top: 8px;
+  left: 0;
+  transform: translateX(-50%);
   width: 14px;
   height: 14px;
   background-color: #ffffff;
@@ -1570,7 +1571,7 @@ body { font-family: 'Segoe UI', sans-serif; }
   border-left: 3px solid #3078b8;
   margin-top: 20px;
   padding-left: 20px;
-}
+ position: relative;}
 .timeline-entry {
   margin-bottom: 30px;
   position: relative;
@@ -1578,8 +1579,9 @@ body { font-family: 'Segoe UI', sans-serif; }
 .timeline-entry::before {
   content: "";
   position: absolute;
-  left: -11px;
   top: 8px;
+  left: 0;
+  transform: translateX(-50%);
   width: 14px;
   height: 14px;
   background-color: #ffffff;
