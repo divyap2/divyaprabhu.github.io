@@ -6,8 +6,8 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta charset="utf-8"/>
 <title>Divya Prabhu | Portfolio</title>
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<meta content="Portfolio of Divya Prabhu – Bioengineer, Imaging Researcher, and Product Strategist." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Portfolio of Divya Prabhu – Bioengineer, Imaging Researcher, and Product Strategist." name="description">
 <meta content="Divya Prabhu, bioengineer, UCSD, microscopy, translational science, imaging, portfolio" name="keywords"/>
 <meta content="Divya Prabhu" name="author"/>
 <style>
@@ -407,7 +407,6 @@ section p, section li {
   z-index: 1;
 }
 </style>
-
 <style>
 @media (max-width: 768px) {
   nav {
@@ -416,8 +415,28 @@ section p, section li {
 }
 </style>
 
+<style>
+@media (max-width: 768px) {
+  #hamburger {
+    display: block;
+  }
+}
+</style>
+<script>
+function toggleSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  if (sidebar) {
+    sidebar.classList.toggle("active");
+  }
+}
+</script>
+
 </head>
-<body style="background: url('assets/img/geisel.jpg') no-repeat center center fixed; background-size: cover;"><div style="background-color: rgba(255,255,255,0.65); padding: 0; margin: 0;">
+<body style="background: url('assets/img/geisel.jpg') no-repeat center center fixed; background-size: cover;">
+<div id="hamburger" onclick="toggleSidebar()" style="display:none; position:fixed; top:15px; left:15px; z-index:1001; font-size:28px; cursor:pointer;">
+  ☰
+</div>
+<div style="background-color: rgba(255,255,255,0.65); padding: 0; margin: 0;">
 <header>
 <img alt="Divya Prabhu" src="profile.jpg"/>
 <div style="text-align: center; font-size: 1.1rem; color: #333; margin-top: 20px;">
@@ -692,12 +711,10 @@ section p, section li {
 </div>
 </div></section>
 <section id="resume" style="padding: 60px 20px;">
-
 <div style="text-align: center; margin: 1rem 0;">
-  <a href="Divya_Prabhu_Resume.pdf" download style="background-color: #f6c343; color: #0f172a; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold;">
+<a download="" href="Divya_Prabhu_Resume.pdf" style="background-color: #007acc; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold;">
     ⬇ Download Resume
   </a>
-    
 </div>
 <h2>Resume</h2>
 <div style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap;">
@@ -709,15 +726,9 @@ section p, section li {
 <div class="timeline-title">MASTER OF SCIENCE IN BIOENGINEERING</div><div class="timeline-content"><div class="timeline-date">Sept 2023 – Present</div><div class="timeline-sub">University of California, San Diego, CA</div><p>Relevant Coursework: Biochemistry, Cell and Molecular Biology, Stem Cell Biology, Tissue and Cell Properties (Biomechanics), Patient-Centered
 Clinical Medicine for Bioengineers, Tissue Engineering and Regenerative Medicine, 
 Quantitative Cardiovascular Pathophysiology</p></div>
-
-
-
 </div>
 <div class="timeline-entry"><div class="timeline-marker"></div>
 <div class="timeline-title">BACHELOR OF ENGINEERING IN BIOMEDICAL</div><div class="timeline-content"><div class="timeline-date">Aug 2016 – Oct 2020</div><div class="timeline-sub">University of Mumbai, India</div><p>Relevant Coursework: Signals and Control Systems, Medical Imaging, Hospital Management, Biomaterials, Advanced Image Processing</p></div>
-
-
-
 </div>
 </div>
 </div>
@@ -736,9 +747,6 @@ reproducibility across 20+ islets and 50+ pancreatic tissue slices in mouse mode
 <li>Developed a computational framework integrating advanced signal processing (FFT, Inverse FFT) in MATLAB and ImageJ, enabling
 quantitative calcium dynamics assessment and spatial correlation analysis using Imaris and GraphPad Prism, enhancing the precision of betacell function characterization.</li>
 </ul></div>
-
-
-
 </div>
 <div class="timeline-entry"><div class="timeline-marker"></div>
 <div class="timeline-title">RESEARCH ASSOCIATE</div><div class="timeline-content"><div class="timeline-date">Jan 2024 – Mar 2024</div><div class="timeline-sub">Cheresh Lab, UC San Diego, CA</div><ul>
@@ -751,9 +759,6 @@ immunofluorescence imaging, elucidating critical tumor–extracellular matrix in
 analysis to characterize cancer-associated fibroblast (CAF) influence on tumor microenvironments, contributing to potential therapeutic
 strategies in oncology research.</li>
 </ul></div>
-
-
-
 </div>
 <div class="timeline-entry"><div class="timeline-marker"></div>
 <div class="timeline-title">PRODUCT MANAGER</div><div class="timeline-content"><div class="timeline-date">Jul 2020 – Aug 2023</div><div class="timeline-sub">Krishagni Solutions Private Limited (OpenSpecimen LIMS), India</div><ul>
@@ -767,9 +772,6 @@ decision-making, improving workflow automation, and increasing biospecimen track
 <li>Conducted 50+ training and mentoring sessions, equipping researchers, clinicians, and junior staff with proficiency in REDCap, Epic, Cerner,
 and Hamilton BiOS, driving higher software adoption, regulatory adherence, and operational efficiency.</li>
 </ul></div>
-
-
-
 </div>
 <div class="timeline-entry"><div class="timeline-marker"></div>
 <div class="timeline-title">RESEARCH INTERN</div><div class="timeline-content"><div class="timeline-date">Jun 2020 – Jul 2020</div><div class="timeline-sub">Center for Innovation and Bio-Design (CIBioD), India</div><ul>
@@ -780,9 +782,6 @@ insights in disease progression and management strategies.</li>
 <li>Led a cross-functional team to design and deploy a machine learning-based diabetes prediction platform, achieving a 48.97% improvement in
 diagnostic accuracy, enhancing early detection and patient risk stratification.</li>
 </ul></div>
-
-
-
 </div>
 <div class="timeline-entry"><div class="timeline-marker"></div>
 <div class="timeline-title">BIOMEDICAL ENGINEERING INTERN</div><div class="timeline-content"><div class="timeline-date">Dec 2018 – Jan 2019</div><div class="timeline-sub">Holy Family Hospital, India</div><ul>
@@ -797,9 +796,6 @@ and uninterrupted clinical operations.</li>
 <li>Applied LabVIEW, SolidWorks, and Minitab to conduct Design of Experiments (DOE), Measurement System Analysis (MSA), and technical
 documentation, driving data-backed optimizations in medical device performance and regulatory compliance.</li>
 </ul></div>
-
-
-
 </div>
 </div>
 </div>
@@ -1900,7 +1896,6 @@ function topFunction() {
     document.getElementById('sidebar').classList.toggle('active');
   }
 </script>
-
 <style>
   .timeline-title {
     cursor: pointer;
@@ -1918,7 +1913,6 @@ function topFunction() {
     margin: 0;
   }
 </style>
-
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".timeline-entry").forEach(entry => {
@@ -1932,6 +1926,5 @@ function topFunction() {
     });
   });
 </script>
-
 </body>
 </html>
