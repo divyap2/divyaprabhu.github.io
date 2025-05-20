@@ -161,19 +161,33 @@
 </style>
 <style>
   @media (max-width: 768px) {
-    .testimonial-card, .project-card {
+    .testimonial {
       max-height: 400px;
       overflow-y: auto;
       padding-right: 10px;
       box-sizing: border-box;
       scrollbar-width: thin;
     }
-    .testimonial-card::-webkit-scrollbar,
-    .project-card::-webkit-scrollbar {
+    .testimonial::-webkit-scrollbar {
       width: 6px;
     }
-    .testimonial-card::-webkit-scrollbar-thumb,
-    .project-card::-webkit-scrollbar-thumb {
+    .testimonial::-webkit-scrollbar-thumb {
+      background-color: #ccc;
+      border-radius: 3px;
+    }
+
+    .swiper-slide > div {
+      max-height: 420px;
+      overflow-y: auto;
+      padding-right: 10px;
+      box-sizing: border-box;
+      scrollbar-width: thin;
+    }
+
+    .swiper-slide > div::-webkit-scrollbar {
+      width: 6px;
+    }
+    .swiper-slide > div::-webkit-scrollbar-thumb {
       background-color: #ccc;
       border-radius: 3px;
     }
