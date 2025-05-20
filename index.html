@@ -6,8 +6,8 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <meta charset="utf-8"/>
 <title>Divya Prabhu | Portfolio</title>
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<meta content="Portfolio of Divya Prabhu – Bioengineer, Imaging Researcher, and Product Strategist." name="description"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Portfolio of Divya Prabhu – Bioengineer, Imaging Researcher, and Product Strategist." name="description">
 <meta content="Divya Prabhu, bioengineer, UCSD, microscopy, translational science, imaging, portfolio" name="keywords"/>
 <meta content="Divya Prabhu" name="author"/>
 <style>
@@ -407,6 +407,32 @@ section p, section li {
   z-index: 1;
 }
 </style>
+
+<style>
+.timeline {
+  position: relative;
+  border-left: 3px solid #3078b8;
+  margin-top: 20px;
+  padding-left: 30px;
+}
+.timeline-entry {
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 30px;
+}
+.timeline-marker {
+  position: absolute;
+  left: -17px;
+  top: 8px;
+  width: 14px;
+  height: 14px;
+  background-color: #ffffff;
+  border: 3px solid #3078b8;
+  border-radius: 50%;
+  z-index: 1;
+}
+</style>
+
 </head>
 <body style="background: url('assets/img/geisel.jpg') no-repeat center center fixed; background-size: cover;"><div style="background-color: rgba(255,255,255,0.65); padding: 0; margin: 0;">
 <header>
@@ -684,31 +710,21 @@ section p, section li {
 </div></section>
 <section id="resume" style="padding: 60px 20px;">
 <h2>Resume</h2>
-<div style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap;">
-<!-- Education -->
-<div style="flex: 1; min-width: 300px;">
+<div style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap;"><div class="timeline"><div style="flex: 1; min-width: 300px;">
 <h3 style="color: #182b49; font-size: 24px;">Education</h3>
-<div class="timeline">
+
 <div class="timeline-entry"><div class="timeline-marker"></div>
 <div class="timeline-title">MASTER OF SCIENCE IN BIOENGINEERING</div><div class="timeline-content"><div class="timeline-date">Sept 2023 – Present</div><div class="timeline-sub">University of California, San Diego, CA</div><p>Relevant Coursework: Biochemistry, Cell and Molecular Biology, Stem Cell Biology, Tissue and Cell Properties (Biomechanics), Patient-Centered
 Clinical Medicine for Bioengineers, Tissue Engineering and Regenerative Medicine, 
 Quantitative Cardiovascular Pathophysiology</p></div>
-
-
-
 </div>
 <div class="timeline-entry"><div class="timeline-marker"></div>
 <div class="timeline-title">BACHELOR OF ENGINEERING IN BIOMEDICAL</div><div class="timeline-content"><div class="timeline-date">Aug 2016 – Oct 2020</div><div class="timeline-sub">University of Mumbai, India</div><p>Relevant Coursework: Signals and Control Systems, Medical Imaging, Hospital Management, Biomaterials, Advanced Image Processing</p></div>
-
-
-
 </div>
-</div>
-</div>
-<!-- Experience -->
-<div style="flex: 1; min-width: 300px;">
+
+</div><div style="flex: 1; min-width: 300px;">
 <h3 style="color: #182b49; font-size: 24px;">Professional Experience</h3>
-<div class="timeline">
+
 <div class="timeline-entry"><div class="timeline-marker"></div>
 <div class="timeline-title">RESEARCH ASSOCIATE</div><div class="timeline-content"><div class="timeline-date">Apr 2024 – Present</div><div class="timeline-sub">Kravets Lab, UC San Diego, CA</div><ul>
 <li>Pioneered research on beta-cell subpopulations in Type 2 Diabetes (T2D), employing FLIM, FRAP, and calcium imaging to assess pancreatic
@@ -720,9 +736,6 @@ reproducibility across 20+ islets and 50+ pancreatic tissue slices in mouse mode
 <li>Developed a computational framework integrating advanced signal processing (FFT, Inverse FFT) in MATLAB and ImageJ, enabling
 quantitative calcium dynamics assessment and spatial correlation analysis using Imaris and GraphPad Prism, enhancing the precision of betacell function characterization.</li>
 </ul></div>
-
-
-
 </div>
 <div class="timeline-entry"><div class="timeline-marker"></div>
 <div class="timeline-title">RESEARCH ASSOCIATE</div><div class="timeline-content"><div class="timeline-date">Jan 2024 – Mar 2024</div><div class="timeline-sub">Cheresh Lab, UC San Diego, CA</div><ul>
@@ -735,9 +748,6 @@ immunofluorescence imaging, elucidating critical tumor–extracellular matrix in
 analysis to characterize cancer-associated fibroblast (CAF) influence on tumor microenvironments, contributing to potential therapeutic
 strategies in oncology research.</li>
 </ul></div>
-
-
-
 </div>
 <div class="timeline-entry"><div class="timeline-marker"></div>
 <div class="timeline-title">PRODUCT MANAGER</div><div class="timeline-content"><div class="timeline-date">Jul 2020 – Aug 2023</div><div class="timeline-sub">Krishagni Solutions Private Limited (OpenSpecimen LIMS), India</div><ul>
@@ -751,9 +761,6 @@ decision-making, improving workflow automation, and increasing biospecimen track
 <li>Conducted 50+ training and mentoring sessions, equipping researchers, clinicians, and junior staff with proficiency in REDCap, Epic, Cerner,
 and Hamilton BiOS, driving higher software adoption, regulatory adherence, and operational efficiency.</li>
 </ul></div>
-
-
-
 </div>
 <div class="timeline-entry"><div class="timeline-marker"></div>
 <div class="timeline-title">RESEARCH INTERN</div><div class="timeline-content"><div class="timeline-date">Jun 2020 – Jul 2020</div><div class="timeline-sub">Center for Innovation and Bio-Design (CIBioD), India</div><ul>
@@ -764,9 +771,6 @@ insights in disease progression and management strategies.</li>
 <li>Led a cross-functional team to design and deploy a machine learning-based diabetes prediction platform, achieving a 48.97% improvement in
 diagnostic accuracy, enhancing early detection and patient risk stratification.</li>
 </ul></div>
-
-
-
 </div>
 <div class="timeline-entry"><div class="timeline-marker"></div>
 <div class="timeline-title">BIOMEDICAL ENGINEERING INTERN</div><div class="timeline-content"><div class="timeline-date">Dec 2018 – Jan 2019</div><div class="timeline-sub">Holy Family Hospital, India</div><ul>
@@ -781,12 +785,13 @@ and uninterrupted clinical operations.</li>
 <li>Applied LabVIEW, SolidWorks, and Minitab to conduct Design of Experiments (DOE), Measurement System Analysis (MSA), and technical
 documentation, driving data-backed optimizations in medical device performance and regulatory compliance.</li>
 </ul></div>
-
-
-
 </div>
-</div>
-</div>
+
+</div></div>
+<!-- Education -->
+
+<!-- Experience -->
+
 </div>
 </section>
 <section id="certifications" style="padding: 60px 20px;">
@@ -1884,7 +1889,6 @@ function topFunction() {
     document.getElementById('sidebar').classList.toggle('active');
   }
 </script>
-
 <style>
   .timeline-title {
     cursor: pointer;
@@ -1902,7 +1906,6 @@ function topFunction() {
     margin: 0;
   }
 </style>
-
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".timeline-entry").forEach(entry => {
@@ -1916,6 +1919,5 @@ function topFunction() {
     });
   });
 </script>
-
 </body>
 </html>
