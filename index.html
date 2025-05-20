@@ -1868,6 +1868,145 @@ function topFunction() {
   }
 </script>
 
+
+<style>
+  .menu-icon {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: #38bdf8;
+    color: white;
+    border: none;
+    padding: 0.6rem 0.8rem;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    z-index: 1001;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -270px;
+    width: 240px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.97);
+    color: #0f172a;
+    padding: 2rem 1.2rem;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    overflow-y: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .sidebar img.profile-pic {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.8rem;
+    border: 3px solid #38bdf8;
+  }
+
+  .sidebar h2 {
+    margin: 0.2rem 0 0.2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1e293b;
+  }
+
+  .sidebar p {
+    margin: 0 0 0.5rem;
+    font-size: 0.9rem;
+    color: #475569;
+  }
+
+  .sidebar .social-icons {
+    margin: 0.5rem 0 1.2rem;
+  }
+
+  .sidebar .social-icons a {
+    margin: 0 0.3rem;
+    display: inline-block;
+    color: #475569;
+    font-size: 1.2rem;
+  }
+
+  .sidebar .social-icons a:hover {
+    color: #0ea5e9;
+  }
+
+  .sidebar a {
+    display: block;
+    color: #0f172a;
+    text-decoration: none;
+    margin: 0.65rem 0;
+    font-size: 1rem;
+    padding-left: 0.25rem;
+    border-left: 3px solid transparent;
+    text-align: left;
+    width: 100%;
+  }
+
+  .sidebar a:hover {
+    color: #0ea5e9;
+    border-left: 3px solid #0ea5e9;
+  }
+
+  .sidebar-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: #0f172a;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+</style>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+<div class="sidebar" id="sidebar">
+  <button class="sidebar-close" onclick="toggleSidebar()">×</button>
+  <img src="profile.jpg" alt="Profile" class="profile-pic">
+  <h2>Divya Prabhu</h2>
+  <p>Clinical & Translational Science</p>
+  <div class="social-icons">
+    <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="mailto:your@email.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+  <a href="#about" onclick="toggleSidebar()">About</a>
+  <a href="#skills" onclick="toggleSidebar()">Skills</a>
+  <a href="#projects" onclick="toggleSidebar()">Projects</a>
+  <a href="#blog" onclick="toggleSidebar()">Blogs</a>
+  <a href="#resume" onclick="toggleSidebar()">Resume</a>
+  <a href="#certifications" onclick="toggleSidebar()">Certifications</a>
+  <a href="#publications" onclick="toggleSidebar()">Publications</a>
+  <a href="#testimonials" onclick="toggleSidebar()">Testimonials</a>
+  <a href="#contact" onclick="toggleSidebar()">Contact</a>
+</div>
+
+<button class="menu-icon" onclick="toggleSidebar()">☰</button>
+
+<script>
+  function toggleSidebar() {
+    document.getElementById('sidebar').classList.toggle('active');
+  }
+</script>
+
 </body>
 
 
