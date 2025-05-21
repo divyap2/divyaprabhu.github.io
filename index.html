@@ -511,40 +511,6 @@ function toggleSidebar() {
 <div><strong id="publications">0</strong><br/>Publications</div>
 <div><strong id="blogsCount">4</strong><br/>Blogs</div><div><strong id="postersCount">1</strong><br/>Poster Presentations
 <div id="slide-indicator" style="text-align:center; margin-top: 10px; font-weight: bold; color: #333;">1/4</div>
-<script>
-  const slides = document.querySelectorAll('.slide');
-  const totalSlides = slides.length;
-  const slider = document.querySelector('.slider');
-  const indicator = document.getElementById('slide-indicator');
-
-  let currentSlide = 0;
-
-  function updateIndicator() {
-    indicator.textContent = (currentSlide + 1) + '/' + totalSlides;
-  }
-
-  function moveToSlide(index) {
-    slider.style.transform = 'translateX(' + (-index * 100) + '%)';
-    currentSlide = index;
-    updateIndicator();
-  }
-
-  // Create previous and next buttons if they exist
-  const prevBtn = document.querySelector('.prev');
-  const nextBtn = document.querySelector('.next');
-
-  if (prevBtn && nextBtn) {
-    prevBtn.addEventListener('click', () => {
-      if (currentSlide > 0) moveToSlide(currentSlide - 1);
-    });
-    nextBtn.addEventListener('click', () => {
-      if (currentSlide < totalSlides - 1) moveToSlide(currentSlide + 1);
-    });
-  }
-
-  // Initial setup
-  updateIndicator();
-</script>
 
 </div></div>
 </section>
@@ -696,6 +662,10 @@ li {
     else if (index < 0) currentSlide = slides.length - 1;
     else currentSlide = index;
     slider.style.transform = 'translateX(' + (-currentSlide * 100) + '%)';
+    const indicator = document.getElementById('slide-indicator');
+    if (indicator) {
+      indicator.textContent = (currentSlide + 1) + '/' + document.querySelectorAll('.slide').length;
+    }
   }
   function plusSlide(n) {
     showSlide(currentSlide + n);
@@ -713,6 +683,10 @@ li {
     else if (index < 0) currentSlide = slides.length - 1;
     else currentSlide = index;
     slider.style.transform = 'translateX(' + (-currentSlide * 100) + '%)';
+    const indicator = document.getElementById('slide-indicator');
+    if (indicator) {
+      indicator.textContent = (currentSlide + 1) + '/' + document.querySelectorAll('.slide').length;
+    }
   }
   function plusSlide(n) {
     showSlide(currentSlide + n);
