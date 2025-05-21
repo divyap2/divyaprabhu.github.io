@@ -1156,18 +1156,24 @@ const words = ["Bioengineer", "Confocal Microscopy", "Islet & Cell Biology", "Im
 let i = 0, j = 0, isDeleting = false;
 function type() {
   const current = words[i];
-  if (!isDeleting && j <= current.length) {
-    typingElement.innerHTML = current.substring(0, j++);
-  } else if (isDeleting && j >= 0) {
-    typingElement.innerHTML = current.substring(0, j--);
-  }
-  if (j === current.length && !isDeleting) {
-    setTimeout(() => { isDeleting = true; type(); }, 1500);
-    return;
-  }
-  if (j === 0 && isDeleting) {
-    isDeleting = false;
-    i = (i + 1) % words.length;
+  typingElement.innerHTML = current.substring(0, j);
+  if (!isDeleting) {
+    if (j < current.length) {
+      j++;
+    } else {
+      setTimeout(() => {
+        isDeleting = true;
+        type();
+      }, 1500);
+      return;
+    }
+  } else {
+    if (j > 0) {
+      j--;
+    } else {
+      isDeleting = false;
+      i = (i + 1) % words.length;
+    }
   }
   setTimeout(type, isDeleting ? 60 : 120);
 }
