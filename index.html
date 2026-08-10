@@ -1,2168 +1,313 @@
-
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta charset="utf-8"/>
-<title>Divya Prabhu | Portfolio</title>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="Portfolio of Divya Prabhu – Bioengineer, Imaging Researcher, and Product Strategist." name="description">
-<meta content="Divya Prabhu, bioengineer, UCSD, microscopy, translational science, imaging, portfolio" name="keywords"/>
-<meta content="Divya Prabhu" name="author"/>
-<style>
-    body {
-  background: url('assets/img/geisel.jpg') no-repeat center center fixed no-repeat center center fixed;
-  background-size: cover;
-  background-color: rgba(255, 255, 255, 0.6);
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  color: #0f172a;
-}
-    header {
-      text-align: center;
-      padding: 2rem;
-      background: rgba(255, 255, 255, 0.8);
-    }
-    header img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      border: 4px solid #38bdf8;
-      object-fit: cover;
-      margin-bottom: 1rem;
-    }
-    h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    nav {
-      position: sticky;
-      top: 0;
-      background: rgba(255,255,255,0.95);
-      padding: 1rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    nav a {
-      margin: 0 1rem;
-      color: #0077b6;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      background: #ffffffcc;
-      padding: 2rem;
-      border-radius: 12px;
-    }
-    h2 {
-      color: #0077b6;
-    }
-    .skill-bar {
-      margin: 1rem 0;
-    }
-    .skill-bar-label {
-      font-weight: bold;
-    }
-    .bar {
-      width: 100%;
-      background: #caf0f8;
-      height: 18px;
-      border-radius: 8px;
-      overflow: hidden;
-    }
-    .bar-fill {
-      height: 100%;
-      background: linear-gradient(to right, #00b4d8, #0077b6);
-      width: 0;
-      transition: width 1.5s ease-in-out;
-    }
-    details {
-      margin: 1rem 0;
-    }
-    .card {
-      background: white;
-      border-radius: 8px;
-      padding: 1rem;
-      margin-top: 1rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .card a {
-      color: #0077b6;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  
-    .card:hover {
-        transform: scale(1.03);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    }
-    .bar-fill:hover {
-        filter: brightness(1.2);
-        transition: filter 0.3s ease;
-    }
-    
-h2 {
-  font-size: 1.75rem;
-  color: #0077b6;
-  text-align: center;
-  font-family: 'Segoe UI', sans-serif;
-}
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Divya Prabhu | Translational Scientist & Bioengineer</title>
+<meta name="description" content="Divya Prabhu, translational scientist and bioengineer specializing in iPSC disease modeling, advanced imaging, and drug discovery pipelines. Portfolio of research, projects, and publications." />
+<meta name="keywords" content="Divya Prabhu, bioengineer, translational science, iPSC, microscopy, FLIM, Gladstone Institutes, UC San Diego, drug discovery, portfolio" />
+<meta name="author" content="Divya Prabhu" />
+<meta property="og:title" content="Divya Prabhu | Translational Scientist & Bioengineer" />
+<meta property="og:description" content="iPSC disease modeling, advanced imaging, and drug discovery. Explore an interactive tour of research, projects, and experience." />
+<meta property="og:type" content="website" />
+<meta name="theme-color" content="#080c16" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
 
-
-section p, section li {
-  font-size: 1.05rem;
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-}
-
-.quote {
-  font-style: italic;
-}
-
-
-.quick-stats {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  font-size: 1.05rem;
-  font-family: 'Segoe UI', sans-serif;
-  text-align: center;
-  gap: 1rem;
-}
-.quick-stats div {
-  flex: 1;
-  min-width: 120px;
-}
-
-
-@media (max-width: 768px) {
-  .slider-container {
-    height: auto !important;
-  }
-
-  #testimonial-container {
-    height: auto !important;
-  }
-
-  .testimonial {
-    position: relative !important;
-    opacity: 1 !important;
-    margin-bottom: 1.5rem;
-  }
-}
-
-
-
-li {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-  font-size: 1.05rem;
-}
-
-</style>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-      document.addEventListener('DOMContentLoaded', function () {
-        AOS.init({ once: true });
-      });
-    </script>
-<!-- Google Analytics -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-JWZYC701YN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-JWZYC701YN');
-</script>
-<style>
-  body {
-    margin: 0;
-    padding: 0;
-  }
-  section, .container {
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  h1, h2, h3 {
-    word-break: break-word;
-  }
-  @media (max-width: 768px) {
-    h1 { font-size: 28px; }
-    h2 { font-size: 22px; }
-    .skills-grid, .project-cards, .testimonial-slider, .blog-cards {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .blog-cards > div,
-    .testimonial-card,
-    .project-card {
-      width: 100% !important;
-    }
-    .contact-icons,
-    .social-links {
-      flex-direction: column;
-      gap: 12px;
-    }
-    input, textarea, button {
-      font-size: 16px !important;
-    }
-  }
-
-h2 {
-  font-size: 1.75rem;
-  color: #0077b6;
-  text-align: center;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-
-section p, section li {
-  font-size: 1.05rem;
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-}
-
-.quote {
-  font-style: italic;
-}
-
-
-.quick-stats {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  font-size: 1.05rem;
-  font-family: 'Segoe UI', sans-serif;
-  text-align: center;
-  gap: 1rem;
-}
-.quick-stats div {
-  flex: 1;
-  min-width: 120px;
-}
-
-
-@media (max-width: 768px) {
-  .slider-container {
-    height: auto !important;
-  }
-
-  #testimonial-container {
-    height: auto !important;
-  }
-
-  .testimonial {
-    position: relative !important;
-    opacity: 1 !important;
-    margin-bottom: 1.5rem;
-  }
-}
-
-
-
-li {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-  font-size: 1.05rem;
-}
-
-</style>
-<style>
-  @media (max-width: 768px) {
-    .swiper-slide {
-      max-height: 500px !important;
-      overflow-y: auto !important;
-      padding-right: 10px;
-      box-sizing: border-box;
-    }
-
-    .testimonial {
-      max-height: 500px !important;
-      overflow-y: auto !important;
-      padding-right: 10px;
-      box-sizing: border-box;
-    }
-
-    .swiper-slide::-webkit-scrollbar,
-    .testimonial::-webkit-scrollbar {
-      width: 6px;
-    }
-
-    .swiper-slide::-webkit-scrollbar-thumb,
-    .testimonial::-webkit-scrollbar-thumb {
-      background-color: #bbb;
-      border-radius: 3px;
-    }
-  }
-
-h2 {
-  font-size: 1.75rem;
-  color: #0077b6;
-  text-align: center;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-
-section p, section li {
-  font-size: 1.05rem;
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-}
-
-.quote {
-  font-style: italic;
-}
-
-
-.quick-stats {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  font-size: 1.05rem;
-  font-family: 'Segoe UI', sans-serif;
-  text-align: center;
-  gap: 1rem;
-}
-.quick-stats div {
-  flex: 1;
-  min-width: 120px;
-}
-
-
-@media (max-width: 768px) {
-  .slider-container {
-    height: auto !important;
-  }
-
-  #testimonial-container {
-    height: auto !important;
-  }
-
-  .testimonial {
-    position: relative !important;
-    opacity: 1 !important;
-    margin-bottom: 1.5rem;
-  }
-}
-
-
-
-li {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-  font-size: 1.05rem;
-}
-
-</style>
-<style>
-  .sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 280px;
-    height: 100%;
-    background: linear-gradient(145deg, #0f2027, #203a43, #2c5364);
-    color: white;
-    padding: 2rem 1.5rem;
-    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 1.1rem;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    display: none;
-    flex-direction: column;
-    gap: 1rem;
-    z-index: 999;
-  }
-
-  .sidebar a {
-    color: #f0f0f0;
-    text-decoration: none;
-    transition: color 0.3s, transform 0.3s;
-  }
-
-  .sidebar a:hover {
-    color: #00c3ff;
-    transform: translateX(5px);
-  }
-
-  .sidebar-close {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-    align-self: flex-end;
-    margin-bottom: 2rem;
-  }
-
-  @media (max-width: 768px) {
-    .sidebar {
-      width: 80%;
-    }
-  }
-  .sidebar.active {
-    display: flex;
-  }
-
-
-li {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-  font-size: 1.05rem;
-}
-
-</style>
-</meta>
-<style>
-.timeline-entry {
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 30px;
-}
-.timeline-marker {
-  position: absolute;
-  left: 0;
-  top: 8px;
-  width: 14px;
-  height: 14px;
-  background-color: #ffffff;
-  border: 3px solid #3078b8;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-
-li {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-  font-size: 1.05rem;
-}
-
-</style>
-<style>
-@media (max-width: 768px) {
-  nav {
-    display: none;
-  }
-}
-
-
-li {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-  font-size: 1.05rem;
-}
-
-</style>
-
-<style>
-@media (max-width: 768px) {
-  #hamburger {
-    display: block;
-  }
-}
-
-
-li {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-  font-size: 1.05rem;
-}
-
-</style>
-<script>
-function toggleSidebar() {
-  const sidebar = document.getElementById("sidebar");
-  if (sidebar) {
-    sidebar.classList.toggle("active");
-  }
-}
-</script>
-
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link rel="stylesheet" href="css/style.css" />
 </head>
-<body style="background: url('assets/img/geisel.jpg') no-repeat center center fixed; background-size: cover;">
-<div id="hamburger" onclick="toggleSidebar()" style="display:none; position:fixed; top:15px; left:15px; z-index:1001; font-size:28px; cursor:pointer;">
-  ☰
+<body>
+
+<div id="loader" aria-hidden="true"><div class="loader-dna"><span></span><span></span><span></span><span></span><span></span></div></div>
+
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+<div class="cursor-glow" id="glow"></div>
+<div class="cursor-dot" id="dot"></div>
+
+<div class="scroll-ring" id="scrollRing" title="Scroll to top">
+  <svg width="46" height="46"><circle class="bg" cx="23" cy="23" r="19"/><circle class="fg" id="ringFg" cx="23" cy="23" r="19"/></svg>
+  <i class="fa-solid fa-arrow-up" id="ringIcon"></i>
 </div>
-<div style="background-color: rgba(255,255,255,0.65); padding: 0; margin: 0;">
-<header>
-<img alt="Divya Prabhu" src="divyaportfoliodp.jpg"/>
-<div style="text-align: center; font-size: 1.1rem; color: #333; margin-top: 20px;">
-<div><strong>City:</strong> San Francisco, California, United States</div>
-<div><strong>Major:</strong> Bioengineering</div>
-<div><strong>Degree:</strong> Masters</div>
-</div>
-<h1>Divya Prabhu</h1>
-<div id="typing" style="font-size: 1.1rem; color: #0077b6; height: 28px;"></div>
+
+<header class="site-header">
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="brand">DP<span class="brand-dot">.</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#demo" class="nav-link">Cell Demo</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#publications" class="nav-link">Publications</a></li>
+      <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark/light theme" title="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+      <a href="Divya_Prabhu_Resume.pdf" class="btn btn-outline nav-resume" download><i class="fa-solid fa-download"></i> Resume</a>
+      <button id="nav-toggle" class="icon-btn nav-burger" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </nav>
 </header>
-<section data-aos="fade-up" id="stats" style="text-align:center; padding:2rem 0;">
-<h2>Quick Stats</h2>
-<div class="quick-stats">
-<div><strong id="projectsCount">0</strong><br/>Projects</div>
-<div><strong id="yearsExp">0</strong><br/>Years Experience</div>
-<div><strong id="publications">0</strong><br/>Publications</div>
-<div><strong id="blogsCount">4</strong><br/>Blogs</div><div><strong id="postersCount">1</strong><br/>Poster Presentations
 
+<main id="home">
 
-</div></div>
-</section>
-<style>
-  nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    padding: 1rem 0;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    backdrop-filter: blur(10px);
-  }
-  nav div {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-  }
-  nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 600;
-    transition: color 0.3s, transform 0.3s;
-  }
-  nav a:hover {
-    color: #007acc;
-    transform: scale(1.05);
-  }
-
-
-li {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-  font-size: 1.05rem;
-}
-
-</style>
-<nav>
-<div>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#blog">Blogs</a>
-<a href="#resume">Resume</a>
-<a href="#certifications">Certifications</a>
-<a href="#publication">Publications</a>
-<a href="#achievements">Achievements</a>
-<a href="#testimonials">Testimonials</a>
-<a href="#contact">Contact</a>
-</div>
-</nav>
-<section data-aos="fade-up" id="about">
-<h2>About Me</h2>
-<p>I am a translational scientist with 5+ years of experience bridging discovery research and therapeutic development. My expertise spans metabolic disease modeling, iPSC-derived cell systems, and in vivo pharmacology, skill sets directly applicable to drug discovery, target validation, and preclinical development in biopharma.</p>
-<p>I have worked across the full research lifecycle: from identifying disease mechanisms (Type 2 Diabetes beta-cell dysfunction, pancreatic cancer tumor microenvironment) to building high-throughput analysis pipelines that accelerate decision-making. At Gladstone Institutes, I develop iPSC-based disease models for neurodegeneration. Previously at UC San Diego, I characterized metabolic heterogeneity using advanced imaging and built automated MATLAB/ImageJ pipelines that improved analysis accuracy by 80%.</p>
-<p>What sets me apart is my dual background in hands-on bench science and cross-functional project management. At Krishagni Solutions, I deployed lab informatics systems for 30+ global research institutions, managing regulatory compliance, workflow automation, and stakeholder alignment, skills critical for navigating matrixed biopharma environments.</p>
-<p>What makes me unique is my ability to speak both languages: rigorous experimental science and scalable, product-driven strategy. At Krishagni Solutions, I deployed research informatics platforms for institutions across three continents, aligning clinical workflows, biospecimen automation, and compliance with international standards.</p>
-<p>I thrive in fast-paced, collaborative settings where scientific rigor meets business impact. Whether it's optimizing assay development, troubleshooting complex workflows, or learning new platform technologies, I adapt quickly and deliver results.</p>
-<p>I am seeking Research Associate, Scientist I/II, or Associate Scientist roles in biopharma/biotech where I can contribute to drug discovery, target validation, cellular therapeutics, or platform technology development across oncology, metabolic disease, immunology, or neuroscience.</p>
-</section>
-<section data-aos="fade-up" id="skills">
-<h2>Top Skills</h2>
-<div class="skill-bar">
-<div class="skill-bar-label">iPSC Culture & Differentiation</div>
-<div class="bar"><div class="bar-fill" style="width:90%"></div></div>
-</div>
-<div class="skill-bar">
-<div class="skill-bar-label">Advanced Microscopy (Confocal, FLIM, Live-Cell)</div>
-<div class="bar"><div class="bar-fill" style="width:95%"></div></div>
-</div>
-<div class="skill-bar">
-<div class="skill-bar-label">In Vivo Pharmacology (Transgenic & Xenograft Models)</div>
-<div class="bar"><div class="bar-fill" style="width:92%"></div></div>
-</div>
-<div class="skill-bar">
-<div class="skill-bar-label">Data Analysis & Automation (MATLAB, Python, ImageJ)</div>
-<div class="bar"><div class="bar-fill" style="width:95%"></div></div>
-</div>
-<div class="skill-bar">
-<div class="skill-bar-label">Cross-Functional Project Management</div>
-<div class="bar"><div class="bar-fill" style="width:95%"></div></div>
-</div>
-<details>
-<summary><strong>DRUG DISCOVERY & TARGET VALIDATION</strong></summary>
-<ul><p><li>Disease modeling (Type 2 Diabetes, neurodegeneration, oncology)</li></p>
-<p><li>Functional assays (calcium imaging, flow cytometry, ELISA)</li></p>
-<p><li>Target engagement studies (Western blot, qPCR, immunofluorescence)</li></p>
-<p><li>Phenotypic screening readouts (high-content imaging, live-cell imaging)</li></p>
-<p><li>Mechanism of action studies (siRNA knockdowns, co-culture assays)</li></p></ul>
-</details>
-<details>
-<summary><strong>CELL-BASED PLATFORMS</strong></summary>
-<ul><p><li>iPSC culture & directed differentiation (neurons, microglia, monocytes)</li></p>
-<p><li>Primary cell isolation (islets, PBMCs, fibroblasts)</li></p>
-<p><li>Co-culture systems & 3D models</li></p>
-<p><li>Cell line engineering (viral transduction, CRISPRi)</li></p>
-<p><li>Assay development & optimization for screening</li></p></ul>
-</details>
-<details>
-<summary><strong>IN VIVO PHARMACOLOGY & DISEASE MODELS</strong></summary>
-<ul><p><li>Transgenic mouse models (GCaMP6, disease-specific lines)</li></p>
-<p><li>Xenograft tumor models</li></p>
-<p><li>In vivo dosing & sample collection</li></p>
-<p><li>Tissue processing & biomarker analysis (IHC, flow cytometry)</li></p>
-<p><li>Pharmacodynamic endpoint assessment</li></p></ul>
-</details>
-<details>
-<summary><strong>ANALYTICAL TECHNIQUES</strong></summary>
-<ul><p><li>Advanced microscopy: Confocal, FLIM, FRAP, multiphoton, robotic imaging</li></p>
-<p><li>Molecular biology: PCR/qPCR, Western blot, ELISA, gel electrophoresis</li></p></ul>
-</details>
-<details>
-<summary><strong>DATA ANALYSIS & AUTOMATION</strong></summary>
-<ul><p><li>High-throughput image analysis (MATLAB, ImageJ, Imaris)</li></p>
-<p><li>Statistical modeling (GraphPad Prism, R, Python)</li></p>
-<p><li>Pipeline development for automated data processing</li></p>
-<p><li>Database management (LIMS/ELN systems)</li></p>
-<p><li>Visualization & reporting (Power BI, Excel dashboards)</li></p></ul>
-</details>
-<details>
-<summary><strong>PROJECT MANAGEMENT & CROSS-FUNCTIONAL COLLABORATION</strong></summary>
-<ul><p><li>Agile project management (JIRA, Confluence)</li></p>
-<p><li>Regulatory compliance (GCP, GMP, FDA standards, HIPAA)</li></p>
-<p><li>SOP development & technical documentation</li></p>
-<p><li>Vendor management & technology transfer</li></p>
-<p><li>Training & knowledge sharing across teams</li></p></ul>
-</details>
-</section>
-<section id="projects" style="padding: 60px 20px; background-color: #f4f4f4; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-<div style="max-width: 800px; margin: auto;">
-<h2>Project Highlights</h2>
-<div class="slider-container" style="position: relative; overflow: hidden; height: 300px; margin-top: 40px;">
-<div class="slider" style="display: flex; transition: transform 0.5s ease;">
-<div class="slide" style="min-width: 100%; box-sizing: border-box; padding: 25px; background: white; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.08);">
-<h3 style="color: #3078b8;">Humidity Sensor using 8051 Microcontroller</h3>
-<p><strong style="color: #c69214;">Jul 2018 - Nov 2018</strong><br/><em>Thadomal Shahani Engineering College</em></p>
-<ul><li>Real-time RH% monitoring using 8051 microcontroller and ADC.</li></ul>
-<a href="projects.html#humidity" style="color:#0077b6; font-weight:bold;">View Full Details</a>
-</div>
-<div class="slide" style="min-width: 100%; box-sizing: border-box; padding: 25px; background: white; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.08);">
-<h3 style="color: #3078b8;">Facial Expression Detection using Convolutional Neural Networks (CNNs)</h3>
-<p><strong style="color: #c69214;">Aug 2019 - Oct 2020</strong><br/><em>Thadomal Shahani Engineering College</em></p>
-<ul><li>Developed a CNN model with 97% accuracy for emotion recognition.</li></ul>
-<a href="projects.html#cnn" style="color:#0077b6; font-weight:bold;">View Full Details</a>
-</div>
-<div class="slide" style="min-width: 100%; box-sizing: border-box; padding: 25px; background: white; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.08);">
-<h3 style="color: #3078b8;">Development & Deployment of OpenSpecimen Workflow Plug-in</h3>
-<p><strong style="color: #c69214;">Aug 2022 - Aug 2023</strong><br/><em>OpenSpecimen (UMC Utrecht)</em></p>
-<ul><li>Digitized lab workflows and compliance reporting for 100+ protocols.</li></ul>
-<a href="projects.html#biobank" style="color:#0077b6; font-weight:bold;">View Full Details</a>
-</div>
-<div class="slide" style="min-width: 100%; box-sizing: border-box; padding: 25px; background: white; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.08);">
-<h3 style="color: #3078b8;">Enhanced Modeling of CSF Flow Modulation Effects on Locally Delivered Brain Drugs</h3>
-<p><strong style="color: #c69214;">Apr 2024 - Jun 2024</strong><br/><em>UC San Diego</em></p>
-<ul><li>Modeled CSF-mediated drug transport and Temozolomide pharmacokinetics to enhance CNS delivery, achieving up to 45% improved drug exposure in glioblastoma simulations.</li></ul>
-<a href="projects.html#csf" style="color:#0077b6; font-weight:bold;">View Full Details</a>
-</div>
-<div class="slide" style="min-width: 100%; box-sizing: border-box; padding: 25px; background: white; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.08);">
-<h3 style="color: #3078b8;">First Responder Analysis for Calcium Imaging in Type 2 Diabetes Research</h3>
-<p><strong style="color: #c69214;">Jul 2024 - Dec 2024</strong><br/><em>Kravets Lab, UC San Diego</em></p>
-<ul><li>Built a MATLAB-based pipeline to automate calcium imaging analysis in islet β-cells, enhancing detection of dysregulated GSIS responses and accelerating T2D dysfunction profiling.</li></ul>
-<a href="projects.html#beta" style="color:#0077b6; font-weight:bold;">View Full Details</a>
-</div>
-<div class="slide" style="min-width: 100%; box-sizing: border-box; padding: 25px; background: white; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.08);">
-<h3 style="color: #3078b8;">Integrating calcium dynamics and NAD(P)H metabolism to study β-cell dysfunction in Type 2 Diabetes (T2D)</h3>
-<p><strong style="color: #c69214;">Aug 2024 - Aug 2025</strong><br/><em>Kravets Lab, UC San Diego</em></p>
-<ul><li>Studied how differences in β-cell calcium responses affect insulin secretion and metabolism, identifying early dysfunction under lipotoxic conditions. </li></ul>
-<a href="projects.html#cal" style="color:#0077b6; font-weight:bold;">View Full Details</a>
-</div>
-<div class="slide" style="min-width: 100%; box-sizing: border-box; padding: 25px; background: white; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.08);">
-<h3 style="color: #3078b8;">RAN Vasculo x Venture Fellows</h3>
-<p><strong style="color: #c69214;">Apr 2025 - Jun 2025</strong><br/><em>Kravets Lab, UC San Diego</em></p>
-<ul><li>Analyzed the thrombectomy device market to identify growth opportunities and unmet clinical needs, while mapping regulatory pathways and competitive positioning.</li></ul>
-<a href="projects.html#ran" style="color:#0077b6; font-weight:bold;">View Full Details</a>
-</div>
-</div>
-</div>
-<div style="text-align:center; margin-top: 20px;">
-<button onclick="plusSlide(-1)" style="margin-right: 10px; padding: 8px 16px;">←</button>
-<button onclick="plusSlide(1)" style="padding: 8px 16px;">→</button>
-<div id="slide-indicator" style="text-align:center; margin-top: 10px; font-weight: bold; color: #333;">1/4</div>
-</div>
-</div>
-</section>
-<script>
-  let currentSlide = 0;
-  function showSlide(index) {
-    const slider = document.querySelector('.slider');
-    const slides = document.querySelectorAll('.slide');
-    if (index >= slides.length) currentSlide = 0;
-    else if (index < 0) currentSlide = slides.length - 1;
-    else currentSlide = index;
-    slider.style.transform = 'translateX(' + (-currentSlide * 100) + '%)';
-    const indicator = document.getElementById('slide-indicator');
-    if (indicator) {
-      indicator.textContent = (currentSlide + 1) + '/' + document.querySelectorAll('.slide').length;
-    }
-  }
-  function plusSlide(n) {
-    showSlide(currentSlide + n);
-  }
-  window.addEventListener('DOMContentLoaded', () => {
-    showSlide(0);
-  });
-</script>
-<script>
-  let currentSlide = 0;
-  function showSlide(index) {
-    const slider = document.querySelector('.slider');
-    const slides = document.querySelectorAll('.slide');
-    if (index >= slides.length) currentSlide = 0;
-    else if (index < 0) currentSlide = slides.length - 1;
-    else currentSlide = index;
-    slider.style.transform = 'translateX(' + (-currentSlide * 100) + '%)';
-    const indicator = document.getElementById('slide-indicator');
-    if (indicator) {
-      indicator.textContent = (currentSlide + 1) + '/' + document.querySelectorAll('.slide').length;
-    }
-  }
-  function plusSlide(n) {
-    showSlide(currentSlide + n);
-  }
-  window.addEventListener('DOMContentLoaded', () => {
-    showSlide(0);
-  });
-</script>
-<style>
-  .fade-in-card {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 1s ease forwards;
-  }
-
-  @keyframes fadeInUp {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-h2 {
-  font-size: 1.75rem;
-  color: #0077b6;
-  text-align: center;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-
-section p, section li {
-  font-size: 1.05rem;
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-}
-
-.quote {
-  font-style: italic;
-}
-
-
-.quick-stats {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  font-size: 1.05rem;
-  font-family: 'Segoe UI', sans-serif;
-  text-align: center;
-  gap: 1rem;
-}
-.quick-stats div {
-  flex: 1;
-  min-width: 120px;
-}
-
-
-@media (max-width: 768px) {
-  .slider-container {
-    height: auto !important;
-  }
-
-  #testimonial-container {
-    height: auto !important;
-  }
-
-  .testimonial {
-    position: relative !important;
-    opacity: 1 !important;
-    margin-bottom: 1.5rem;
-  }
-}
-
-
-
-li {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-  font-size: 1.05rem;
-}
-
-</style>
-<section id="blog" style="padding: 60px 20px; background-color: #f4f4f4;">
-<div style="max-width: 1000px; margin: auto;">
-<h2>Blog Highlights</h2>
-<div class="blog-section">
-<div class="blog-card">
-<h3>Microbiome Biobanks – Challenges and Opportunities</h3>
-<p>Microbiomes are dynamic and complex systems... preserved individually as snapshots instead of a bigger ecosystem.</p>
-<a href="https://www.openspecimen.org/microbiome-biobanks-challenges-and-opportunities/" target="_blank">Read More →</a>
-</div>
-<div class="blog-card">
-<h3>Future of Biobanking</h3>
-<p>Biobanks are acknowledged as a remarkable tool for research... disease-oriented vs population-based biobanking.</p>
-<a href="https://www.openspecimen.org/future-of-biobanking/" target="_blank">Read More →</a>
-</div>
-<div class="blog-card">
-<h3>Automation of Biobanking Activities</h3>
-<p>Biobanks empower clinical research... Automation provides economies of scale and efficiency for growing operations.</p>
-<a href="https://www.openspecimen.org/automation-of-biobanking-activities/" target="_blank">Read More →</a>
-</div>
-<div class="blog-card">
-<h3>Ethical Challenges in COVID-19 Biospecimen Research</h3>
-<p>COVID-19 biospecimen studies raise ethical concerns... crucial for life-saving treatment development and fairness.</p>
-<a href="https://www.openspecimen.org/ethical-challenges-in-covid-19-biospecimen-research/" target="_blank">Read More →</a>
-</div>
-</div>
-</div></section>
-<section id="resume" style="padding: 60px 20px;">
-<div style="text-align: center; margin: 1rem 0;">
-<a download="" href="Divya_Prabhu_Resume.pdf" style="background-color: #f6c343; color: #0f172a; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold;">
-    ⬇ Download CV
-  </a>
-
-</div>
-<h2>Resume</h2>
-<div style="display: flex; justify-content: center; gap: 50px; flex-wrap: wrap;">
-<!-- Education -->
-<div style="flex: 1; min-width: 300px;">
-<h3 style="color: #182b49; font-size: 24px;">Education</h3>
-<div class="timeline">
-<div class="timeline-entry"><div class="timeline-marker"></div>
-<div class="timeline-title"><strong style="color:#d4af37;">MASTER OF SCIENCE IN BIOENGINEERING</strong></div><div class="timeline-content"><div class="timeline-date">Sept 2023 – Aug 2025</div><div class="timeline-sub">University of California, San Diego, CA</div>
-    <p>Relevant Coursework: Biochemistry, Cell and Molecular Biology, Stem Cell Biology, Tissue and Cell Properties (Biomechanics), Patient-Centered
-Clinical Medicine for Bioengineers, Tissue Engineering and Regenerative Medicine, 
-Quantitative Cardiovascular Pathophysiology</p></div>
-</div>
-<div class="timeline-entry"><div class="timeline-marker"></div>
-<div class="timeline-title"><strong style="color:#d4af37;">BACHELOR OF ENGINEERING IN BIOMEDICAL</strong></div><div class="timeline-content"><div class="timeline-date">Aug 2016 – Oct 2020</div><div class="timeline-sub">University of Mumbai, India</div><p>Relevant Coursework: Signals and Control Systems, Medical Imaging, Hospital Management, Biomaterials, Advanced Image Processing</p></div>
-</div>
-</div>
-</div>
-<!-- Experience -->
-<div style="flex: 1; min-width: 300px;">
-<h3 style="color: #182b49; font-size: 24px;">Professional Experience</h3>
-<div class="timeline">
-    
-<div class="timeline-entry"><div class="timeline-marker"></div>
-<div class="timeline-title"><strong style="color:#d4af37;">Research Associate III</strong></div><div class="timeline-content"><div class="timeline-date">Oct 2025 – Present</div><div class="timeline-sub">J. David Gladstone Institutes, San Francisco, CA</div><ul>
-<li>Model frontotemporal dementia using patient iPSC-derived cell types spanning neuronal (NPCs, iNeurons) and immune (HPCs, iMGs, monocytes) lineages to dissect cell-type-specific contributions to neurodegeneration.</li>
-<li>Execute co-culture experiments pairing iPSC neurons with microglia and monocytes to quantify inflammatory activation, phagocytosis, and neuronal toxicity across C9orf72 and TDP-43 FTD variants.</li>
-<li>Operate robotic microscopy systems to capture multi-day time-lapse imaging of iPSC differentiation (NPCs → neurons, HPCs → microglia) and neuron-glia interactions in FTD models.</li>
-<li>Optimize protocols for iPSC maintenance, directed differentiation (cortical neurons, microglia), and primary cell integration (patient fibroblasts, blood-derived monocytes) to support disease modeling screens.</li>
-</ul></div>
-</div>
-    
-<div class="timeline-entry"><div class="timeline-marker"></div>
-<div class="timeline-title"><strong style="color:#d4af37;">Research Associate</strong></div><div class="timeline-content"><div class="timeline-date">Apr 2024 – Aug 2025</div><div class="timeline-sub">Kravets Lab, UC San Diego, CA</div><ul>
-<li>Characterized beta-cell heterogeneity in Type 2 Diabetes using FLIM and calcium imaging across 20+ mouse samples, revealing distinct metabolic subpopulations linked to insulin secretion patterns.</li>
-<li>Mapped immune-islet interactions in Type 1 Diabetes using spatial transcriptomics and 4D confocal imaging, identifying 3 novel mechanisms of autoimmune destruction.</li>
-<li>Developed MATLAB/ImageJ pipelines to extract calcium oscillation dynamics from 50+ tissue slices, improving analysis accuracy by 80% and enabling high-throughput quantification of beta-cell activity.</li>
-<li>Standardized experimental workflows for islet isolation, staining, and IF imaging across transgenic mouse models and human islets, boosting reproducibility and data quality across multi-modal datasets.</li>
-</ul></div>
-</div>
-<div class="timeline-entry"><div class="timeline-marker"></div>
-<div class="timeline-title"><strong style="color:#d4af37;">Research Associate</strong></div><div class="timeline-content"><div class="timeline-date">Jan 2024 – Mar 2024</div><div class="timeline-sub">Cheresh Lab, UC San Diego, CA</div><ul>
-<li>Investigated tumor-stroma signaling in pancreatic cancer by analyzing LPAR4 and fibronectin expression via flow cytometry, western blotting, and gel electrophoresis, uncovering key regulators of ECM remodeling and metastasis.</li>
-<li>Designed and executed tumor–fibroblast co-culture assays with siRNA knockdowns and IF imaging, revealing novel fibroblast-mediated mechanisms driving tumor invasion and chemoresistance.</li>
-<li>Conducted in vivo studies using xenograft and transgenic mouse models; applied AFM and IHC to assess ECM stiffness and biomarker profiles, contributing to the development of anti-stromal therapeutic strategies.</li>
-<li>Streamlined experimental workflows by integrating high-content imaging, transcriptomic profiling, and protein quantification tools, enhancing data reproducibility and accelerating project timelines by 30%.</li>
-</ul></div>
-</div>
-<div class="timeline-entry"><div class="timeline-marker"></div>
-<div class="timeline-title"><strong style="color:#d4af37;">Product Manager</strong></div><div class="timeline-content"><div class="timeline-date">Jul 2020 – Aug 2023</div><div class="timeline-sub">Krishagni Solutions Private Limited (OpenSpecimen LIMS), India</div><ul>
-<li>Deployed 30+ LIMS/ELN integrations for oncology and metabolic disease research, reducing specimen tracking errors by 75% and improving regulatory compliance.</li>
-<li>Managed 20+ cross-functional projects integrating LIMS, ELN, and EDC tools, enhancing data quality, research reproducibility, and clinical workflow alignment.</li>
-<li>Led system design, testing, and feature validation cycles, contributing to key releases with minimal errors; authored 40+ technical documents and SOPs used globally as internal knowledge bases and user guides.</li>
-<li>Built and mentored a 4-member team; conducted 50+ client training sessions and implemented JIRA-based analytics dashboards, enabling real-time decision-making, reducing turnaround time, and driving adoption of lab informatics platforms.</li>
-</ul></div>
-</div>
-<div class="timeline-entry"><div class="timeline-marker"></div>
-<div class="timeline-title"><strong style="color:#d4af37;">Research Intern</strong></div><div class="timeline-content"><div class="timeline-date">Jun 2020 – Jul 2020</div><div class="timeline-sub">Center for Innovation and Bio-Design (CIBioD), India</div><ul>
-<li>Optimized manufacturing workflows for diabetes-related products, implementing three innovative solutions that enhanced production efficiency and product quality in a translational diabetes research project.</li>
-<li>Conducted research on Type 1 and Type 2 diabetes, analyzing neurological complications and metabolic dysfunction, contributing to novel insights into disease progression and management strategies.</li>
-<li>Led a cross-functional team to design and deploy a machine learning-based diabetes prediction platform, achieving a 48.97% improvement in diagnostic accuracy, enhancing early detection, and patient risk stratification.</li>
-</ul></div>
-</div>
-<div class="timeline-entry"><div class="timeline-marker"></div>
-<div class="timeline-title"><strong style="color:#d4af37;">Biomedical Engineering Intern</strong></div><div class="timeline-content"><div class="timeline-date">Dec 2018 – Jan 2019</div><div class="timeline-sub">Holy Family Hospital, India</div><ul>
-<li>Partnered with senior engineers to troubleshoot, repair, and maintain critical medical devices across radiology, ICU, and surgical units, ensuring 100% compliance with GMP, FDA, and hospital safety regulations, directly enhancing patient care and operational efficiency.</li>
-<li>Led validation and fixture development projects for diagnostic imaging systems, ventilators, infusion pumps, and surgical tools, improving device reliability and performance for life-saving procedures.</li>
-<li>Executed hands-on troubleshooting and precision calibration of high-risk medical equipment, ensuring optimal functionality, compliance with safety standards, and uninterrupted clinical operations.</li>
-<li>Applied LabVIEW, SolidWorks, and Minitab to conduct Design of Experiments (DOE), Measurement System Analysis (MSA), and technical documentation, driving data-backed optimizations in medical device performance and regulatory compliance.</li>
-</ul></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="certifications" style="padding: 60px 20px;">
-<h2>Certifications</h2>
-<div style="max-width: 800px; margin: auto;">
-<ul style="list-style: none; padding: 0; font-size: 16px; line-height: 1.8;">
-<li>Aerosol Transmissible Disease Pathogens Refresher</li>
-<li>Annual Laboratory Hazards Training</li>
-<li>Biosafety: Bloodborne Pathogens Training and Annual Refresher</li>
-<li>Laboratory Safety Refresher</li>
-<li>HIPAA Professional (HIPAAP)</li>
-<li>Medical Device Development</li>
-<li>SOLIDWORKS</li>
-<li>Good Clinical Practices (GCP)</li>
-<li>Drug Development (In Progress)</li>
-</ul>
-</div>
-</section>
-<section id="publication" style="padding: 60px 20px;">
-<h2>Publications</h2>
-<div style="max-width: 900px; margin: auto;">
-<div style="background: #ffffff; border-radius: 12px; padding: 25px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); margin-bottom: 20px;">
-<h3 style="color: #182b49; font-size: 20px; font-weight: bold;">Role of GLP1-receptor-mediated α-β-cell communication in functional β-cell heterogeneity</h3>
-<p style="font-size: 16px; color: #333;">
-        This study explores how GLP-1R mediated signaling between α and β cells impacts islet function and subpopulation behavior...
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-kicker fade-up"><span class="pulse-dot"></span> Open to Research Associate / Scientist I‑II roles</p>
+      <h1 class="hero-title fade-up" style="--d:0.05s">Hi, I'm <span class="text-gradient">Divya Prabhu</span></h1>
+      <p class="hero-role fade-up" style="--d:0.12s"><span class="typewriter" id="typewriter"></span><span class="cursor">|</span></p>
+      <p class="hero-desc fade-up" style="--d:0.18s">
+        I'm a translational scientist bridging <strong>discovery research</strong> and <strong>therapeutic development</strong>.
+        At Gladstone Institutes, I model neurodegeneration using patient-derived neurons grown without an iPSC stage,
+        and previously worked on metabolic disease imaging at UC San Diego. Scroll down: part of this portfolio actually <em>fires like a β‑cell</em>.
       </p>
-<a href="https://doi.org/10.1101/2025.04.25.650736" style="color: #3078b8; font-weight: bold; font-size: 16px; text-decoration: none;" target="_blank">Read More →</a>
-</div>
-</div>
-</section>
-<style>
-body { font-family: 'Segoe UI', sans-serif; }
-.timeline {
-  position: relative;
-  border-left: 3px solid #3078b8;
-  margin-top: 20px;
-  padding-left: 25px;
-}
-.timeline-entry {
-  margin-bottom: 30px;
-  position: relative;
-}
-.timeline-entry::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: -9px;
-  width: 14px;
-  height: 14px;
-  background-color: #ffffff;
-  border: 3px solid #3078b8;
-  border-radius: 50%;
-  z-index: 1;
-}
-  content: "";
-  position: absolute;
-  left: -11px;
-  top: 5px;
-  width: 12px;
-  height: 12px;
-  background-color: #ffffff;
-  border: 3px solid #3078b8;
-  border-radius: 50%;
-}
-.timeline-title {
-  font-weight: bold;
-  font-size: 16px;
-  color: #182b49;
-}
-.timeline-date {
-  background-color: #e4ebf3;
-  display: inline-block;
-  padding: 3px 10px;
-  margin: 5px 0;
-  font-weight: bold;
-  font-size: 14px;
-}
-.timeline-sub {
-  font-style: italic;
-  margin-bottom: 6px;
-}
-.timeline-entry p, .timeline-entry ul {
-  font-size: 14px;
-  margin: 5px 0 0 0;
-  padding-left: 15px;
-}
+      <div class="hero-actions fade-up" style="--d:0.24s">
+        <a href="#demo" class="btn btn-primary"><i class="fa-solid fa-bolt"></i> Try the cell demo</a>
+        <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+      </div>
+      <div class="hero-stats fade-up" style="--d:0.3s">
+        <div class="stat"><span class="stat-num" data-count="7">0</span><span class="stat-label">Research Projects</span></div>
+        <div class="stat"><span class="stat-num" data-count="5" data-suffix="+">0</span><span class="stat-label">Years Experience</span></div>
+        <div class="stat"><span class="stat-num" data-count="1">0</span><span class="stat-label">Publications</span></div>
+        <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-label">Blog Features</span></div>
+        <div class="stat"><span class="stat-num" data-count="30" data-suffix="+">0</span><span class="stat-label">Institutions Deployed</span></div>
+      </div>
+    </div>
+    <div class="hero-portrait fade-up" style="--d:0.15s">
+      <div class="portrait-ring"><img src="divyaportfoliodp.jpg" alt="Portrait of Divya Prabhu" /></div>
+    </div>
+    <a href="#about" class="scroll-cue" aria-label="Scroll down"><i class="fa-solid fa-chevron-down"></i></a>
+  </section>
 
-.timeline-entry {
-  animation: fadeSlideIn 0.8s ease forwards;
-  opacity: 0;
-  transform: translateY(20px);
-}
-.timeline-entry:nth-child(1) { animation-delay: 0.2s; }
-.timeline-entry:nth-child(2) { animation-delay: 0.4s; }
-.timeline-entry:nth-child(3) { animation-delay: 0.6s; }
-.timeline-entry:nth-child(4) { animation-delay: 0.8s; }
-.timeline-entry:nth-child(5) { animation-delay: 1s; }
+  <!-- ================= ABOUT ================= -->
+  <section id="about" class="section">
+    <div class="section-head reveal"><span class="section-tag">01 · About</span><h2>Scientist, engineer, translator between bench and business</h2></div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>My work sits across the bench and the pipeline: 5+ years spanning metabolic disease modeling, neurodegeneration, and the imaging-heavy workflows that turn raw data into biological answers, skills that map directly onto drug discovery, target validation, and preclinical development in biopharma.</p>
 
-@keyframes fadeSlideIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+        <div class="now-card reveal">
+          <span class="now-tag"><span class="pulse-dot"></span> Currently, at Gladstone Institutes</span>
+          <p>I'm deep-phenotyping transdifferentiated neurons ("t-neurons") derived directly from patient fibroblasts to study Parkinson's Disease, converting skin cells into neurons without passing through an iPSC stage. This preserves aging-associated epigenetic signatures that iPSC reprogramming tends to erase, making it a stronger model for late-onset neurodegeneration. Using a panel of live-cell biosensors, I track lysosomal function, α-synuclein turnover, and mitochondrial and neuronal health in these neurons over time by robotic microscopy.</p>
+        </div>
 
-h2 {
-  font-size: 1.75rem;
-  color: #0077b6;
-  text-align: center;
-  font-family: 'Segoe UI', sans-serif;
-}
+        <p>Previously at UC San Diego, I characterized metabolic heterogeneity using advanced imaging and built automated MATLAB/ImageJ pipelines that improved analysis accuracy by <strong>80%</strong>, while identifying disease mechanisms in Type 2 diabetes β-cell dysfunction and pancreatic cancer.</p>
+        <p>Before the bench, I spent three years in lab informatics product management, deploying LIMS/ELN systems for <strong>30+ research institutions</strong> across three continents and owning regulatory compliance, workflow automation, and stakeholder alignment. That combination of rigorous experimental science plus scalable, product-driven execution is what I bring to fast-paced biopharma teams.</p>
+        <div class="about-tags reveal"><span>Disease Modeling</span><span>Advanced Microscopy</span><span>In Vivo Pharmacology</span><span>Pipeline Automation</span><span>Cross-functional PM</span></div>
+      </div>
+      <div class="about-side reveal">
+        <div class="info-card">
+          <div class="info-row"><i class="fa-solid fa-location-dot"></i> South San Francisco, CA</div>
+          <div class="info-row"><i class="fa-solid fa-graduation-cap"></i> M.S. Bioengineering, UC San Diego</div>
+          <div class="info-row"><i class="fa-solid fa-microscope"></i> Research Associate III, Gladstone Institutes</div>
+          <div class="info-row"><i class="fa-solid fa-bullseye"></i> Targeting Research Associate / Scientist I‑II roles</div>
+        </div>
+        <blockquote class="pull-quote">"What makes me distinctive is speaking two languages fluently: rigorous experimental science, and scalable, product-driven strategy."</blockquote>
+      </div>
+    </div>
+  </section>
 
+  <!-- ================= SIGNATURE DEMO ================= -->
+  <section id="demo" class="section alt">
+    <div class="section-head reveal">
+      <span class="section-tag">02 · Interactive Demo</span>
+      <h2>Click a cell. Watch it respond.</h2>
+      <p class="section-sub">Two playable models pulled straight from my actual research: an islet model from my diabetes thesis work, and a neuron model from my current Parkinson's work. Switch between them below.</p>
+    </div>
 
-section p, section li {
-  font-size: 1.05rem;
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-}
+    <div class="demo-mode-toggle reveal">
+      <button class="mode-btn active" data-mode="t2d">Islet · Type 2 Diabetes</button>
+      <button class="mode-btn" data-mode="pd">Neuron · Parkinson's Disease</button>
+    </div>
 
-.quote {
-  font-style: italic;
-}
+    <!-- ---- Islet / T2D view ---- -->
+    <div class="demo-panel reveal" id="isletView">
+      <div class="demo-top">
+        <div class="demo-stats">
+          <div><b id="statFired">0</b><span>β-cells fired</span></div>
+          <div><b id="statWaves">0</b><span>Waves triggered</span></div>
+          <div><b id="statLatency">–</b><span>Last latency (ms)</span></div>
+        </div>
+        <button class="btn btn-outline" id="resetDemo"><i class="fa-solid fa-rotate-left"></i> Reset</button>
+      </div>
 
+      <div class="cell-legend">
+        <span><i class="dot" style="background:#4ade80"></i> β-cell (insulin+) · <span id="countBeta">–</span></span>
+        <span><i class="dot" style="background:#fb7185"></i> α-cell (glucagon+) · <span id="countAlpha">–</span></span>
+      </div>
 
-.quick-stats {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  font-size: 1.05rem;
-  font-family: 'Segoe UI', sans-serif;
-  text-align: center;
-  gap: 1rem;
-}
-.quick-stats div {
-  flex: 1;
-  min-width: 120px;
-}
+      <div class="cell-grid" id="cellGrid"></div>
+      <p class="demo-status" id="demoStatus">Click a green β-cell to trigger a calcium wave, or a red α-cell to see why it doesn't join in.</p>
+      <p class="demo-caption">Modeled on two parts of my actual thesis work: MATLAB-based local-minima detection to classify β-cell calcium response timing, and immunofluorescence (anti-insulin / anti-glucagon) to tell α- and β-cells apart within the same islet.</p>
 
+      <div class="demo-divider"><span>Where this data actually comes from</span></div>
+      <p class="demo-subtext">Drag the slider to move through time and see amplitude differ across responder classes: this is the real read-out behind the β-cell heterogeneity classification the wave above is modeling.</p>
+      <div class="data-card">
+        <canvas id="calciumChart" width="700" height="260"></canvas>
+        <div class="scrub-row">
+          <i class="fa-solid fa-play"></i>
+          <input type="range" id="scrub" min="0" max="39" value="0" />
+          <span class="scrub-t">t = <span id="tVal">0</span>s</span>
+        </div>
+        <div class="readout" id="readout"></div>
+        <div class="data-legend">
+          <span><i class="dot" style="background:#22d3ee"></i> First responder</span>
+          <span><i class="dot" style="background:#a78bfa"></i> Median responder</span>
+          <span><i class="dot" style="background:#f472b6"></i> Last responder</span>
+        </div>
+      </div>
+    </div>
 
-@media (max-width: 768px) {
-  .slider-container {
-    height: auto !important;
-  }
+    <!-- ---- Neuron / PD view ---- -->
+    <div class="demo-panel reveal hidden" id="neuronView">
+      <div class="demo-top">
+        <div class="demo-stats">
+          <div><b id="statDay">0</b><span>Day of conversion</span></div>
+          <div><b id="statStage">Fibroblast</b><span>Current stage</span></div>
+        </div>
+        <div class="line-toggle" id="lineToggle">
+          <button class="line-btn active" data-line="control">Control-line</button>
+          <button class="line-btn" data-line="pd">PD-line</button>
+        </div>
+      </div>
 
-  #testimonial-container {
-    height: auto !important;
-  }
+      <div class="neuron-canvas-wrap">
+        <canvas id="neuronCanvas" width="700" height="320"></canvas>
+      </div>
 
-  .testimonial {
-    position: relative !important;
-    opacity: 1 !important;
-    margin-bottom: 1.5rem;
-  }
-}
+      <div class="day-scrub-row">
+        <i class="fa-solid fa-seedling"></i>
+        <input type="range" id="daySlider" min="0" max="30" value="0" />
+        <i class="fa-solid fa-brain"></i>
+      </div>
+      <p class="demo-status" id="neuronStatus">Day 0: a patient skin fibroblast, before any reprogramming factors are switched on.</p>
+      <p class="demo-caption">Modeled on the actual transdifferentiation timeline I use to convert patient fibroblasts directly into cortical neurons ("t-neurons"), no iPSC stage involved, over about 30 days. Switch to PD-line to see the α-synuclein accumulation and reduced neurite complexity published GBA-PD studies predict for this genetic background; this side is illustrative of that prediction, not a claim about data I've already collected.</p>
+    </div>
+  </section>
 
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="section alt">
+    <div class="section-head reveal">
+      <span class="section-tag">03 · Skills</span>
+      <h2>Every technique I use, plotted</h2>
+      <p class="section-sub">Each dot is one skill: its column is the competency domain, its height is self-rated proficiency. Click any dot for detail.</p>
+    </div>
 
+    <div class="scatter-wrap reveal">
+      <canvas id="skillScatter" width="900" height="380"></canvas>
+      <p class="chart-caption" id="scatterDesc">Click a dot above to see what it means in practice.</p>
+    </div>
 
-li {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-  font-size: 1.05rem;
-}
+    <div class="skills-tabs-wrap reveal">
+      <div class="tab-buttons" id="skillTabs" role="tablist"></div>
+      <div class="tab-panels" id="skillPanels"></div>
+    </div>
+  </section>
 
-</style>
+  <!-- ================= EXPERIENCE ================= -->
+  <section id="experience" class="section">
+    <div class="section-head reveal"><span class="section-tag">04 · Experience</span><h2>Timeline</h2></div>
+    <div class="timeline" id="timeline"></div>
+  </section>
 
-<section id="achievements">
-  <h2>Achievements</h2>
-  <div class="card">
-    <h3>Research Presentation at UC San Diego Research Expo</h3>
-    <p>Presented a research poster titled <em>"Integrating Calcium Dynamics and Metabolic Shifts Using First Responder Analysis and FLIM"</em> at the 43rd Annual Research Expo, Jacobs School of Engineering, UC San Diego. Demonstrated expertise in advanced imaging and cross-disciplinary analysis to academic and industry leaders.</p>
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="section alt">
+    <div class="section-head reveal">
+      <span class="section-tag">05 · Projects</span>
+      <h2>Research highlights</h2>
+      <p class="section-sub">Filter by domain, then click a card to expand the full case study.</p>
+    </div>
+    <div class="filter-bar reveal" id="projectFilters"></div>
+    <div class="project-grid" id="projectGrid"></div>
+  </section>
+
+  <!-- ================= PUBLICATIONS + BLOGS ================= -->
+  <section id="publications" class="section">
+    <div class="section-head reveal"><span class="section-tag">06 · Publications & Writing</span><h2>Publications, posters & blog features</h2></div>
+    <div class="pub-grid reveal">
+      <div class="pub-card">
+        <div class="pub-card-top"><span class="pub-type">Preprint</span><span class="pub-meta">bioRxiv</span></div>
+        <h3>Role of GLP1-receptor-mediated α–β-cell communication in functional β-cell heterogeneity</h3>
+        <p>Explores how GLP-1R–mediated signaling between α and β cells shapes islet function and subpopulation behavior in the context of Type 2 diabetes.</p>
+        <div class="pub-actions">
+          <a href="https://www.biorxiv.org/content/10.1101/2025.04.25.650736v2" target="_blank" rel="noopener">View on bioRxiv <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <div class="skill-evidence"><button class="evidence-chip" data-type="project" data-target="cal"><i class="fa-solid fa-arrow-up-right-from-square"></i> Related project: Calcium &amp; NAD(P)H imaging</button></div>
+        </div>
+      </div>
+      <div class="pub-card">
+        <div class="pub-card-top"><span class="pub-type">Poster</span><span class="pub-meta">UC San Diego Research Expo</span></div>
+        <h3>Integrating Calcium Dynamics and Metabolic Shifts Using First Responder Analysis and FLIM</h3>
+        <p>Presented at the 43rd Annual Research Expo, Jacobs School of Engineering, UC San Diego, covering advanced imaging and cross-disciplinary analysis for academic and industry audiences.</p>
+        <div class="pub-actions">
+          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7324923786766561280/" target="_blank" rel="noopener">View on LinkedIn <i class="fa-brands fa-linkedin"></i></a>
+          <div class="skill-evidence"><button class="evidence-chip" data-type="project" data-target="beta"><i class="fa-solid fa-arrow-up-right-from-square"></i> Related project: First responder analysis</button></div>
+        </div>
+      </div>
+    </div>
+    <h3 class="blogs-heading reveal">Blog features · OpenSpecimen</h3>
+    <div class="blog-grid reveal" id="blogGrid"></div>
+  </section>
+
+  <!-- ================= CERTIFICATIONS ================= -->
+  <section id="certifications" class="section alt">
+    <div class="section-head reveal"><span class="section-tag">07 · Certifications</span><h2>Training & compliance</h2></div>
+    <div class="cert-grid reveal" id="certGrid"></div>
+  </section>
+
+  <!-- ================= ACHIEVEMENTS ================= -->
+  <section id="achievements" class="section">
+    <div class="section-head reveal"><span class="section-tag">08 · Achievements</span><h2>Recognition & leadership</h2></div>
+    <div class="achieve-grid" id="achieveGrid"></div>
+  </section>
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section id="testimonials" class="section alt">
+    <div class="section-head reveal"><span class="section-tag">09 · Testimonials</span><h2>What collaborators say</h2></div>
+    <div class="testimonial-carousel reveal">
+      <button class="carousel-arrow left" id="tPrev" aria-label="Previous testimonial"><i class="fa-solid fa-chevron-left"></i></button>
+      <div class="testimonial-track-wrap"><div class="testimonial-track" id="testimonialTrack"></div></div>
+      <button class="carousel-arrow right" id="tNext" aria-label="Next testimonial"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+    <div class="carousel-dots" id="carouselDots"></div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section contact-section">
+    <div class="section-head reveal">
+      <span class="section-tag">10 · Contact</span>
+      <h2>Let's talk research, roles, or collaboration</h2>
+      <span class="now-tag"><span class="pulse-dot"></span> Open to opportunities</span>
+      <p class="section-sub">I'm currently open to Research Associate, Scientist I/II, and Associate Scientist roles in biopharma/biotech.</p>
+      <p class="contact-location"><i class="fa-solid fa-location-dot"></i> South San Francisco, CA · open to remote and hybrid roles</p>
+    </div>
+    <div class="contact-grid reveal">
+      <div class="contact-card">
+        <a class="contact-main" href="mailto:divya.20.prabhu@gmail.com?subject=Re%3A%20Research%20Associate%20%2F%20Scientist%20roles"><i class="fa-solid fa-envelope"></i><div><strong>Email</strong><span>divya.20.prabhu@gmail.com</span></div></a>
+        <button class="copy-btn" data-copy="divya.20.prabhu@gmail.com" aria-label="Copy email address"><i class="fa-solid fa-copy"></i><span class="copy-tip">Copy</span></button>
+      </div>
+      <div class="contact-card">
+        <a class="contact-main" href="https://www.linkedin.com/in/divya-prabhu/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i><div><strong>LinkedIn</strong><span>/in/divya-prabhu</span></div></a>
+        <button class="copy-btn" data-copy="https://www.linkedin.com/in/divya-prabhu/" aria-label="Copy LinkedIn URL"><i class="fa-solid fa-copy"></i><span class="copy-tip">Copy</span></button>
+      </div>
+      <a class="contact-card" href="Divya_Prabhu_Resume.pdf" download><i class="fa-solid fa-file-arrow-down"></i><div><strong>Resume</strong><span>Download PDF</span></div></a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Divya Prabhu. Built with curiosity and a little bit of MATLAB muscle memory.</p>
+  <div class="footer-links">
+    <a href="mailto:divya.20.prabhu@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/divya-prabhu/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
   </div>
-  <div class="card">
-    <h3>Teaching Assistant at UC San Diego</h3>
-    <p>Served as a Teaching Assistant (50%) for 7 out of 8 quarters during the Master’s program, showcasing subject mastery and dedication to student mentorship. Contributed through lectures, lab sessions, and one-on-one academic support.</p>
-  </div>
-  <div class="card">
-    <h3>Co-founder of TSEC’s First Incubation Center</h3>
-    <p>Co-founded the first startup incubation center at Thadomal Shahani Engineering College (TSEC), India, promoting university–industry collaboration. Spearheaded initiatives that provided mentorship, funding access, and strategic guidance to student entrepreneurs.</p>
-  </div>
-</section>
- 
-<section data-aos="fade-up" id="testimonials">
-<h2>Testimonials</h2>
-<div style="max-width:800px; margin:auto; border-radius:10px; overflow:hidden; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
-<div id="testimonial-slider" style="font-family: 'Times New Roman', serif; background-color: #f9f9f9; padding: 40px 20px; border-radius: 10px;">
-<div id="testimonial-container" style="max-width: 800px; margin: auto; position: relative; height: 230px; color: #3078b8;">
-<div class="testimonial" style="position: absolute; opacity: 0; transition: opacity 1s ease-in-out; font-size: 1.1rem; line-height: 1.6;">
-<p><span class="quote">"Divya is a knowledgeable, methodological, and efficient scientist and I have learned a great deal from her expertise and skills. Thus, I highly recommend her as a professional."</span></p>
-<strong style="color: #c69214;">~ Dr. Nantia Lakovidou</strong><br/>
-<em style="color: #555;">Senior Researcher at Khalifa University</em>
-</div>
-<div class="testimonial" style="position: absolute; opacity: 0; transition: opacity 1s ease-in-out; font-size: 1.1rem; line-height: 1.6;">
-<p><span class="quote">"I had the privilege of working with Divya when implementing the Bio repository system for the International Livestock Research Institute under the BUILD project... I would without any reservations recommend her..."</span></p>
-<strong style="color: #c69214;">~ Innocent Obilil</strong><br/>
-<em style="color: #555;">Data Systems Information Specialist at International Livestock Research</em>
-</div>
-<div class="testimonial" style="position: absolute; opacity: 0; transition: opacity 1s ease-in-out; font-size: 1.1rem; line-height: 1.6;">
-<p><span class="quote">"During the intensive period of implementing the new OpenSpecimen Workflow plug-in, Divya provided us with product support in a professional manner. Always fast, solution-oriented and based on our wishes. Thanks Divya!"</span></p>
-<strong style="color: #c69214;">~ Jaap van Minnen</strong><br/>
-<em style="color: #555;">Project Manager at UMC Utrecht</em>
-</div>
-<div class="testimonial" style="position: absolute; opacity: 0; transition: opacity 1s ease-in-out; font-size: 1.1rem; line-height: 1.6;">
-<p><span class="quote">"Divya is delightful to work with - she gets the pulse of the customer very quickly, understands the capabilities of the product... I wish Divya all the best with her future and would jump at the opportunity to work with her again."</span></p>
-<strong style="color: #c69214;">~ Sunil Ayalasomayajula</strong><br/>
-<em style="color: #555;">Senior Consultant at Coppei (now Exadel)</em>
-</div>
-<div class="testimonial" style="position: absolute; opacity: 0; transition: opacity 1s ease-in-out; font-size: 1.1rem; line-height: 1.6;">
-<p><span class="quote">"Divya is a very diligent, sincere, hard working and focused on the projects in hand... Pro-active attitude to learn, very good communicator &amp; interpersonal skills."</span></p>
-<strong style="color: #c69214;">~ Amit Das</strong><br/>
-<em style="color: #555;">Co-Founder &amp; Director at Med-Cubator Innovations Pvt. Ltd</em>
-</div>
-<div class="testimonial" style="position: absolute; opacity: 0; transition: opacity 1s ease-in-out; font-size: 1.1rem; line-height: 1.6;">
-<p><span class="quote">"I taught Divya Applied Mathematics, Biostatistics and Operations Research. Divya is very diligent, sincere and hard working..."</span></p>
-<strong style="color: #c69214;">~ Dr. Poonam Soni</strong><br/>
-<em style="color: #555;">Associate Professor &amp; HoD Mathematics at Thadomal Shahani Engineering College</em>
-</div>
-<div class="testimonial" style="position: absolute; opacity: 0; transition: opacity 1s ease-in-out; font-size: 1.1rem; line-height: 1.6;">
-<p><span class="quote">"I know Divya as a sincere, attentive and honest student with a focused mindset to achieve her goals... She always believed in hard work and persistence in everything she did."</span></p>
-<strong style="color: #c69214;">~ Sachit Nalaskar</strong><br/>
-<em style="color: #555;">Associate Professor; Advisor, NSS; &amp; Nodal Officer, UBA at Thadomal Shahani Engineering College</em>
-</div>
-</div>
-</div>
-<script>
-  let index = 0;
-  const testimonials = document.querySelectorAll('.testimonial');
-  function showTestimonial() {
-    testimonials.forEach((el, i) => {
-      el.style.opacity = i === index ? 1 : 0;
-    });
-    index = (index + 1) % testimonials.length;
-  }
-  showTestimonial();
-  setInterval(showTestimonial, 5000);
-</script>
-</div>
-</section>
-<section class="section" id="contact">
-<div class="container">
-<h2>Contact</h2>
-<div style="text-align:center; padding-top: 20px;">
-<a href="mailto:divya.20.prabhu@gmail.com" style="background-color: #f6c343; color: #0f172a; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold;">
-        Contact Me – I’m Open to Work!
-      </a>
-</div>
-<div style="height: 30px;"></div>
-<div style="display: flex; justify-content: center; gap: 20px; padding-bottom: 10px;">
-<a href="mailto:divya.20.prabhu@gmail.com" style="background-color: #1a1a1a; border-radius: 50%; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center;" target="_blank">
-<img alt="Email" src="https://img.icons8.com/ios-filled/24/ffffff/new-post.png"/>
-</a>
-<a href="https://www.linkedin.com/in/divya-prabhu/" style="background-color: #1a1a1a; border-radius: 50%; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center;" target="_blank">
-<img alt="LinkedIn" src="https://img.icons8.com/ios-filled/24/ffffff/linkedin.png"/>
-</a>
-</div>
-</div>
-<h3 style="text-align:center; margin-top: 30px; font-weight: bold; color: #182b49;">Ask me anything</h3>
-<form action="https://formspree.io/f/mvgayyqk" method="POST" style="max-width: 500px; margin: 20px auto 0;">
-<input name="name" placeholder="Your Name *" required="" style="width:100%; padding:10px; margin-bottom:10px; border:1px solid #ccc; border-radius:6px;" type="text"/>
-<input name="_replyto" placeholder="Your Email *" required="" style="width:100%; padding:10px; margin-bottom:10px; border:1px solid #ccc; border-radius:6px;" type="email"/>
-<textarea name="message" placeholder="Your Message *" required="" rows="5" style="width:100%; padding:10px; margin-bottom:10px; border:1px solid #ccc; border-radius:6px;"></textarea>
-<button style="background-color: #3078b8; color: white; padding: 10px 20px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer;" type="submit">
-    Send Message
-  </button>
-</form>
-</section>
-<script>
-    window.addEventListener('scroll', () => {
-      document.querySelectorAll('.bar-fill').forEach(bar => {
-        const rect = bar.getBoundingClientRect();
-        if (rect.top < window.innerHeight) {
-          const style = bar.getAttribute('style');
-          bar.style.width = style.split(':')[1];
-        }
-      });
-    });
-  </script>
-<script>
-const typingElement = document.getElementById("typing");
-const words = ["Research Scientist", "Disease Modeling Expert", "iPSC Platform Specialist", "Translational Researcher", "Drug Discovery Scientist", "Functional Assay Developer"];
-let i = 0, j = 0, isDeleting = false;
-function type() {
-  const current = words[i];
-  typingElement.innerHTML = current.substring(0, j);
-  if (!isDeleting) {
-    if (j < current.length) {
-      j++;
-    } else {
-      setTimeout(() => {
-        isDeleting = true;
-        type();
-      }, 1500);
-      return;
-    }
-  } else {
-    if (j > 0) {
-      j--;
-    } else {
-      isDeleting = false;
-      i = (i + 1) % words.length;
-    }
-  }
-  setTimeout(type, isDeleting ? 60 : 120);
-}
-type();
-</script>
-</div>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  function animateCount(id, end, duration) {
-    let start = 0;
-    const increment = end / (duration / 10);
-    const counter = document.getElementById(id);
-    const timer = setInterval(() => {
-      start += increment;
-      if (start >= end) {
-        counter.textContent = end;
-        clearInterval(timer);
-      } else {
-        counter.textContent = Math.floor(start);
-      }
-    }, 10);
-  }
-  animateCount("projectsCount", 4, 1000);
-  animateCount("yearsExp", 5, 1000);
-  animateCount("publications", 1, 1000);
-  animateCount("blogsCount", 4, 1000);
-});
-
-animateCount("postersCount", 1, 1000);</script>
-<script>
-const testimonials = [
-  { text: "Divya is a knowledgeable, methodological, and efficient scientist and I have learned a great deal from her expertise and skills. Thus, I highly recommend her as a professional.", author: "~ Dr. Nantia Lakovidou" },
-  { text: "I had the privilege of working with Divya when implementing the Bio repository system for the International Livestock Research Institute under the BUILD project. I must admit she was knowledgeable about her work and provided the best customer service and response time. I would without any reservations recommend her for any future opportunities that provide the chance to grow in career and skill.", author: "~ Innocent Obilil" },
-  { text: "During the intensive period of implementing the new OpenSpecimen Workflow plug-in, Divya provided us with product support in a professional manner. Always fast, solution-oriented and based on our wishes. Thanks Divya!", author: "~ Jaap van Minnen" },
-  { text: "Divya is delightful to work with - she gets the pulse of the customer very quickly, understands the capabilities of the product and what can and cannot be done and advises the customer about the best way of doing things. Divya designed and built the workflows functionality (a new and evolving module of Open Specimen) for the Fred Hutch Cancer Center and I worked very closely with her while providing the end customer's requirements to Divya, who would take it from there and provide the best solution possible. I found Divya to be savvy, smart, prompt and open to exploring alternate solutions when the product couldn't directly meet a requirement. I wish Divya all the best with her future and would jump at the opportunity to work with her again.", author: "~ Sunil Ayalasomayajula" },
-  { text: "Divya is a very diligent, sincere, hard working and focused on the projects in hand. She is an excellent team member and highly dependable to get the task completed as per timelines. Pro-active attitude to learn, very good communicator & interpersonal skills.", author: "~ Amit Das" },
-  { text: "I taught Divya Applied Mathematics, Biostatistics and Operations Research. Divya is very diligent, sincere and hard working. Apart from her skills, her ability to remain focused and her pro-active attitude to learn will be a great asset to her and any organization she works for.", author: "~ Dr. Poonam Soni" },
-  { text: "I know Divya as a sincere, attentive and honest student with a focused mindset to achieve her goals. She was a bright student who always stood ahead of her peers on many occasions in studies. Divya set forth a good example with her diligent attempts to try out contemporary skills and knowledge. She radiates positivity and great energy through her pleasing persona. She always believed in hard work and persistence in everything she did. Divya was also involved in social outreach programs in the college through NSS and through joining various NGOs on her own. I am very confident about her sincerity and talent.", author: "~ Sachit Nalaskar" }
-];
-let current = 0;
-let interval;
-
-function showTestimonial(index) {
-  document.getElementById("testimonialText").textContent = testimonials[index].text;
-  document.getElementById("testimonialAuthor").textContent = testimonials[index].author;
-}
-
-function nextTestimonial() {
-  current = (current + 1) % testimonials.length;
-  showTestimonial(current);
-}
-
-function prevTestimonial() {
-  current = (current - 1 + testimonials.length) % testimonials.length;
-  showTestimonial(current);
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  showTestimonial(current);
-  const nextBtn = document.querySelector('button[onclick="nextTestimonial()"]');
-  const prevBtn = document.querySelector('button[onclick="prevTestimonial()"]');
-
-  nextBtn.addEventListener("mouseenter", () => {
-    interval = setInterval(nextTestimonial, 2000);
-  });
-  nextBtn.addEventListener("mouseleave", () => clearInterval(interval));
-
-  prevBtn.addEventListener("mouseenter", () => {
-    interval = setInterval(prevTestimonial, 2000);
-  });
-  prevBtn.addEventListener("mouseleave", () => clearInterval(interval));
-});
-</script>
-<style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: #f4f4f4;
-      margin: 0;
-      padding: 40px 20px;
-    }
-    h2 {
-      color: #3078b8;
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    .blog-section {
-      max-width: 1000px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .blog-card {
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      opacity: 0.7;
-      transform: translateY(0);
-      transition: all 0.3s ease;
-    }
-    .blog-card:hover {
-      opacity: 1;
-      transform: translateY(-10px);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-    }
-    .blog-card h3 {
-      color: #182b49;
-    }
-    .blog-card a {
-      color: #3078b8;
-      font-weight: bold;
-      text-decoration: none;
-    }
-  
-h2 {
-  font-size: 1.75rem;
-  color: #0077b6;
-  text-align: center;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-
-section p, section li {
-  font-size: 1.05rem;
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-}
-
-.quote {
-  font-style: italic;
-}
-
-
-.quick-stats {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  font-size: 1.05rem;
-  font-family: 'Segoe UI', sans-serif;
-  text-align: center;
-  gap: 1rem;
-}
-.quick-stats div {
-  flex: 1;
-  min-width: 120px;
-}
-
-
-@media (max-width: 768px) {
-  .slider-container {
-    height: auto !important;
-  }
-
-  #testimonial-container {
-    height: auto !important;
-  }
-
-  .testimonial {
-    position: relative !important;
-    opacity: 1 !important;
-    margin-bottom: 1.5rem;
-  }
-}
-
-
-
-li {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-  font-size: 1.05rem;
-}
-
-</style>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate");
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll(".blog-card-animated").forEach(card => {
-      observer.observe(card);
-    });
-  });
-</script>
-<style>
-.blog-card-animated {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.8s ease-out;
-}
-.blog-card-animated.animate {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-h2 {
-  font-size: 1.75rem;
-  color: #0077b6;
-  text-align: center;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-
-section p, section li {
-  font-size: 1.05rem;
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-}
-
-.quote {
-  font-style: italic;
-}
-
-
-.quick-stats {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  font-size: 1.05rem;
-  font-family: 'Segoe UI', sans-serif;
-  text-align: center;
-  gap: 1rem;
-}
-.quick-stats div {
-  flex: 1;
-  min-width: 120px;
-}
-
-
-@media (max-width: 768px) {
-  .slider-container {
-    height: auto !important;
-  }
-
-  #testimonial-container {
-    height: auto !important;
-  }
-
-  .testimonial {
-    position: relative !important;
-    opacity: 1 !important;
-    margin-bottom: 1.5rem;
-  }
-}
-
-
-
-li {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-  font-size: 1.05rem;
-}
-
-</style>
-<style>
-.blog-card-animated {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.8s ease-out forwards;
-}
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-h2 {
-  font-size: 1.75rem;
-  color: #0077b6;
-  text-align: center;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-
-section p, section li {
-  font-size: 1.05rem;
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-}
-
-.quote {
-  font-style: italic;
-}
-
-
-.quick-stats {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  font-size: 1.05rem;
-  font-family: 'Segoe UI', sans-serif;
-  text-align: center;
-  gap: 1rem;
-}
-.quick-stats div {
-  flex: 1;
-  min-width: 120px;
-}
-
-
-@media (max-width: 768px) {
-  .slider-container {
-    height: auto !important;
-  }
-
-  #testimonial-container {
-    height: auto !important;
-  }
-
-  .testimonial {
-    position: relative !important;
-    opacity: 1 !important;
-    margin-bottom: 1.5rem;
-  }
-}
-
-
-
-li {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-  font-size: 1.05rem;
-}
-
-</style>
-<style>
-.blog-card {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-.blog-card.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-h2 {
-  font-size: 1.75rem;
-  color: #0077b6;
-  text-align: center;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-
-section p, section li {
-  font-size: 1.05rem;
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-}
-
-.quote {
-  font-style: italic;
-}
-
-
-.quick-stats {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  font-size: 1.05rem;
-  font-family: 'Segoe UI', sans-serif;
-  text-align: center;
-  gap: 1rem;
-}
-.quick-stats div {
-  flex: 1;
-  min-width: 120px;
-}
-
-
-@media (max-width: 768px) {
-  .slider-container {
-    height: auto !important;
-  }
-
-  #testimonial-container {
-    height: auto !important;
-  }
-
-  .testimonial {
-    position: relative !important;
-    opacity: 1 !important;
-    margin-bottom: 1.5rem;
-  }
-}
-
-
-
-li {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-  font-size: 1.05rem;
-}
-
-</style>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll(".blog-card").forEach(card => {
-      observer.observe(card);
-    });
-  });
-</script>
-<style>
-.blog-card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  opacity: 0.7;
-  transform: translateY(0);
-  transition: all 0.3s ease;
-}
-.blog-card:hover {
-  opacity: 1;
-  transform: translateY(-10px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-  font-size: 1.75rem;
-  color: #0077b6;
-  text-align: center;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-
-section p, section li {
-  font-size: 1.05rem;
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-}
-
-.quote {
-  font-style: italic;
-}
-
-
-.quick-stats {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  font-size: 1.05rem;
-  font-family: 'Segoe UI', sans-serif;
-  text-align: center;
-  gap: 1rem;
-}
-.quick-stats div {
-  flex: 1;
-  min-width: 120px;
-}
-
-
-@media (max-width: 768px) {
-  .slider-container {
-    height: auto !important;
-  }
-
-  #testimonial-container {
-    height: auto !important;
-  }
-
-  .testimonial {
-    position: relative !important;
-    opacity: 1 !important;
-    margin-bottom: 1.5rem;
-  }
-}
-
-
-
-li {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-  font-size: 1.05rem;
-}
-
-</style>
-<style>
-body { font-family: 'Segoe UI', sans-serif; }
-.timeline {
-  position: relative;
-  border-left: 3px solid #3078b8;
-  margin-top: 20px;
-  padding-left: 25px;
-}
-.timeline-entry {
-  margin-bottom: 30px;
-  position: relative;
-}
-.timeline-entry::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: -9px;
-  width: 14px;
-  height: 14px;
-  background-color: #ffffff;
-  border: 3px solid #3078b8;
-  border-radius: 50%;
-  z-index: 1;
-}
-  content: "";
-  position: absolute;
-  left: -11px;
-  top: 5px;
-  width: 12px;
-  height: 12px;
-  background-color: #ffffff;
-  border: 3px solid #3078b8;
-  border-radius: 50%;
-}
-.timeline-title {
-  font-weight: bold;
-  font-size: 16px;
-  color: #182b49;
-}
-.timeline-date {
-  background-color: #e4ebf3;
-  display: inline-block;
-  padding: 3px 10px;
-  margin: 5px 0;
-  font-weight: bold;
-  font-size: 14px;
-}
-.timeline-sub {
-  font-style: italic;
-  margin-bottom: 6px;
-}
-.timeline-entry p, .timeline-entry ul {
-  font-size: 14px;
-  margin: 5px 0 0 0;
-  padding-left: 15px;
-}
-
-.timeline-entry {
-  animation: fadeSlideIn 0.8s ease forwards;
-  opacity: 0;
-  transform: translateY(20px);
-}
-.timeline-entry:nth-child(1) { animation-delay: 0.2s; }
-.timeline-entry:nth-child(2) { animation-delay: 0.4s; }
-.timeline-entry:nth-child(3) { animation-delay: 0.6s; }
-.timeline-entry:nth-child(4) { animation-delay: 0.8s; }
-.timeline-entry:nth-child(5) { animation-delay: 1s; }
-
-@keyframes fadeSlideIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-h2 {
-  font-size: 1.75rem;
-  color: #0077b6;
-  text-align: center;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-
-section p, section li {
-  font-size: 1.05rem;
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-}
-
-.quote {
-  font-style: italic;
-}
-
-
-.quick-stats {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  font-size: 1.05rem;
-  font-family: 'Segoe UI', sans-serif;
-  text-align: center;
-  gap: 1rem;
-}
-.quick-stats div {
-  flex: 1;
-  min-width: 120px;
-}
-
-
-@media (max-width: 768px) {
-  .slider-container {
-    height: auto !important;
-  }
-
-  #testimonial-container {
-    height: auto !important;
-  }
-
-  .testimonial {
-    position: relative !important;
-    opacity: 1 !important;
-    margin-bottom: 1.5rem;
-  }
-}
-
-
-
-li {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-  font-size: 1.05rem;
-}
-
-</style>
-<!-- Scroll to Top Button -->
-<button id="scrollTopBtn" onclick="topFunction()" style="
-  display: none;
-  position: fixed;
-  bottom: 40px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: #3078b8;
-  color: white;
-  cursor: pointer;
-  padding: 12px 16px;
-  border-radius: 50%;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
-" title="Go to top">↑</button>
-<script>
-// Show button when user scrolls down 400px
-window.onscroll = function() {
-  document.getElementById("scrollTopBtn").style.display = 
-    (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) ? "block" : "none";
-};
-
-// Scroll to top function
-function topFunction() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-</script>
-<footer style="text-align:center; padding: 20px 10px; font-size: 14px; color: #ffffff; background-color: rgba(0,0,0,0.6);">
-  © 2025 Divya Prabhu. All Rights Reserved.
 </footer>
-<style>
-  .menu-icon {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    background: #38bdf8;
-    color: white;
-    border: none;
-    padding: 0.6rem 0.8rem;
-    border-radius: 50%;
-    font-size: 1.3rem;
-    z-index: 1001;
-    cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  }
 
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: -260px;
-    width: 240px;
-    height: 100%;
-    background: #0f172a;
-    color: white;
-    padding: 2rem 1.5rem;
-    transition: left 0.3s ease;
-    z-index: 1000;
-    box-shadow: 2px 0 10px rgba(0,0,0,0.3);
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
-    overflow-y: auto;
-  }
-
-  .sidebar.active {
-    left: 0;
-  }
-
-  .sidebar a {
-    display: block;
-    color: #ffffffcc;
-    text-decoration: none;
-    margin: 1.2rem 0;
-    font-size: 1.05rem;
-    padding-left: 0.25rem;
-    border-left: 3px solid transparent;
-  }
-
-  .sidebar a:hover {
-    color: #38bdf8;
-    border-left: 3px solid #38bdf8;
-  }
-
-  .sidebar-close {
-    position: absolute;
-    top: 0.8rem;
-    right: 1rem;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-
-  @media (min-width: 768px) {
-    nav {
-      display: none;
-    }
-    .menu-icon {
-      display: block;
-    }
-  }
-
-
-li {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-  font-size: 1.05rem;
-}
-
-</style>
-<div class="sidebar" id="sidebar">
-<button class="sidebar-close" onclick="toggleSidebar()">×</button>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#blog">Blogs</a>
-<a href="#resume">Resume</a>
-<a href="#certifications">Certifications</a>
-<a href="#publication">Publications</a>
-<a href="#achievements">Achievements</a>
-<a href="#testimonials">Testimonials</a>
-<a href="#contact">Contact</a>
-</div>
-<button class="menu-icon" onclick="toggleSidebar()">☰</button>
-<script>
-  function toggleSidebar() {
-    document.getElementById('sidebar').classList.toggle('active');
-  }
-</script>
-<style>
-  .menu-icon {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    background: #38bdf8;
-    color: white;
-    border: none;
-    padding: 0.6rem 0.8rem;
-    border-radius: 50%;
-    font-size: 1.3rem;
-    z-index: 1001;
-    cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-  }
-
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: -270px;
-    width: 250px;
-    height: 100%;
-    background: #0f172a;
-    color: white;
-    padding: 2rem 1rem;
-    transition: left 0.3s ease;
-    z-index: 1000;
-    box-shadow: 2px 0 10px rgba(0,0,0,0.4);
-    border-top-right-radius: 12px;
-    border-bottom-right-radius: 12px;
-    overflow-y: auto;
-    text-align: center;
-  }
-
-  .sidebar.active {
-    left: 0;
-  }
-
-  .sidebar img.profile-pic {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    border: 3px solid #38bdf8;
-  }
-
-  .sidebar h2 {
-    margin: 0.5rem 0 0.2rem;
-    font-size: 1.1rem;
-    font-weight: bold;
-  }
-
-  .sidebar p {
-    margin: 0;
-    font-size: 0.9rem;
-    color: #9ca3af;
-  }
-
-  .sidebar .social-icons {
-    margin: 1rem 0;
-  }
-
-  .sidebar .social-icons a {
-    margin: 0 0.3rem;
-    display: inline-block;
-    color: #cbd5e1;
-    font-size: 1.2rem;
-  }
-
-  .sidebar .social-icons a:hover {
-    color: #38bdf8;
-  }
-
-  .sidebar a {
-    display: block;
-    color: #ffffffcc;
-    text-decoration: none;
-    margin: 0.8rem 0;
-    font-size: 1rem;
-    padding-left: 0.25rem;
-    border-left: 3px solid transparent;
-    text-align: left;
-  }
-
-  .sidebar a:hover {
-    color: #38bdf8;
-    border-left: 3px solid #38bdf8;
-  }
-
-  .sidebar-close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-
-
-li {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-  font-size: 1.05rem;
-}
-
-</style>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-<div class="sidebar" id="sidebar">
-<button class="sidebar-close" onclick="toggleSidebar()">×</button>
-<img alt="Profile" class="profile-pic" src="assets/img/divyaportfoliodp.jpg"/>
-<h2>Divya Prabhu</h2>
-<p>Clinical &amp; Translational Science</p>
-<div class="social-icons">
-<a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
-<a href="mailto:your@email.com"><i class="fas fa-envelope"></i></a>
-<a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-</div>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#blog">Blogs</a>
-<a href="#resume">Resume</a>
-<a href="#certifications">Certifications</a>
-<a href="#publications">Publications</a>
-<a href="#achievements">Achievements</a>
-<a href="#testimonials">Testimonials</a>
-<a href="#contact">Contact</a>
-</div>
-<button class="menu-icon" onclick="toggleSidebar()">☰</button>
-<script>
-  function toggleSidebar() {
-    document.getElementById('sidebar').classList.toggle('active');
-  }
-</script>
-<style>
-  .timeline-title {
-    cursor: pointer;
-  }
-  .timeline-content {
-    transition: max-height 0.4s ease, opacity 0.4s ease;
-    overflow: hidden;
-    max-height: 1000px;
-    opacity: 1;
-  }
-  .timeline-content.collapsed {
-    max-height: 0;
-    opacity: 0;
-    padding: 0;
-    margin: 0;
-  }
-
-
-li {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-  font-size: 1.05rem;
-}
-
-</style>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".timeline-entry").forEach(entry => {
-      const title = entry.querySelector(".timeline-title");
-      const content = entry.querySelector(".timeline-content");
-      if (title && content) {
-        title.addEventListener("click", () => {
-          content.classList.toggle("collapsed");
-        });
-      }
-    });
-  });
-</script>
-
-<style>
-@media (max-width: 480px) {
-  form input, form textarea, form button {
-    width: 100% !important;
-    box-sizing: border-box;
-  }
-
-  form {
-    padding: 0 10px;
-  }
-}
-</style>
-
+<script src="js/main.js"></script>
 </body>
 </html>
