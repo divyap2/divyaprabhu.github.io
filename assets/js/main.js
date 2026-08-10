@@ -159,10 +159,19 @@ function initNav() {
   function onScroll() {
     navbar.style.boxShadow = window.scrollY > 20 ? '0 10px 30px -15px rgba(0,0,0,0.4)' : '';
     let current = null;
-    for (const sec of sections) {
-      if (!sec) continue;
-      const rect = sec.getBoundingClientRect();
-      if (rect.top <= 140 && rect.bottom >= 140) current = sec.id;
+    // Near the bottom of the page the last section may be too short to ever satisfy
+    // the line-crossing check below (there's no more room to scroll it into place),
+    // so force the last section active once we've hit (or nearly hit) the bottom.
+    const atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+    if (atBottom) {
+      const last = sections[sections.length - 1];
+      current = last ? last.id : null;
+    } else {
+      for (const sec of sections) {
+        if (!sec) continue;
+        const rect = sec.getBoundingClientRect();
+        if (rect.top <= 140 && rect.bottom >= 140) current = sec.id;
+      }
     }
     links.forEach(l => l.classList.toggle('active', current && l.getAttribute('href') === '#' + current));
   }
